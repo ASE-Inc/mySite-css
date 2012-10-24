@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import 'animations000.css';
-@import 'bootstrap-responsive.css';
-@import 'bootstrap.css';
+@import 'bootstrap/css/bootstrap-responsive.css';
+@import 'bootstrap/css/bootstrap.css';
 @import 'mySite';
 /*@import url('typography');
  @import url('extra.css');*/
@@ -10,6 +10,11 @@
  SITE SPECIFIC STYLES
  Author: Abhishek Munie
  ========================================================================== */
+
+body {
+    font-size: 62.5%;
+}
+
 .addthis_counter *{-webkit-box-sizing:content-box;}
 .TopNavElement{height:59px;}
 .TopNavContainer{top:0;border:0;position:relative;z-index:99999;min-width:100%;display:block;height:71px;}

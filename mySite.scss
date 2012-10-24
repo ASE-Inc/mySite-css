@@ -1,94 +1,7 @@
 @charset "utf-8";
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+@import
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 /* #Images
 ================================================== */
 /*The purpose of the below declaration is to make sure images don't exceed the width of columns they are put into when resizing window. 
@@ -989,7 +902,7 @@ input#searchsubmit{outline:none;border:none;position:absolute;top:50%;left:50%;m
     -ms-animation-iteration-count:infinite;
 }
 .sky_background{
-	background:url(http://s.abhishekmunie.com/img/bg/stars_3/stars_background.png) repeat 5% 5%;z-index:0;
+  background:url(http://s.abhishekmunie.com/img/bg/stars_3/stars_background.png) repeat 5% 5%;z-index:0;
 }.animations-on .sky_background{
     animation-name:moving-star-background-rev;
     animation-duration:240s;
@@ -1001,7 +914,7 @@ input#searchsubmit{outline:none;border:none;position:absolute;top:50%;left:50%;m
     -ms-animation-duration:240s;
 }
 .sky_midground{
-	background:url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_midground.png) repeat 20% 20%;z-index:1;
+  background:url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_midground.png) repeat 20% 20%;z-index:1;
 }.animations-on .sky_midground{
     animation-name:moving-star-background;
     animation-duration:480s;
@@ -1013,7 +926,7 @@ input#searchsubmit{outline:none;border:none;position:absolute;top:50%;left:50%;m
     -ms-animation-duration:480s;
 }
 .sky_foreground{
-	background:url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_foreground.png) repeat 90% 110%;z-index:2;
+  background:url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_foreground.png) repeat 90% 110%;z-index:2;
 }.animations-on .sky_foreground{
     animation-name:moving-star-background;
     animation-duration:150s;
@@ -1103,7 +1016,7 @@ input#searchsubmit{outline:none;border:none;position:absolute;top:50%;left:50%;m
 }
 
 .img_rollover div:nth-child(2) {
-    -webkit-transition: -webkit-mask-position 1s ease;		
+    -webkit-transition: -webkit-mask-position 1s ease;    
     -webkit-mask-size: 600px 600px;
     -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
     color-stop(0.00,  rgba(0,0,0,1)),
@@ -1148,9 +1061,9 @@ figure.expandable:focus{outline:none;-webkit-transform:rotate(-3deg) scale(2.5);
 #lightbox-nav-btnNext{right:0;float:right;}
 #lightbox-container-image-data-box{font:10px Verdana,Helvetica,sans-serif;background-color:#fff;margin:0 auto;line-height:1.4em;overflow:auto;width:100%;padding:0 10px 0;}
 #lightbox-container-image-data{padding:0 10px;color:#666;}
-#lightbox-container-image-data #lightbox-image-details{width:70%;float:left;text-align:left;}	
+#lightbox-container-image-data #lightbox-image-details{width:70%;float:left;text-align:left;} 
 #lightbox-image-details-caption{font-weight:bold;}
-#lightbox-image-details-currentNumber{display:block;clear:left;padding-bottom:1.0em;}			
+#lightbox-image-details-currentNumber{display:block;clear:left;padding-bottom:1.0em;}     
 #lightbox-secNav-btnClose{width:66px;float:right;padding-bottom:0.7em;}
 /*jQuery lightBox plugin*/
 
@@ -1186,212 +1099,8 @@ The expand / collapse button */
 }
 .facebox .close{background-image:url(http://s.abhishekmunie.com/img/button/close/close.png);margin:-18px -18px 0 0;float:right;cursor:pointer;width:35px;height:35px;}
 
- 
+@import 'h5bp/footer';
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow:none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-
-/* =============================================================================
- Print styles.
- Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
- ========================================================================== */
-@media print {
-    aside{ display: none; }
-    a[href]:after { content: " (" attr(href) ")"; }
-    abbr[title]:after { content: " (" attr(title) ")"; }
-    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-    thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
-    tr, img { page-break-inside: avoid; }
-    @page { margin: 0.5cm; }
-    p, h2, h3 { orphans: 3; widows: 3; }
-}
 .printer_friendly * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
 .printer_friendly a, a:visited { color: #444 !important; text-decoration: underline; }
 

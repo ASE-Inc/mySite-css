@@ -1,3 +1,5 @@
+@import "globals/config";
+
 .sky_back {
   position: absolute;
   top: 0;
@@ -18,7 +20,7 @@
 }
 
 .sky_background {
-  background: url(http://s.abhishekmunie.com/img/bg/stars_3/stars_background.png) repeat 5% 5%;
+  background: url(#{$cdn_img}img/bg/stars_3/stars_background.png) repeat 5% 5%;
   z-index: 0;
 }
 
@@ -34,7 +36,7 @@
 }
 
 .sky_midground {
-  background: url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_midground.png) repeat 20% 20%;
+  background: url(#{$cdn_img}img/bg/stars_3/img/stars_midground.png) repeat 20% 20%;
   z-index: 1;
 }
 
@@ -50,7 +52,7 @@
 }
 
 .sky_foreground {
-  background: url(http://s.abhishekmunie.com/img/bg/stars_3/img/stars_foreground.png) repeat 90% 110%;
+  background: url(#{$cdn_img}img/bg/stars_3/img/stars_foreground.png) repeat 90% 110%;
   z-index: 2;
 }
 

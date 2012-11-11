@@ -3,6 +3,8 @@
  * ============================
  */
 
+@import "globals/config";
+
 .fb_profile_image {
   height: 30px
 }
@@ -42,7 +44,7 @@
 }
 
 .facebox .close {
-  background-image: url(http://s.abhishekmunie.com/img/button/close/close.png);
+  background-image: url(#{$cdn_img}img/button/close/close.png);
   margin: -18px -18px 0 0;
   float: right;
   cursor: pointer;

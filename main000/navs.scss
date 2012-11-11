@@ -1,3 +1,5 @@
+@import "globals/config";
+
 .TopNavElement {
   height: 59px
 }
@@ -107,12 +109,12 @@ nav .TopNav {
   color: #BBB;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .75);
   border-width: 0 2px 0 2px;
-  border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-  -webkit-border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-  -moz-border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-  -o-border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-  -khtml-border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-  -ms-border-image: url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  -webkit-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  -moz-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  -o-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  -khtml-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
+  -ms-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
 }
 
 .mainNavList>li>a:hover {

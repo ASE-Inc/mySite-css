@@ -3,8 +3,10 @@
  * =============================== 
  */
 
+@import "globals/config";
+
 a.faqtoggle {
-  background: url('http://s.abhishekmunie.com/img/buttons/faq_buttons.png') no-repeat;
+  background: url('#{$cdn_img}img/buttons/faq_buttons.png') no-repeat;
   width: 80px;
   height: 38px;
   position: absolute;
@@ -66,7 +68,7 @@ input.toggleCB:checked + label + .ans {
 }
 
 .ques .icon {
-  background: url('http://s.abhishekmunie.com/img/bullets/faq_bullets.png') no-repeat left bottom;
+  background: url('#{$cdn_img}img/bullets/faq_bullets.png') no-repeat left bottom;
   height: 12px;
   left: 0;
   position: absolute;

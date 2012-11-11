@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import "globals/config";
 @import "plugins/h5bp/normalize";
 @import "plugins/h5bp/h5bp";
 @import "plugins/bootstrap/css/bootstrap-responsive";
@@ -47,7 +48,7 @@
 }
 
 .homeIcon {
-  background: url('http://s.abhishekmunie.com/img/icons/home.png') no-repeat center center;
+  background: url('#{$cdn_img}img/icons/home.png') no-repeat center center;
   overflow: hidden;
   padding-left: 12px;
   padding-right: 12px;

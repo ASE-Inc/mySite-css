@@ -1,5 +1,7 @@
+@import "globals/config";
+
 .topImgShadow {
-  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/topShadow.png");
+  background-image: url("#{$cdn_img}img/shadow/msww/topShadow.png");
   background-position: top;
   background-repeat: repeat-x;
   padding-top: 11px;
@@ -7,7 +9,7 @@
 }
 
 .bottomImgShadow {
-  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/bottomShadow.png");
+  background-image: url("#{$cdn_img}img/shadow/msww/bottomShadow.png");
   background-position: bottom;
   background-repeat: repeat-x;
   padding-bottom: 11px;
@@ -15,7 +17,7 @@
 }
 
 .leftImgShadow {
-  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/leftShadow.png");
+  background-image: url("#{$cdn_img}img/shadow/msww/leftShadow.png");
   background-position: left;
   background-repeat: repeat-y;
   padding-left: 11px;
@@ -23,7 +25,7 @@
 }
 
 .rightImgShadow {
-  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/rightShadow.png");
+  background-image: url("#{$cdn_img}img/shadow/msww/rightShadow.png");
   background-position: right;
   background-repeat: repeat-y;
   padding-right: 11px;

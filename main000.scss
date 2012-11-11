@@ -1,7 +1,8 @@
 @charset "utf-8";
 
-@import 'animations/animations000';
-@import 'mySite';
+@import "globals/config";
+@import "animations/animations000";
+@import "mySite";
 /*@import url('typography');
  @import url('extra.css');*/
 
@@ -21,7 +22,7 @@ body {
   background-color: #F5F6F7;
   background-attachment: fixed;
   background-position: center top;
-  background-image: url(http://s.abhishekmunie.com/img/bg/bg_matte.png);
+  background-image: url(#{$cdn_img}img/bg/bg_matte.png);
   background-repeat: repeat;
   behavior: url("csshover3.htc");
   color: #333;
@@ -32,7 +33,7 @@ body {
 }
 
 .loading body {
-  cursor: url(http://s.abhishekmunie.com/img/preloaders/loading.png)
+  cursor: url(#{$cdn_img}img/preloaders/loading.png)
 }
 
 .rcContainer {
@@ -86,7 +87,7 @@ body {
 }
 
 #PageContainer {
-  background: url('http://s.abhishekmunie.com/img/bg/google/HeaderCircuit.png') repeat-x scroll left top
+  background: url('#{$cdn_img}img/bg/google/HeaderCircuit.png') repeat-x scroll left top
 }
 
 #MainHeader {
@@ -137,7 +138,7 @@ body {
 }
 
 .icloudBg {
-  background: url('http://s.abhishekmunie.com/img/bg/apple/bg_tile.jpg') repeat top left !important
+  background: url('#{$cdn_img}img/bg/apple/bg_tile.jpg') repeat top left !important
 }
 
 /* Home */
@@ -175,7 +176,7 @@ body {
 }
 
 .HomeartworkOverlay {
-  background: url('http://s.abhishekmunie.com/officialfiles/img/xmasArt.png');
+  background: url('#{$img}officialfiles/img/xmasArt.png');
   display: none;
   height: 318px;
   width: 259px;
@@ -186,7 +187,7 @@ body {
 }
 
 .HomeartworkOverlayflip {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png);
+  background: url(#{$img}officialfiles/img/xmasArt-flip.png);
   float: left;
   height: 318px;
   width: 259px;
@@ -545,12 +546,12 @@ a.maclogo:hover {
 }
 
 .maclogo div.logo {
-  background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')
+  background-image: url('#{$cdn_img}ext_img/apple/icloud/icloudapplelogo.png')
 }
 
 .ie8 .maclogo div.logo-brightener:hover,
 .maclogo div.logo-brightener {
-  background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')
+  background-image: url('#{$cdn_img}ext_img/apple/icloud/icloudapplelogo.png')
 }
 
 .maclogo div.logo,
@@ -667,7 +668,7 @@ a.githubLogo:hover img.default {
 .headerSideBg {
   height: 150px;
   width: 30px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/header-overlay.png) no-repeat top left;
+  background: url(#{$img}officialfiles/img/header-overlay.png) no-repeat top left;
   position: absolute;
   top: 60px;
   left: 0;
@@ -694,7 +695,7 @@ ul#siteNavigation li a {
   font-weight: bold;
   height: 40px;
   padding: 17px 9px 3px 9px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif)no-repeat 0 29px;
+  background: url(#{$img}officialfiles/img/div-site-nav.gif)no-repeat 0 29px;
   display: block;
   letter-spacing: -1px;
 }
@@ -704,7 +705,7 @@ ul#siteNavigation li a {
 }
 
 ul#siteNavigation li.selected {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav-li.gif) no-repeat center 45px
+  background: url(#{$img}officialfiles/img/div-site-nav-li.gif) no-repeat center 45px
 }
 
 ul#siteNavigation li:first-child a {
@@ -748,11 +749,11 @@ ul#siteNavigation li a:hover {
 }
 
 #pageContent.minimalPage {
-  background: url('http://s.abhishekmunie.com/officialfiles/img/bg-main-large.jpg') no-repeat 100% 0%
+  background: url('#{$img}officialfiles/img/bg-main-large.jpg') no-repeat 100% 0%
 }
 
 #mainContent {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-main.jpg) no-repeat top right;
+  background: url(#{$img}officialfiles/img/bg-main.jpg) no-repeat top right;
   padding: 30px 0 30px;
   position: relative;
   min-height: 279px;
@@ -783,14 +784,14 @@ ul#siteNavigation li a:hover {
   min-width: 960px;
   height: 50px;
   z-index: 100;
-  background: #fff url(http://s.abhishekmunie.com/officialfiles/img/bg-footer.gif) no-repeat top left;
+  background: #fff url(#{$img}officialfiles/img/bg-footer.gif) no-repeat top left;
 }
 
 #footerContent {
   float: right;
   width: auto;
   padding: 0 45px 0 0;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/footer-overlay.png) no-repeat top right;
+  background: url(#{$img}officialfiles/img/footer-overlay.png) no-repeat top right;
   overflow: hidden;
 }
 
@@ -807,7 +808,7 @@ ul#footerNavigation li a {
   color: #707070;
   height: 30px;
   padding: 18px 10px 1px 12px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-footer-nav.gif) no-repeat 0 25px;
+  background: url(#{$img}officialfiles/img/div-footer-nav.gif) no-repeat 0 25px;
   display: block;
 }
 
@@ -828,12 +829,12 @@ ul#footerNavigation li a.addthis_button_compact .at300bs {
 .socialNaviation {
   margin: 0 8px 0 0;
   float: left;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat right 21px;
+  background: url(#{$img}officialfiles/img/div-social-nav.gif) no-repeat right 21px;
   padding-right: 20px;
 }
 
 .socialNaviation li {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png);
+  background: url(#{$img}officialfiles/img/icons.png);
   padding: 1px;
   margin: 14px 0 0 8px;
   float: left;
@@ -844,7 +845,7 @@ ul#footerNavigation li a.addthis_button_compact .at300bs {
   width: 20px;
   display: block;
   text-indent: -9999px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat;
+  background: url(#{$img}officialfiles/img/icons.png) no-repeat;
 }
 
 .socialNaviation li.facebookIcon a {
@@ -932,7 +933,7 @@ ul#footerNavigation li a.addthis_button_compact .at300bs {
 }
 
 .footerSideBg {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-left-shadow.gif) no-repeat left bottom;
+  background: url(#{$img}officialfiles/img/bg-left-shadow.gif) no-repeat left bottom;
   position: absolute;
   bottom: 50px;
   left: 0;
@@ -952,7 +953,7 @@ ul#footerNavigation li a.addthis_button_compact .at300bs {
 }
 
 .backLink {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif) no-repeat 0 -44px;
+  background: url(#{$img}officialfiles/img/bg-arrows.gif) no-repeat 0 -44px;
   padding-left: 13px;
 }
 
@@ -1065,7 +1066,7 @@ col7 {
   color: #fff;
   text-transform: uppercase;
   padding: 16px 10px 18px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 25px;
+  background: url(#{$img}officialfiles/img/div-second-nav.gif) no-repeat 0 25px;
   display: block;
 }
 
@@ -1242,7 +1243,7 @@ ul.newsList li h6 {
 .article .socialBookmarks ul {
   float: none;
   padding: 0;
-  background: url("http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif") no-repeat left 8px;
+  background: url("#{$img}officialfiles/img/div-social-nav.gif") no-repeat left 8px;
   margin: 0;
 }
 
@@ -1385,7 +1386,7 @@ ul.newsList li h6 {
   display: inline-block;
   *display: inline;
   padding-top: 10px;
-  background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_left.png') no-repeat 0 10px;
+  background: url('#{$img}officialfiles/img/headerquote_left.png') no-repeat 0 10px;
   padding-left: 45px;
 }
 
@@ -1395,7 +1396,7 @@ ul.newsList li h6 {
   font-size: 18px;
   line-height: 22px;
   font-style: italic;
-  background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_right.png') no-repeat 100% 100%;
+  background: url('#{$img}officialfiles/img/headerquote_right.png') no-repeat 100% 100%;
 }
 
 /* - WYSIWYG content - */
@@ -1469,7 +1470,7 @@ ul.linksList li {
 }
 
 .rssIcon {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat 0 -644px;
+  background: url(#{$img}officialfiles/img/icons.png) no-repeat 0 -644px;
   display: block;
   padding: 2px 0 1px 20px;
 }
@@ -1589,7 +1590,7 @@ ul.linksList li {
   height: 18px;
   width: 19px;
   text-indent: -9999px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-message-arrows.gif) no-repeat;
+  background: url(#{$img}officialfiles/img/bg-message-arrows.gif) no-repeat;
 }
 
 .minimalPage_flexi .messagePag span,
@@ -1642,7 +1643,7 @@ span.sNext {
   display: inline;
   margin: 30px 0 0 30px;
   min-height: 150px;
-  background: url('http://s.abhishekmunie.com/officialfiles/img/tile-border.png') no-repeat 50% 100%;
+  background: url('#{$img}officialfiles/img/tile-border.png') no-repeat 50% 100%;
 }
 
 .messagesTemplate ul.abhishekMessages > li > p {
@@ -1706,7 +1707,7 @@ span.sNext {
   float: left;
   height: 13px;
   width: 18px;
-  background-image: url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif);
+  background-image: url(#{$img}officialfiles/img/bg-arrows.gif);
   display: inline-block;
   text-indent: -9999px;
 }
@@ -1901,7 +1902,7 @@ some_nowhitespace {
 #mainContent .shareTrack .rightside ul li {
   float: left;
   list-style: none;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat scroll 0 4px transparent;
+  background: url(#{$img}officialfiles/img/div-social-nav.gif) no-repeat scroll 0 4px transparent;
   display: block;
   padding: 0 10px 0 12px;
 }
@@ -1912,7 +1913,7 @@ some_nowhitespace {
 }
 
 #mainContent .shareTrack .rightside p.itunes {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/itunes.gif);
+  background: url(#{$img}officialfiles/img/itunes.gif);
   padding-bottom: 0;
   height: 11px;
   width: 45px;
@@ -1922,7 +1923,7 @@ some_nowhitespace {
 /* SLIDESHOW --------------------------------------------------------------*/
 
 #pageContent.slideshowTemplate {
-  background: #eee url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow.gif) repeat-y top;
+  background: #eee url(#{$img}officialfiles/img/bg-slideshow.gif) repeat-y top;
   position: relative;
   overflow: visible;
 }
@@ -1973,7 +1974,7 @@ some_nowhitespace {
 }
 
 #flashFallback .divider {
-  background-image: url(http://s.abhishekmunie.com/officialfiles/img/fallback-divider.gif);
+  background-image: url(#{$img}officialfiles/img/fallback-divider.gif);
   width: 90px;
   height: 1px;
   display: block;
@@ -2044,7 +2045,7 @@ some_nowhitespace {
 
 #slideshowBar > a {
   display: inline-block;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-icons.gif) no-repeat 10px 12px;
+  background: url(#{$img}officialfiles/img/bg-slideshow-icons.gif) no-repeat 10px 12px;
   height: 5px;
   width: 6px;
   padding: 12px 11px;
@@ -2116,7 +2117,7 @@ some_nowhitespace {
 .imgRight span {
   text-indent: -9999px;
   display: block;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif);
+  background: url(#{$img}officialfiles/img/bg-sildeshow-arrows.gif);
   width: 20px;
   height: 9px;
 }
@@ -2209,7 +2210,7 @@ some_nowhitespace {
 }
 
 #slideShowOverlay .credits span {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
+  background: url(#{$img}officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
   padding-left: 10px;
   margin-left: 6px;
 }
@@ -2219,7 +2220,7 @@ some_nowhitespace {
 }
 
 #slideShowOverlay .credits div {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
+  background: url(#{$img}officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
   padding-left: 10px;
   margin-left: 6px;
   display: inline;
@@ -2262,7 +2263,7 @@ some_nowhitespace {
 }
 
 #slideshowThumbs > span {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-ends.gif);
+  background: url(#{$img}officialfiles/img/bg-slideshow-ends.gif);
   height: 39px;
   width: 86px;
   display: block;
@@ -2281,7 +2282,7 @@ some_nowhitespace {
 
 .js #slideshowThumbs ul {
   width: 99999px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-thumbs.gif) repeat-x top left;
+  background: url(#{$img}officialfiles/img/bg-slideshow-thumbs.gif) repeat-x top left;
 }
 
 #slideshowThumbs ul li {
@@ -2329,7 +2330,7 @@ some_nowhitespace {
 #slideshowNavigation ul li a {
   text-transform: uppercase;
   font-size: 16px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif) no-repeat 0 11px;
+  background: url(#{$img}officialfiles/img/div-site-nav.gif) no-repeat 0 11px;
   padding: 0 10px 0 11px;
 }
 
@@ -2362,7 +2363,7 @@ some_nowhitespace {
   height: 18px;
   width: 25px;
   text-indent: -9999px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif) 0 -27px;
+  background: url(#{$img}officialfiles/img/bg-sildeshow-arrows.gif) 0 -27px;
   margin: 0 10px 0 0;
 }
 
@@ -2432,7 +2433,7 @@ some_nowhitespace {
   margin-top: 6px;
   display: block;
   text-indent: -9999px;
-  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-fonts.png) no-repeat;
+  background: url(#{$img}officialfiles/img/bg-fonts.png) no-repeat;
 }
 
 .cA {
@@ -2802,7 +2803,7 @@ a.blue,
 }
 
 .blue .artworkOverlay {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/blueArt.png)
+  background: url(#{$img}officialfiles/img/blueArt.png)
 }
 
 .blue .landingBlocks > ul > li > .box {
@@ -2854,7 +2855,7 @@ a.blue,
 }
 
 .blue .loaderImg span {
-  background: url('http://s.abhishekmunie.com/officialfiles/img/blueLoader.gif')
+  background: url('#{$img}officialfiles/img/blueLoader.gif')
 }
 
 /* - standard form - */
@@ -2868,7 +2869,7 @@ a.blue,
 }
 
 .blue .form .labelError {
-  background-image: url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png')
+  background-image: url('#{$img}officialfiles/img/blueAsterisk.png')
 }
 
 .blue .termsTemplate .message {
@@ -2929,7 +2930,7 @@ nav .blue div.TopSubNav {
 }
 
 .darkOrange .artworkOverlay {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/darkOrangeArt.png)
+  background: url(#{$img}officialfiles/img/darkOrangeArt.png)
 }
 
 .darkOrange .landingBlocks > ul > li > .box {
@@ -2977,7 +2978,7 @@ nav .darkOrange div.TopSubNav {
 }
 
 .facebook .artworkOverlay {
-  background-image: url('http://s.abhishekmunie.com/officialfiles/img/facebookArt.png')
+  background-image: url('#{$img}officialfiles/img/facebookArt.png')
 }
 
 .facebook .landingBlocks > ul > li > .box {
@@ -3025,7 +3026,7 @@ nav .facebook div.TopSubNav {
 }
 
 .purple .artworkOverlay {
-  background: url('http://s.abhishekmunie.com/officialfilesImages/purpleArt.png')
+  background: url('#{$img}officialfilesImages/purpleArt.png')
 }
 
 .purple .landingBlocks > ul > li > .box {
@@ -3078,7 +3079,7 @@ nav .purple div.TopSubNav {
 }
 
 .red .artworkOverlay {
-  background: url('http://s.abhishekmunie.com/officialfiles/img/redArt.png')
+  background: url('#{$img}officialfiles/img/redArt.png')
 }
 
 .red .landingBlocks > ul > li > .box {
@@ -3096,7 +3097,7 @@ nav .purple div.TopSubNav {
 }
 
 .red .form .labelError {
-  background-image: url('http://s.abhishekmunie.com/officialfiles/img/redAsterisk.png')
+  background-image: url('#{$img}officialfiles/img/redAsterisk.png')
 }
 
 .red .messagesTemplate .message {
@@ -3145,7 +3146,7 @@ nav .red div.TopSubNav {
 }
 
 .teal .artworkOverlay {
-  background-image: url('http://s.abhishekmunie.com/officialfiles/img/tealArt.png')
+  background-image: url('#{$img}officialfiles/img/tealArt.png')
 }
 
 .teal .landingBlocks > ul > li > .box {
@@ -3195,11 +3196,11 @@ nav .teal div.TopSubNav {
 }
 
 .xmas .artworkOverlay {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt.png)
+  background: url(#{$img}officialfiles/img/xmasArt.png)
 }
 
 .xmas .artworkOverlayflip {
-  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png)
+  background: url(#{$img}officialfiles/img/xmasArt-flip.png)
 }
 
 .xmas .landingBlocks > ul > li > .box {
@@ -3251,7 +3252,7 @@ nav .teal div.TopSubNav {
 }
 
 .xmas .loaderImg span {
-  background: url('http://s.abhishekmunie.com/officialfiles/img/xmasLoader.gif')
+  background: url('#{$img}officialfiles/img/xmasLoader.gif')
 }
 
 /* - standard form - */
@@ -3265,7 +3266,7 @@ nav .teal div.TopSubNav {
 }
 
 .xmas .form .labelError {
-  background-image: url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png')
+  background-image: url('#{$img}officialfiles/img/blueAsterisk.png')
 }
 
 .xmas .termsTemplate .message {

@@ -1,0 +1,42 @@
+.fixedRatioBox,
+.goldenBox,
+.goldenBox_flexi,
+.goldenBox_Vertical,
+.goldenBox_Vertical_flexi {
+  position: relative;
+  display: inline-block;
+}
+
+.fixedRatioBox>.dummy,
+.goldenBox>.dummy,
+.goldenBox_flexi>.dummy,
+.goldenBox_Vertical>.dummy,
+.goldenBox_Vertical_flexi>.dummy {
+  float: left;
+  width: 0;
+  height: 0;
+}
+
+.goldenBox>div.dummy,
+.goldenBox_flexi>div.dummy {  margin-top: 61.80339887498948482045868343656381177203091798057628621354% }
+
+.goldenBox_Vertical>div.dummy,
+.goldenBox_Vertical_flexi>div.dummy {  margin-top: 161.80339887498948482045868343656381177203091798057628621354% }
+
+.goldenBox>div.content,
+.goldenBox>div:not(.dummy),
+.goldenBox_Vertical>div.content,
+.goldenBox_Vertical>div:not(.dummy) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.goldenBox>div.overflow_content,
+.goldenBox_Vertical>div.overflow_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,775 +1,2771 @@
 @charset "utf-8";
-@import 'animations000.css';
-@import 'bootstrap/css/bootstrap-responsive.css';
-@import 'bootstrap/css/bootstrap.css';
+
+@import 'animations/animations000';
 @import 'mySite';
 /*@import url('typography');
  @import url('extra.css');*/
 
-/* =============================================================================
+/* ==========================================================================
  SITE SPECIFIC STYLES
  Author: Abhishek Munie
  ========================================================================== */
-
 body {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  overflow: visible;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  direction: ltr;
+  unicode-bidi: embed;
+  background-color: #F5F6F7;
+  background-attachment: fixed;
+  background-position: center top;
+  background-image: url(http://s.abhishekmunie.com/img/bg/bg_matte.png);
+  background-repeat: repeat;
+  behavior: url("csshover3.htc");
+  color: #333;
+  font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Georgia,"Times New Roman",Verdana,sans-serif,Times,serif;
+  text-align: center;
+  min-width: 1000px;
+  min-height: 100%;
 }
 
-.addthis_counter *{-webkit-box-sizing:content-box;}
-.TopNavElement{height:59px;}
-.TopNavContainer{top:0;border:0;position:relative;z-index:99999;min-width:100%;display:block;height:71px;}
-.TopNavContainer *{height:100%;}
-.TopNavBar{width:100%;height:60px;top:0;left:0;border:0;text-align:center;position:relative;z-index:99999;display:block;}
-nav .TopNav{
-    font:12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-    width:85%;margin:0 auto;left:0;border:0;display:block;position:relative;
-    box-shadow:0 0 300px 15px #0C0F12;
-    -moz-box-shadow:0 0 300px 15px #0C0F12;
-    -webkit-box-shadow:0 0 300px 15px #0C0F12;
-    -o-box-shadow:0 0 300px 15px #0C0F12;
-    -khtml-box-shadow:0 0 300px 15px #0C0F12;
-    -ms-box-shadow:0 0 300px 15px #0C0F12;
-}
-.TopMainNavBox{left:0;border:0;margin:3px auto 0;display:block;float:left;color:whitesmoke;width:100%;height:39px;position:relative;z-index:33;}
-#MyLogo{float:left;margin:auto;padding:5px 3px;}
-#MyLogoName {
-    font-size:33px;font-variant:small-caps;
-    color:whitesmoke;
-    -webkit-font-smoothing:antialiased;
-    -webkit-transition-delay:0s;
-    -webkit-transition-duration:0s;
-    -webkit-transition-property:all;
-    -webkit-transition-timing-function:cubic-bezier(0.25,0.1,0.25,1);
-    text-shadow:#555555 1px 1px 5px;
-}
-.mainNavList{font-size:0;float:right;list-style:none;margin:0;margin-left:5px;}
-.mainNavList>li.navElement{
-    display:inline-block;text-align:center;vertical-align:middle;
-}
-.mainNavList>li>a{
-    font-family:HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position:relative;z-index:999;color:whitesmoke;border-top:3px solid white;display:inline-block;cursor:pointer;padding:9px 9px;font-size:18px;font-variant:small-caps;text-align:center;vertical-align:middle;font-weight:bolder;
-    text-shadow:1px 1px 2px black;
-    color:#BBB;
-    text-shadow:0 -1px 0 rgba(0, 0, 0, .75);
-    border-width:0 2px 0 2px;
-    border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-    -webkit-border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-    -moz-border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-    -o-border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-    -khtml-border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-    -ms-border-image:url('http://s.abhishekmunie.com/img/overlays/toolbarItemSelected.png') 0 2 0 2;
-}
-.mainNavList>li>a:hover{color:white}
-.mainNavList>li.lavalampback{
-    position:absolute;top:3px;height:36px;pointer-events:none;z-index:10;
-    transition:all .3s ease-in;-webkit-transition:all .3s ease-in;-moz-transition:all .3s ease-in;-khtml-transition:all .3s ease-in;-o-transition:all .3s ease-in;-ms-transition:all .3s ease-in;
-}
-.TopSubNav{width:100%;float:left;height:30px;position:absolute;left:0;top:39px;z-index:0}
-.mainNavList>li>div.TopSubNav{overflow:hidden;display:none;}
-.mainNavList>li.selected>div.TopSubNav{display:block;}
-.mainNavList>li:hover>div.TopSubNav{display:block;z-index:9;}
-.subNavList li{float:left;}
-
-div.github_ribbon{background-color:#a00;position:absolute;right:-3em;top:15px;
-    transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);
-    box-shadow:0 0 1em #888;-webkit-box-shadow:0 0 1em #888;-moz-box-shadow:0 0 1em #888;-o-box-shadow:0 0 1em #888;-ms-box-shadow:0 0 1em #888;
-}
-div.github_ribbon a{border:1px solid #faa;color:#fff;display:block;font:bold 81.25% 'Helvetiva Neue',Helvetica,Arial,sans-serif;margin:0.05em 0;padding:0.5em 3.5em;text-align:center;text-decoration:none;text-shadow:0 0 0.5em #444;}
-#PageContainer{background:url('http://s.abhishekmunie.com/img/bg/google/HeaderCircuit.png') repeat-x scroll left top;}
-#MainHeader{margin:0;clear:both;width:100%;z-index:9;text-align:center;display:block;vertical-align:middle;position:relative;}
-.headerWrapper{width:85%;min-height:69px;display:inline-block;margin:21px auto 9px auto;clear:both;position:relative;z-index: 9;text-align:center;}
-.SnowFall{position:absolute;top:0;display:block;}
-#TopBanner{width:100%;display:block;position:relative;background:black;}
-
-#MyContentContainer{
-    position:relative;
-    box-shadow:inset 0 0 300px 15px #0C0F12;
-    -moz-box-shadow:inset 0 0 300px 15px #0C0F12;
-    -webkit-box-shadow:inset 0 0 300px 15px #0C0F12;
-    -o-box-shadow:inset 0 0 300px 15px #0C0F12;
-    -khtml-box-shadow:inset 0 0 300px 15px #0C0F12;
-    -ms-box-shadow:inset 0 0 300px 15px #0C0F12;
-    width:100%;display:block;
+.loading body {
+  cursor: url(http://s.abhishekmunie.com/img/preloaders/loading.png)
 }
 
-.icloudBg{
-    background:url('http://s.abhishekmunie.com/img/bg/apple/bg_tile.jpg') repeat top left !important;
+.rcContainer {
+  min-width: 990px
+}
+
+.rcBlock {
+  max-width: 1600px;
+  min-width: 990px;
+}
+
+.nrcInnerBlock {
+  width: 930px
+}
+
+.nrcOuterBlock {
+  width: 990px
+}
+
+.outerBlocks {
+  display: inline-block;
+  clear: both;
+  text-align: center;
+  min-width: 100%;
+}
+
+@import "main000/navs";
+
+.pageMainWrapper {
+  width: 81%;
+  max-width: 1600px;
+  min-width: 990px;
+  padding: 0 30px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.pageMain {
+  width: 100%;
+  box-shadow: 0 0 30px 0px #2d2d2d;
+  -moz-box-shadow: 0 0 30px 0px #2d2d2d;
+  -webkit-box-shadow: 0 0 30px 0px #2d2d2d;
+  -o-box-shadow: 0 0 30px 0px #2d2d2d;
+  -khtml-box-shadow: 0 0 30px 0px #2d2d2d;
+  -ms-box-shadow: 0 0 30px 0px #2d2d2d;
+}
+
+.addthis_counter * {
+  -webkit-box-sizing: content-box;
+}
+
+#PageContainer {
+  background: url('http://s.abhishekmunie.com/img/bg/google/HeaderCircuit.png') repeat-x scroll left top
+}
+
+#MainHeader {
+  margin: 0;
+  clear: both;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.headerWrapper {
+  width: 85%;
+  min-height: 69px;
+  display: inline-block;
+  margin: 21px auto 9px auto;
+  clear: both;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+}
+
+.SnowFall {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+#TopBanner {
+  width: 100%;
+  display: block;
+  position: relative;
+  background: black;
+}
+
+#MyContentContainer {
+  position: relative;
+  box-shadow: inset 0 0 300px 15px #0C0F12;
+  -moz-box-shadow: inset 0 0 300px 15px #0C0F12;
+  -webkit-box-shadow: inset 0 0 300px 15px #0C0F12;
+  -o-box-shadow: inset 0 0 300px 15px #0C0F12;
+  -khtml-box-shadow: inset 0 0 300px 15px #0C0F12;
+  -ms-box-shadow: inset 0 0 300px 15px #0C0F12;
+  width: 100%;
+  display: block;
+}
+
+.icloudBg {
+  background: url('http://s.abhishekmunie.com/img/bg/apple/bg_tile.jpg') repeat top left !important
 }
 
 /* Home */
+
 #pageHome {
-    margin:auto;
-    width:100%;
-    background:rgba(180,180,180,0.33);
-    -webkit-transition:opacity 4.99s linear;
-    -moz-transition:opacity 4.99s linear;
-    -khtml-transition:opacity 4.99s linear;
-    opacity:0;
-    display:inline-block;
-    text-align:center;
-    position:relative;
-    z-index:99;
-}#pageHome:hover{background:white;}
-
-#emart{
-    transition-duration:5.99s;-webkit-transition-duration:5.99s;-moz-transition-duration:5.99s;-khtml-transition-duration:5.99s;-o-transition-duration:5.99s;-ms-transition-duration:5.99s;
-    margin-top:-99px;margin-left:-69px;z-index:0;position:absolute;left:0;
+  margin: auto;
+  width: 100%;
+  background: rgba(180,180,180,0.33);
+  -webkit-transition: opacity 4.99s linear;
+  -moz-transition: opacity 4.99s linear;
+  -khtml-transition: opacity 4.99s linear;
+  opacity: 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 99;
 }
-.HomeartworkOverlay{background:url('http://s.abhishekmunie.com/officialfiles/img/xmasArt.png');display:none;height:318px;width:259px;position:absolute;top:-60px;right:0;z-index:199;}
-.HomeartworkOverlayflip{background:url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png);float:left;height:318px;width:259px;margin-top:-60px;position:relative;z-index:199;}
 
-#HomeURLCode{display:block;width:100%;height:150px;overflow:hidden;position:relative;}
-#HomeURLCode figure.expandable{background:white;border:10px solid white;position:absolute;display:inline-block;
-    -webkit-box-shadow:0 3px 10px #ccc;-moz-box-shadow:0 3px 10px #ccc;
-    -webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);
-    -webkit-transition:all 0.7s ease;-moz-transition:all 1s ease;}
-#HomeURLCode figure.expandable:focus{left:50%;top:-30px;margin-left:-475px;}
-#HomeURLCode figure.expandable figcaption{text-align:center;display:none;}
-#HomeURLCode figure.expandable:focus figcaption{display:block;}
+#pageHome:hover {
+  background: white
+}
 
-#abhishekmunie{margin:0 auto;width:81%;z-index:101;position:relative;display:block;overflow:hidden;}
-#homewrapper{display:block;overflow:hidden;padding:0 30px;}
-#pageMain{width:100%;}
-/* - home page flash fallback template - */
-#homePageSizeBox{width:100%;overflow:hidden;}
-#homePageContent{height:100%;position:relative;display:block;z-index:3;}
-#homePageContent>div{height:100%;}
-#homePageContent figure img{width:100%;}
-#homePageContent>div,#homePageContent>div.sect3>div{overflow:hidden;float:left;padding:0;margin:0;display:block;position:relative;}
-#homePageContent>div>figure,#homePageContent>div.sect3>div,#homePageContent>div.sect3>div>figure{position:relative;float:left;overflow:hidden;z-index:-1;}
-#homePageContent div>figure>a{overflow:visible;width:100%;min-height:100%;margin:0;display:block;}
-#homePageContent div>figure>a>img{height:auto;display:block;position:absolute;}
-#homePageContent .sect1{width:15.6%;}
-#homePageContent figure#home1{width:100%;height:75.7%;}
-#homePageContent figure#home1>a>img{width:210%;top:0;right:0;}
-#homePageContent figure#home2{width:100%;height:24.3%;}
-#homePageContent figure#home2>a>img{width:150%;top:-25%;right:0;}
-#homePageContent .sect2{width:25.9%;height:100%;line-height:100%;overflow:visible;position:relative;z-index:999;background:white;background:rgba(255,255,255,.81);
-    transition:background-color .9s linear;-webkit-transition:background-color .9s linear;-moz-transition:background-color .9s linear;-khtml-transition:background-color .9s linear;-o-transition:background-color .9s linear;-ms-transition:background-color .9s linear;
-}#homePageContent:hover .sect2{background-color:white;transition:background-color .3s linear;-webkit-transition:background-color .3s linear;-moz-transition:background-color .3s linear;-khtml-transition:background-color .3s linear;-o-transition:background-color .3s linear;-ms-transition:background-color .3s linear;}
-#homePageContent .sect2 h2{margin-top:-80%;}
-#homePageContent .sect2>.floral{pointer-events:none;}
-#homePageContent .sect2>.floral>img{width:135.1%;position:absolute;left:0;z-index:10;max-width:475px;}
-#homePageContent .sect2>.sect2_inner{padding:160% 3% 15% 3%;text-align:right;}
-#homePageContent .sect2>.sect2_inner>h2{text-align:left;margin-left:15px;}
-#homePageContent .sect2>.sect2_inner>h2>span{max-width:303px;font-size:39px;color:black;font-family:"Times New Roman";line-height:33px;display:block;}
-#homePageContent .sect2>.sect2_inner>h5{padding-bottom:0px;}
-#homePageContent .sect2>.sect2_inner>p.date{}
-#homePageContent .sect3{width:58.5%;}
-#homePageContent .sect3 div.sect3_top{width:100%;height:50.0%;}
-#homePageContent .sect3 div.sect3_bottom{width:100%;height:50.0%;}
-#homePageContent figure#home3{width:77.75%;height:100%;}
-#homePageContent figure#home4{width:22.25%;height:100%;}
-#homePageContent figure#home5{width:38.9%;height:100%;}
-#homePageContent figure#home6{width:61.1%;height:100%;}
-#homePageContent:hover .sect2{width:26.0%;}
-#homePageContent div.sect1:hover{width:24.0%;}
-#homePageContent div.sect1>figure#home1:hover{height:80.6%;}
-#homePageContent div.sect1>figure#home2:hover{height:37.9%;}
-#homePageContent:hover .sect3{width:50.0%;}
-#homePageContent div.sect3:hover{width:61.7%;}
-#homePageContent div.sect3>div.sect3_top:hover{height:64.6%}
-#homePageContent div.sect3 figure#home4:hover{width:44.2%;}
-#homePageContent:hover .sect1{width:12.3%;}
-#homePageContent div.sect2:hover+div.sect3{width:58.5%;}
-#homePageContent div.sect2:hover+div.sect1{width:15.6%;}
-#homePageContent div.sect2:hover~div.sect3{width:58.5%;}
-#homePageContent div.sect2:hover~div.sect1{width:15.6%;}
-#homePageContent *{transition:all .5s ease-out;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-khtml-transition:all .5s ease-out;-o-transition:all .5s ease-out;-ms-transition:all .5s ease-out;}
-/*go to the page*
- #homePageContent > div,
- #homePageContent > ul { float: left; padding: 0; margin: 0; }
- #homePageContent > ul > li { float: left; }
- #homePageContent > ul > li#home1 { width: 100%; }
- #homePageContent > ul > li#home2 { width: 100%; }
- #homePageContent > ul > li#home3 { width: 77.75% }
- #homePageContent > ul > li#home4 { width: 22.25%; }
- #homePageContent > ul > li#home5 { width: 38.9%; margin-top: -1px; }
- #homePageContent > ul > li#home6 { width: 61.1%; margin-top: -1px; }
- #homePageContent > ul > li > img { display: block; }
- #homePageContent .sect1 { width: 15.6%; }
- #homePageContent .sect2 { width: 25.9%; background: #fff; height: 100%; }
- #homePageContent .sect2 h2 { margin-top: -80%; }
- #homePageContent .sect2 > .floral > img { position: absolute; z-index: 10; max-width: 475px; }
- #homePageContent .sect2 > .sect2_inner { padding: 180% 10% 0 10%; text-align: right; }
- #homePageContent .sect2 > .sect2_inner > h2 > img { max-width: 303px; }
- #homePageContent .sect2 > .sect2_inner > h5 { padding-bottom: 0px;  }
- #homePageContent .sect2 > .sect2_inner > p.date {  }
- #homePageContent .sect3 { width: 58.5%; }*/
-/* - home page flash fallback template - */
-.socialWidget{float:left;margin-bottom:15px;margin-left:5px;width:330px;height:550px;display:inline;}
+#emart {
+  transition-duration: 5.99s;
+  -webkit-transition-duration: 5.99s;
+  -moz-transition-duration: 5.99s;
+  -khtml-transition-duration: 5.99s;
+  -o-transition-duration: 5.99s;
+  -ms-transition-duration: 5.99s;
+  margin-top: -99px;
+  margin-left: -69px;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+}
+
+.HomeartworkOverlay {
+  background: url('http://s.abhishekmunie.com/officialfiles/img/xmasArt.png');
+  display: none;
+  height: 318px;
+  width: 259px;
+  position: absolute;
+  top: -60px;
+  right: 0;
+  z-index: 199;
+}
+
+.HomeartworkOverlayflip {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png);
+  float: left;
+  height: 318px;
+  width: 259px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 199;
+}
+
+#HomeURLCode {
+  display: block;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+#HomeURLCode figure.expandable {
+  background: white;
+  border: 10px solid white;
+  position: absolute;
+  display: inline-block;
+  -webkit-box-shadow: 0 3px 10px #ccc;
+  -moz-box-shadow: 0 3px 10px #ccc;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 1s ease;
+}
+
+#HomeURLCode figure.expandable:focus {
+  left: 50%;
+  top: -30px;
+  margin-left: -475px;
+}
+
+#HomeURLCode figure.expandable figcaption {
+  text-align: center;
+  display: none;
+}
+
+#HomeURLCode figure.expandable:focus figcaption {
+  display: block
+}
+
+#abhishekmunie {
+  margin: 0 auto;
+  width: 81%;
+  z-index: 101;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#homewrapper {
+  display: block;
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+#pageMain {
+  width: 100%
+}
+
+.socialWidget {
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  width: 330px;
+  height: 550px;
+  display: inline;
+}
+
 /* Home */
 
 /* Abhishek */
+
 /* - landing template - */
-#mainContent.landingTemplate{padding:0;position:relative;min-height:0;}
-#mainContent.landingTemplate .col2_landing{float:left;position:relative;z-index:2;width:33%;padding-top:26px;margin-bottom:26px;margin:0;overflow:hidden;}
-#mainContent.landingTemplate .col2_landing h5{padding-bottom:14px;}
-.landingTemplate .col2_landing>div{padding:0 30px;min-height:100px;max-height:125px;}
-.landingBlocks{width:66%;background:#fff;float:right;}
-.landingBlocks>ul{padding:0;margin:0;overflow:hidden;display:inline-block;}
-.landingBlocks>ul>li{float:right;display:inline;position:relative;width:24%;*width:24%;*margin-bottom:-3px;cursor:pointer;overflow:hidden;height:auto;}
-.landingBlocks>ul>li:hover{height:100%;}
-.landingBlocks>ul>li>a figcaption.bubble{position:absolute;z-index:10;bottom:0;right:0;text-transform:uppercase;background:#fff;padding:9px 10px;min-width:50%;max-width:85%;}
-.landingBlocks>ul>li:hover>a figcaption.bubble{color:#000;}
-.landingBlocks>ul>li>a>.mask{width:100%;margin:0%;display:block;position:relative;}
-.landingBlocks>ul>li>a>.mask img{display:block;position:relative;top:0;width:100%;transition:all .5s ease-out;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-khtml-transition:all .5s ease-out;-o-transition:all .5s ease-out;-ms-transition:all .5s ease-out;}
-.landingBlocks>ul>li:hover>a>.mask img{top:-12%;width:115%;}
-.landingBlocks>ul>li>.box{ border: 5px solid; display: none; width: 100%; height: 100%; position: absolute; }
-.landingBlocks>ul>li>.boxL{top:0;left:0;border-top:0px;}
-.landingBlocks>ul>li>.boxR{bottom:0;right:0;}
-.landingBlocks>ul>li>a>figure:focus {
-    outline: none;
-    -webkit-transform: rotate(-363deg) scale(2.5); -moz-transform: rotate(-363deg) scale(2.5);
-    -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
-    position:relative;z-index: 9999;
+
+#mainContent.landingTemplate {
+  padding: 0;
+  position: relative;
+  min-height: 0;
 }
 
-#wrapper {opacity:0;-webkit-transition:opacity 1.8s linear;-moz-transition:opacity 1.8s linear;-khtml-transition:opacity 1.8s linear;-o-transition:opacity 1.8s linear;}
-#siteNavigation{
-    margin-top:-500px;
-    -webkit-transition:margin-top 3s linear;
-    -moz-transition:margin-top 3s linear;
-    -khtml-transition:margin-top 3s linear;
-    -o-transition:margin-top 3s linear;
+#mainContent.landingTemplate .col2_landing {
+  float: left;
+  position: relative;
+  z-index: 2;
+  width: 33%;
+  padding-top: 26px;
+  margin-bottom: 26px;
+  margin: 0;
+  overflow: hidden;
 }
-#siteNavigation li{
-    text-shadow: 3px 3px 5px 5px #000;
-    -moz-text-shadow: 3px 3px 5px 5px #000;
-    -webkit-text-shadow: 3px 3px 5px 5px #000;
-    -khtml-text-shadow: 3px 3px 5px 5px #000;
-    -webkit-transition:color .3s linear;
-    -moz-transition:color .3s linear;
-    -khtml-transition:color .3s linear;
-    -o-transition:color .3s linear;
-    -webkit-transition:-webkit-text-shadow .3s linear;
-    -moz-transition:-moz-text-shadow .3s linear;
-    -khtml-transition:-khtml-text-shadow .3s linear;
-}#siteNavigation li:hover{
-    background-color: white;
-    -moz-box-shadow:0 -18px 5px 18px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
-    -khttml-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
-    -webkit-transition: background-color .9s linear;
-    -moz-transition:background-color .9s linear;
-    -khtml-transition:background-color .9s linear;
-    -webkit-transition:-webkit-box-shadow .9s linear;
-    -moz-transition:-moz-box-shadow .9s linear;
-    -khtml-transition:-khtml-box-shadow .9s linear;
-    position:relative;z-index: -99;
+
+#mainContent.landingTemplate .col2_landing h5 {
+  padding-bottom: 14px
 }
-#secondNavigation ul li{
-    opacity:0;
-    transition:opacity 1.9s ease-in;-webkit-transition:opacity 1.9s ease-in;-moz-transition:opacity 1.9s ease-in;-khtml-transition:opacity 1.9s ease-in;-ms-transition:opacity 1.9s ease-in;
+
+.landingTemplate .col2_landing>div {
+  padding: 0 30px;
+  min-height: 100px;
+  max-height: 125px;
 }
-.socialNaviation li:hover{margin-top:11px;}
-.overlay{display:none;width:500px;padding:20px;background-color:#ddd;}
-#footerWrapper{margin-top:10px;position:absolute;bottom:0;}
+
+.landingBlocks {
+  width: 66%;
+  background: #fff;
+  float: right;
+}
+
+.landingBlocks>ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.landingBlocks>ul>li {
+  float: right;
+  display: inline;
+  position: relative;
+  width: 24%;
+  *width: 24%;
+  *margin-bottom: -3px;
+  cursor: pointer;
+  overflow: hidden;
+  height: auto;
+}
+
+.landingBlocks>ul>li:hover {
+  height: 100%
+}
+
+.landingBlocks>ul>li>a figcaption.bubble {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  background: #fff;
+  padding: 9px 10px;
+  min-width: 50%;
+  max-width: 85%;
+}
+
+.landingBlocks>ul>li:hover>a figcaption.bubble {
+  color: #000
+}
+
+.landingBlocks>ul>li>a>.mask {
+  width: 100%;
+  margin: 0%;
+  display: block;
+  position: relative;
+}
+
+.landingBlocks>ul>li>a>.mask img {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -khtml-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+}
+
+.landingBlocks>ul>li:hover>a>.mask img {
+  top: -12%;
+  width: 115%;
+}
+
+.landingBlocks>ul>li>.box {
+  border: 5px solid;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.landingBlocks>ul>li>.boxL {
+  top: 0;
+  left: 0;
+  border-top: 0px;
+}
+
+.landingBlocks>ul>li>.boxR {
+  bottom: 0;
+  right: 0;
+}
+
+.landingBlocks>ul>li>a>figure:focus {
+  outline: none;
+  -webkit-transform: rotate(-363deg) scale(2.5);
+  -moz-transform: rotate(-363deg) scale(2.5);
+  -webkit-box-shadow: 0 3px 10px #666;
+  -moz-box-shadow: 0 3px 10px #666;
+  position: relative;
+  z-index: 9999;
+}
+
+#wrapper {
+  opacity: 0;
+  -webkit-transition: opacity 1.8s linear;
+  -moz-transition: opacity 1.8s linear;
+  -khtml-transition: opacity 1.8s linear;
+  -o-transition: opacity 1.8s linear;
+}
+
+#siteNavigation {
+  margin-top: -500px;
+  -webkit-transition: margin-top 3s linear;
+  -moz-transition: margin-top 3s linear;
+  -khtml-transition: margin-top 3s linear;
+  -o-transition: margin-top 3s linear;
+}
+
+#siteNavigation li {
+  text-shadow: 3px 3px 5px 5px #000;
+  -moz-text-shadow: 3px 3px 5px 5px #000;
+  -webkit-text-shadow: 3px 3px 5px 5px #000;
+  -khtml-text-shadow: 3px 3px 5px 5px #000;
+  -webkit-transition: color .3s linear;
+  -moz-transition: color .3s linear;
+  -khtml-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  -webkit-transition: -webkit-text-shadow .3s linear;
+  -moz-transition: -moz-text-shadow .3s linear;
+  -khtml-transition: -khtml-text-shadow .3s linear;
+}
+
+#siteNavigation li:hover {
+  background-color: white;
+  -moz-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
+  -khttml-box-shadow: 0 -18px 5px 18px rgba(0,0,0,0.5);
+  -webkit-transition: background-color .9s linear;
+  -moz-transition: background-color .9s linear;
+  -khtml-transition: background-color .9s linear;
+  -webkit-transition: -webkit-box-shadow .9s linear;
+  -moz-transition: -moz-box-shadow .9s linear;
+  -khtml-transition: -khtml-box-shadow .9s linear;
+  position: relative;
+  z-index: -99;
+}
+
+#secondNavigation ul li {
+  opacity: 0;
+  transition: opacity 1.9s ease-in;
+  -webkit-transition: opacity 1.9s ease-in;
+  -moz-transition: opacity 1.9s ease-in;
+  -khtml-transition: opacity 1.9s ease-in;
+  -ms-transition: opacity 1.9s ease-in;
+}
+
+.socialNaviation li:hover {
+  margin-top: 11px
+}
+
+.overlay {
+  display: none;
+  width: 500px;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+#footerWrapper {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
 /* Abhishek */
 
 /* Sceince */
-#ScienceBanner{
-    margin:12px 0 15px;
-    background-color:rgba(255,255,255,.75);
-    box-shadow:0 1px 3px rgba(0,0,0,.35);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.35);-moz-box-shadow:0 1px 3px rgba(0,0,0,.35);-o-box-shadow:0 1px 3px rgba(0,0,0,.35);-khtml-box-shadow:0 1px 3px rgba(0,0,0,.35);
-    -webkit-font-smoothing:antialiased;
-    -webkit-transition-delay:0.20000000298023224s;
-    -webkit-transition-duration:0.30000001192092896s;
-    -webkit-transition-property:opacity;
-    -webkit-transition-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+#ScienceBanner {
+  margin: 12px 0 15px;
+  background-color: rgba(255,255,255,.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-delay: 0.20000000298023224s;
+  -webkit-transition-duration: 0.30000001192092896s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
 }
-#ScienceBanner .slide-up-boxes{position:absolute;bottom:15px;margin:0 15.5%;width:69%;min-width:550px;text-align:center;}
-#ScienceBanner .slide-up-boxes>a{
-    width:18%;margin:.8%;display:inline-block;
-    border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;-khtml-border-radius:4px;-ms-border-radius:4px;}
-#ScienceBanner .slide-up-boxes>a>h2{}
-#ScienceBanner .slide-up-boxes>a>div{}
+
+#ScienceBanner .slide-up-boxes {
+  position: absolute;
+  bottom: 15px;
+  margin: 0 15.5%;
+  width: 69%;
+  min-width: 550px;
+  text-align: center;
+}
+
+#ScienceBanner .slide-up-boxes>a {
+  width: 18%;
+  margin: .8%;
+  display: inline-block;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+
+#ScienceBanner .slide-up-boxes>a>h2 {
+
+}
+
+#ScienceBanner .slide-up-boxes>a>div {
+
+}
+
 /* Sceince */
 
 /* Footer */
-#MyFooter{text-align:center;margin-bottom:0;}
-#MyFooterBox{margin:auto;display:inline-block;vertical-align:middle;padding:5px;}
-.maclogo{color:#777;width:105px;text-align:center;margin:5px 0;}
-a.maclogo:hover{color:#999;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;}
-.maclogo div{display:block;margin-left:43px;}
-.maclogo div.logo{background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')}
-.ie8 .maclogo div.logo-brightener:hover,.maclogo div.logo-brightener{background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')}
-.maclogo div.logo,.maclogo div.logo-brightener{top:3px;width:19px;height:22px;}
-.maclogo div.logo{position:relative;z-index:12;background-position: 0px -1566px;background-repeat:no-repeat;pointer-events:none}
-.maclogo div.logo-brightener{opacity:0;-webkit-transition:opacity 0.2s;cursor:pointer;position:relative;z-index:13;background-position: 0px -1588px;background-repeat:no-repeat;}
-.ie8 .maclogo div.logo-brightener{background:transparent}
-.maclogo div.logo-brightener:hover{opacity:1;z-index:10;}
-.maclogo:hover div.logo-brightener{opacity:1;z-index:10;}
-.ie8 .maclogo div.logo-brightener:hover{background-position: 0px -1588px;background-repeat:no-repeat}
-.sponsor{white-space:nowrap;color:#777;display:inline-block;text-align:left;margin-right:5px;}
-.sponsor a{color:#BD101F;}
-a.githubLogo img{margin-top:3px;-webkit-transition:opacity .25s linear;-moz-transition:opacity .25s linear;-khtml-transition:opacity .25s linear;-o-transition:opacity .25s linear;}
-a.githubLogo img.hover{opacity:0;}
-a.githubLogo:hover img.hover{opacity:1;}
-a.githubLogo img.default{opacity:1;}
-a.githubLogo:hover img.default{opacity:0;}
-.sponsor .rslogo{margin-right:10px;}
+
+#MyFooter {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#MyFooterBox {
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.maclogo {
+  color: #777;
+  width: 105px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+a.maclogo:hover {
+  color: #999;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.maclogo div {
+  display: block;
+  margin-left: 43px;
+}
+
+.maclogo div.logo {
+  background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')
+}
+
+.ie8 .maclogo div.logo-brightener:hover,
+.maclogo div.logo-brightener {
+  background-image: url('http://s.abhishekmunie.com/ext_img/apple/icloud/icloudapplelogo.png')
+}
+
+.maclogo div.logo,
+.maclogo div.logo-brightener {
+  top: 3px;
+  width: 19px;
+  height: 22px;
+}
+
+.maclogo div.logo {
+  position: relative;
+  z-index: 12;
+  background-position: 0px -1566px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.maclogo div.logo-brightener {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 13;
+  background-position: 0px -1588px;
+  background-repeat: no-repeat;
+}
+
+.ie8 .maclogo div.logo-brightener {
+  background: transparent
+}
+
+.maclogo div.logo-brightener:hover {
+  opacity: 1;
+  z-index: 10;
+}
+
+.maclogo:hover div.logo-brightener {
+  opacity: 1;
+  z-index: 10;
+}
+
+.ie8 .maclogo div.logo-brightener:hover {
+  background-position: 0px -1588px;
+  background-repeat: no-repeat;
+}
+
+.sponsor {
+  white-space: nowrap;
+  color: #777;
+  display: inline-block;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.sponsor a {
+  color: #BD101F
+}
+
+a.githubLogo img {
+  margin-top: 3px;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -khtml-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+}
+
+a.githubLogo img.hover {
+  opacity: 0
+}
+
+a.githubLogo:hover img.hover {
+  opacity: 1
+}
+
+a.githubLogo img.default {
+  opacity: 1
+}
+
+a.githubLogo:hover img.default {
+  opacity: 0
+}
+
+.sponsor .rslogo {
+  margin-right: 10px
+}
+
 /* Footer */
 
 /*----------------------------------------------------------------------
- [Master Stylesheet]	
+ [Master Stylesheet]    
  -----------------------------------------------------------------------*/
 
 /* GLOBAL SHARED STYLES -----------------------------------------------*/
+
 /* - header */
-/*#headerWrapper{position:relative;height:60px;background:#fff;z-index:101;}*/
-#headerContent {min-width:963px;background:#fff;}
-#logo{float:left;}
-#logo a{height:40px;display:block;padding:20px 30px 0;}
-.headerSideBg{height:150px;width:30px;background:url(http://s.abhishekmunie.com/officialfiles/img/header-overlay.png) no-repeat top left;position:absolute;top:60px;left:0;display:block;}
+
+/*#headerWrapper{position:relative;height:60px;background:#fff;z-index:101;}_NO__DOTCOMMA__AFTER___NO__DOTCOMMA__AFTER__*/
+
+#headerContent {
+  min-width: 963px;
+  background: #fff;
+}
+
+#logo {
+  float: left
+}
+
+#logo a {
+  height: 40px;
+  display: block;
+  padding: 20px 30px 0;
+}
+
+.headerSideBg {
+  height: 150px;
+  width: 30px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/header-overlay.png) no-repeat top left;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: block;
+}
+
 /* -- navigation */
-ul#siteNavigation{float:right;width:auto;margin:0 45px 0 0;padding:0;}
-ul#siteNavigation li{float:left;}
-ul#siteNavigation li a{font-size:14px;line-height:20px;text-transform:uppercase;font-weight:bold;height:40px;padding:17px 9px 3px 9px;background:url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif)no-repeat 0 29px;display:block;letter-spacing:-1px;}
-.cufon-active ul#siteNavigation li a{font-size:18px;}
-ul#siteNavigation li.selected{ background:url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav-li.gif) no-repeat center 45px;}
-ul#siteNavigation li:first-child a{background:0 none;}
-ul#siteNavigation li a:hover{color:#000;}
-#abhishek{margin:0 auto;z-index:101;position:relative;}
-#wrapper{padding:0 30px;overflow:hidden;}
+
+ul#siteNavigation {
+  float: right;
+  width: auto;
+  margin: 0 45px 0 0;
+  padding: 0;
+}
+
+ul#siteNavigation li {
+  float: left
+}
+
+ul#siteNavigation li a {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  padding: 17px 9px 3px 9px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif)no-repeat 0 29px;
+  display: block;
+  letter-spacing: -1px;
+}
+
+.cufon-active ul#siteNavigation li a {
+  font-size: 18px
+}
+
+ul#siteNavigation li.selected {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav-li.gif) no-repeat center 45px
+}
+
+ul#siteNavigation li:first-child a {
+  background: 0 none
+}
+
+ul#siteNavigation li a:hover {
+  color: #000
+}
+
+#abhishek {
+  margin: 0 auto;
+  z-index: 101;
+  position: relative;
+}
+
+#wrapper {
+  padding: 0 30px;
+  overflow: hidden;
+}
+
 /* - section header - */
-#sectionHeader{width:100%;display:block;}
-#sectionHeader.higherLevelHeader{position:relative;z-index:2;}
+
+#sectionHeader {
+  width: 100%;
+  display: block;
+}
+
+#sectionHeader.higherLevelHeader {
+  position: relative;
+  z-index: 2;
+}
+
 /* - main */
-#pageContent{overflow:hidden;position:relative;width:100%;display:block;}
-#pageContent.minimalPage{background:url('http://s.abhishekmunie.com/officialfiles/img/bg-main-large.jpg') no-repeat 100% 0%;}
-#mainContent{background:url(http://s.abhishekmunie.com/officialfiles/img/bg-main.jpg) no-repeat top right;padding:30px 0 30px;position:relative;min-height:279px;display:block;text-align:left;}
-#pageContent.minimalPage #mainContent,#pageContent.landingPage #mainContent{background:none;}
-.artworkOverlay{display:none;height:318px;width:259px;position:absolute;top:-60px;right:0;z-index:1;}
+
+#pageContent {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+#pageContent.minimalPage {
+  background: url('http://s.abhishekmunie.com/officialfiles/img/bg-main-large.jpg') no-repeat 100% 0%
+}
+
+#mainContent {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-main.jpg) no-repeat top right;
+  padding: 30px 0 30px;
+  position: relative;
+  min-height: 279px;
+  display: block;
+  text-align: left;
+}
+
+#pageContent.minimalPage #mainContent,
+#pageContent.landingPage #mainContent {
+  background: none
+}
+
+.artworkOverlay {
+  display: none;
+  height: 318px;
+  width: 259px;
+  position: absolute;
+  top: -60px;
+  right: 0;
+  z-index: 1;
+}
+
 /* - footer */
-#footerWrapper { width: 100%; max-width: 1600px; min-width: 960px; height: 50px; z-index:100; background: #fff url(http://s.abhishekmunie.com/officialfiles/img/bg-footer.gif) no-repeat top left; }
-#flashControls { float:left; margin-left:45px; display:none; }
-.js #flashControls { display:block; }
-#flashControls li { display:inline; }
-#flashControls .flashModeLink { display:inline-block; width:31px; height:18px; background-image:url(http://s.abhishekmunie.com/officialfiles/img/flash-mode-buttons.gif); margin:17px 0 0 10px; }
-#flashControls #grill { background-position:0 18px; }
-#flashControls #grill.selected, #flashControls #grill:hover { background-position:0 36px; }
-#flashControls #grid { background-position:0 54px; }
-#flashControls #grid.selected, #flashControls #grid:hover { background-position:0 72px; }
-#flashControls #bigFullScreen { background-position:0 90px; }
-#flashControls #bigFullScreen.selected, #flashControls #bigFullScreen:hover { background-position:0 108px; }
-#flashControls #fullScreen { background-position:0 126px; }
-#flashControls #fullScreen.selected, #flashControls #fullScreen:hover { background-position:0 144px; }
-#footerContent { float: right; width: auto; padding: 0 45px 0 0; background: url(http://s.abhishekmunie.com/officialfiles/img/footer-overlay.png) no-repeat top right; overflow: hidden; }
-ul#footerNavigation { float: left; padding: 0; }
-ul#footerNavigation li { float: left; }
-ul#footerNavigation li a { color: #707070; height: 30px; padding: 18px 10px 1px 12px; background: url(http://s.abhishekmunie.com/officialfiles/img/div-footer-nav.gif) no-repeat 0 25px; display: block; }
-ul#footerNavigation li:first-child a { background: 0 none; }	
-ul#footerNavigation li a:hover { color: #000; }
-ul#footerNavigation li a.addthis_button_compact .at300bs { background: none; width: 0; height: 0; }
-.socialNaviation { margin: 0 8px 0 0; float: left; background: url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat right 21px; padding-right: 20px; }
-.socialNaviation li { background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png); padding: 1px; margin: 14px 0 0 8px; float: left; }
-.socialNaviation li a { height: 20px; width: 20px; display: block; text-indent: -9999px; background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat; }
-.socialNaviation li.facebookIcon a { background-position: 0 -32px; }
-.socialNaviation li.facebookIcon a:hover { background-position: -1px -364px; }
-.socialNaviation li.twitterIcon a { background-position: 0 -59px; }
-.socialNaviation li.twitterIcon a:hover { background-position: 0 -391px; }
-.socialNaviation li.youtubeIcon a { background-position: 0 -87px; }
-.socialNaviation li.youtubeIcon a:hover { background-position: 0 -419px; }
-.socialNaviation li.flickrIcon a { background-position: 0 -114px; }
-.socialNaviation li.flickrIcon a:hover { background-position: 0 -448px; }
-.socialNaviation li.mySpaceIcon a { background-position: 0 -307px; }
-.socialNaviation li.mySpaceIcon a:hover { background-position: 0 -587px; }
-.socialNaviation li.beboIcon a { background-position: 0 -335px; }
-.socialNaviation li.beboIcon a:hover { background-position: 1px -615px; }
-.socialNaviation li.friendIcon a { background-position: 0 -167px; }
-.socialNaviation li.friendIcon a:hover { background-position: 0 -475px; }
-.socialNaviation li.liveIcon a { background-position: 0 -223px; }
-.socialNaviation li.liveIcon a:hover { background-position: 0 -531px; }
-.socialNaviation li.diggIcon a { background-position: 0 -279px; }
-.socialNaviation li.delIcon a { background-position: 0 -195px; }
-.socialNaviation li.delIcon a:hover { background-position: 0 -503px; }
-.socialNaviation li.stumbleIcon a { background-position: 0 -251px; }
-.socialNaviation li.stumbleIcon a:hover { background-position: 0 -559px; }
-.footerSideBg { background: url(http://s.abhishekmunie.com/officialfiles/img/bg-left-shadow.gif) no-repeat left bottom; position: absolute; bottom: 50px; left: 0; display: block; height: 935px; width: 30px; }
+
+#footerWrapper {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 960px;
+  height: 50px;
+  z-index: 100;
+  background: #fff url(http://s.abhishekmunie.com/officialfiles/img/bg-footer.gif) no-repeat top left;
+}
+
+#footerContent {
+  float: right;
+  width: auto;
+  padding: 0 45px 0 0;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/footer-overlay.png) no-repeat top right;
+  overflow: hidden;
+}
+
+ul#footerNavigation {
+  float: left;
+  padding: 0;
+}
+
+ul#footerNavigation li {
+  float: left
+}
+
+ul#footerNavigation li a {
+  color: #707070;
+  height: 30px;
+  padding: 18px 10px 1px 12px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-footer-nav.gif) no-repeat 0 25px;
+  display: block;
+}
+
+ul#footerNavigation li:first-child a {
+  background: 0 none
+}
+
+ul#footerNavigation li a:hover {
+  color: #000
+}
+
+ul#footerNavigation li a.addthis_button_compact .at300bs {
+  background: none;
+  width: 0;
+  height: 0;
+}
+
+.socialNaviation {
+  margin: 0 8px 0 0;
+  float: left;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat right 21px;
+  padding-right: 20px;
+}
+
+.socialNaviation li {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png);
+  padding: 1px;
+  margin: 14px 0 0 8px;
+  float: left;
+}
+
+.socialNaviation li a {
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-indent: -9999px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat;
+}
+
+.socialNaviation li.facebookIcon a {
+  background-position: 0 -32px
+}
+
+.socialNaviation li.facebookIcon a:hover {
+  background-position: -1px -364px
+}
+
+.socialNaviation li.twitterIcon a {
+  background-position: 0 -59px
+}
+
+.socialNaviation li.twitterIcon a:hover {
+  background-position: 0 -391px
+}
+
+.socialNaviation li.youtubeIcon a {
+  background-position: 0 -87px
+}
+
+.socialNaviation li.youtubeIcon a:hover {
+  background-position: 0 -419px
+}
+
+.socialNaviation li.flickrIcon a {
+  background-position: 0 -114px
+}
+
+.socialNaviation li.flickrIcon a:hover {
+  background-position: 0 -448px
+}
+
+.socialNaviation li.mySpaceIcon a {
+  background-position: 0 -307px
+}
+
+.socialNaviation li.mySpaceIcon a:hover {
+  background-position: 0 -587px
+}
+
+.socialNaviation li.beboIcon a {
+  background-position: 0 -335px
+}
+
+.socialNaviation li.beboIcon a:hover {
+  background-position: 1px -615px
+}
+
+.socialNaviation li.friendIcon a {
+  background-position: 0 -167px
+}
+
+.socialNaviation li.friendIcon a:hover {
+  background-position: 0 -475px
+}
+
+.socialNaviation li.liveIcon a {
+  background-position: 0 -223px
+}
+
+.socialNaviation li.liveIcon a:hover {
+  background-position: 0 -531px
+}
+
+.socialNaviation li.diggIcon a {
+  background-position: 0 -279px
+}
+
+.socialNaviation li.delIcon a {
+  background-position: 0 -195px
+}
+
+.socialNaviation li.delIcon a:hover {
+  background-position: 0 -503px
+}
+
+.socialNaviation li.stumbleIcon a {
+  background-position: 0 -251px
+}
+
+.socialNaviation li.stumbleIcon a:hover {
+  background-position: 0 -559px
+}
+
+.footerSideBg {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-left-shadow.gif) no-repeat left bottom;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  display: block;
+  height: 935px;
+  width: 30px;
+}
 
 /* IMPORTANT SHARED STYLES ---------------------------------------------*/
-.left{float:left!important;}
-.right{float:right!important;}
-.backLink{background:url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif) no-repeat 0 -44px;padding-left:13px;}
-.backLink span{background:#fff;padding-left:4px;line-height:16px;}
-.backLink:hover,.upLink:hover,.downLink:hover{background-color:#000;}
+
+.left {
+  float: left!important
+}
+
+.right {
+  float: right!important
+}
+
+.backLink {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif) no-repeat 0 -44px;
+  padding-left: 13px;
+}
+
+.backLink span {
+  background: #fff;
+  padding-left: 4px;
+  line-height: 16px;
+}
+
+.backLink:hover,
+.upLink:hover,
+.downLink:hover {
+  background-color: #000
+}
 
 /* GRID STYLES ---------------------------------------------------------*/
-.row{width:930px;overflow:hidden;z-index:2;position:relative;}
-.minimalPage .row{min-width:930px;width:100%;}
-.col1,.col2,.col3,.col4,.col5,.col6,col7{display:inline;float:left;position:relative;}
-.col1,.col2,.col3,.col5,.col6{margin-left:30px;}
-.col2{width:500px;}
-.col2_ext{width:660px;}
-.col5{width:180px;}
-.col6{width:130px;}
-.col4{width:225px;}
+
+.row {
+  width: 930px;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+}
+
+.minimalPage .row {
+  min-width: 930px;
+  width: 100%;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+col7 {
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+.col1,
+.col2,
+.col3,
+.col5,
+.col6 {
+  margin-left: 30px
+}
+
+.col2 {
+  width: 500px
+}
+
+.col2_ext {
+  width: 660px
+}
+
+.col5 {
+  width: 180px
+}
+
+.col6 {
+  width: 130px
+}
+
+.col4 {
+  width: 225px
+}
 
 /* GLOBAL SHARED STYLES ------------------------------------------------*/
 
 /* - banner */
-.banner{position:relative;display:block;}
-.banner h1{position:absolute;bottom:0;left:30px;width:32%;display:block;} 
-.banner h1 span{display:none;}
+
+.banner {
+  position: relative;
+  display: block;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 32%;
+  display: block;
+}
+
+.banner h1 span {
+  display: none
+}
+
 /* - second nav */
-#secondNavigation{width:100%;}
-#secondNavigation ul{padding:0 30px;position:relative;z-index:2;}
-#secondNavigation ul li{float:left;}
-#secondNavigation ul li a{font-size:14px;line-height:14px;color:#fff;text-transform:uppercase; padding: 16px 10px 18px;background:url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 25px;display:block;}
-#secondNavigation ul li:first-child a{background:0 none;padding-left:0;}
-#secondNavigation ul li a:hover{color:#000;}
+
+#secondNavigation {
+  width: 100%
+}
+
+#secondNavigation ul {
+  padding: 0 30px;
+  position: relative;
+  z-index: 2;
+}
+
+#secondNavigation ul li {
+  float: left
+}
+
+#secondNavigation ul li a {
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 16px 10px 18px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 25px;
+  display: block;
+}
+
+#secondNavigation ul li:first-child a {
+  background: 0 none;
+  padding-left: 0;
+}
+
+#secondNavigation ul li a:hover {
+  color: #000
+}
+
 /* - third nav - */
-#thirdNavigation { margin: 0; padding: 0;  }
-#thirdNavigation li { padding-bottom: 10px; padding-left: 0; list-style: none; }
+
+#thirdNavigation {
+  margin: 0;
+  padding: 0;
+}
+
+#thirdNavigation li {
+  padding-bottom: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
 /* - sidebar */
-.sideBar {}
-.sideBar .sidePanel { border-top: 1px solid #e0e0e0; padding-top: 17px; }
-.sideBar .sidePanel h5 { padding-bottom: 16px; }
-.sideBar .sidePanel:first-child { border: 0 none; padding: 0; }
-.sideBar .sidePanel img { padding-bottom: 10px; }
-.sideBar .sidePanel .cufon-canvas + img { margin-top: -16px; } /** Fixes empty cufon tag above images **/
+
+.sideBar {
+
+}
+
+.sideBar .sidePanel {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 17px;
+}
+
+.sideBar .sidePanel h5 {
+  padding-bottom: 16px
+}
+
+.sideBar .sidePanel:first-child {
+  border: 0 none;
+  padding: 0;
+}
+
+.sideBar .sidePanel img {
+  padding-bottom: 10px
+}
+
+.sideBar .sidePanel .cufon-canvas + img {
+  margin-top: -16px
+}
+
+some_nowhitespace {
+  nowhitespace: afterproperty
+}
+
+/** Fixes empty cufon tag above images **/
 
 /* - news list */
-ul.newsList { padding-bottom: 0; }
-ul.newsList li { padding-bottom: 15px; }
-ul.newsList li h6 { line-height: 16px; }
+
+ul.newsList {
+  padding-bottom: 0
+}
+
+ul.newsList li {
+  padding-bottom: 15px
+}
+
+ul.newsList li h6 {
+  line-height: 16px
+}
+
 /* - listings - */
-.listings { padding: 0 30px; width: 710px; }
-.listings > div { border-top: 1px solid #dddddd; padding: 30px 0 0 0; margin-top: 10px; }
-#mainContent .listings > div h2 { padding-bottom: 15px; }
-.listings > div:first-child { border-top: none; padding-top: 0; margin-top: 0!important; }
-.listings > div p { padding-bottom: 20px; }
-.listings > div p.date { margin-top: -15px; padding-bottom: 16px; }
-.listings > div.eventRow { border: 0 none; padding: 0; margin: 0; }
-.listings > div.eventRow p.date { float: left; width: 180px; margin:0; padding-top: 28px; }
-.listings > div.eventRow:first-child p.date { padding-top: 0; margin-top: -2px; }
-.eventRowRight { float: left; width: 500px; margin-left: 30px; padding: 30px 0 12px; border-top: 1px solid #dddddd; }
-.listings > div.eventRow:first-child .eventRowRight { border: 0; padding-top: 0; }
-.eventRowContent { }
-.listings > div.eventRow p { padding-bottom: 15px; }
+
+.listings {
+  padding: 0 30px;
+  width: 710px;
+}
+
+.listings > div {
+  border-top: 1px solid #dddddd;
+  padding: 30px 0 0 0;
+  margin-top: 10px;
+}
+
+#mainContent .listings > div h2 {
+  padding-bottom: 15px
+}
+
+.listings > div:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0!important;
+}
+
+.listings > div p {
+  padding-bottom: 20px
+}
+
+.listings > div p.date {
+  margin-top: -15px;
+  padding-bottom: 16px;
+}
+
+.listings > div.eventRow {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+.listings > div.eventRow p.date {
+  float: left;
+  width: 180px;
+  margin: 0;
+  padding-top: 28px;
+}
+
+.listings > div.eventRow:first-child p.date {
+  padding-top: 0;
+  margin-top: -2px;
+}
+
+.eventRowRight {
+  float: left;
+  width: 500px;
+  margin-left: 30px;
+  padding: 30px 0 12px;
+  border-top: 1px solid #dddddd;
+}
+
+.listings > div.eventRow:first-child .eventRowRight {
+  border: 0;
+  padding-top: 0;
+}
+
+.eventRowContent {
+
+}
+
+.listings > div.eventRow p {
+  padding-bottom: 15px
+}
+
 /* - article - */
-.article { border-bottom: 1px solid #e0e0e0; margin: 20px 0 20px; padding: 0 0 6px 0; text-align: justify; }	
-#mainContent .article h2 { padding-bottom: 2px; }
-.articleDate { display: block; margin-bottom: 16px; }
-.article ul li { list-style: disc inside; }
-.socialBookmarks { padding: 24px 0 18px; margin: 10px 0 -6px; border-top: 1px solid #e0e0e0; min-height: 70px; }
-.article .socialBookmarks ul { float: none; padding: 0; background: url("http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif") no-repeat left 8px; margin: 0; }
-.article .socialBookmarks ul li { list-style: none; margin: 0 0 0 7px; }
-.article .socialBookmarks ul li:first-child { margin-left: 12px; }
+
+.article {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 20px 0 20px;
+  padding: 0 0 6px 0;
+  text-align: justify;
+}
+
+#mainContent .article h2 {
+  padding-bottom: 2px
+}
+
+.articleDate {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.article ul li {
+  list-style: disc inside
+}
+
+.socialBookmarks {
+  padding: 24px 0 18px;
+  margin: 10px 0 -6px;
+  border-top: 1px solid #e0e0e0;
+  min-height: 70px;
+}
+
+.article .socialBookmarks ul {
+  float: none;
+  padding: 0;
+  background: url("http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif") no-repeat left 8px;
+  margin: 0;
+}
+
+.article .socialBookmarks ul li {
+  list-style: none;
+  margin: 0 0 0 7px;
+}
+
+.article .socialBookmarks ul li:first-child {
+  margin-left: 12px
+}
+
 /* - minimal page - */
-.minimalPage { }
+
+.minimalPage {
+
+}
+
 /* - standard form styles - */
-.form { margin-top: 15px; }
-.form div { clear: both; padding: 0 0 10px 0; overflow: auto; }
-.form .input { margin-left: -20px; }
-.form .input > * { float: left; background: none no-repeat 8px 6px; }
-.form .input label { text-transform: uppercase; display: block; width: 120px; line-height: 16px; padding: 5px 5px 5px 20px; }
+
+.form {
+  margin-top: 15px
+}
+
+.form div {
+  clear: both;
+  padding: 0 0 10px 0;
+  overflow: auto;
+}
+
+.form .input {
+  margin-left: -20px
+}
+
+.form .input > * {
+  float: left;
+  background: none no-repeat 8px 6px;
+}
+
+.form .input label {
+  text-transform: uppercase;
+  display: block;
+  width: 120px;
+  line-height: 16px;
+  padding: 5px 5px 5px 20px;
+}
+
 .form .text input,
-.form .text textarea { background: #fff; border: 1px solid #e0e0e0; float: left; padding: 5px; display: block; width: 350px; }
+.form .text textarea {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  float: left;
+  padding: 5px;
+  display: block;
+  width: 350px;
+}
+
 .form .text input:focus,
-.form .text textarea:focus { border-color: #000; }
-.form .submit button { display: block; padding-right: 10px; text-transform: uppercase; margin: 10px 0 10px auto; width: 300px; text-align: right; }
-.form .validationMessages { margin-left: auto; text-align: right; padding-right: 10px; }
-.form .validationMessages li { }
-.form .validationMessages li span { display: inline-block; background: none no-repeat 5px 5px; padding-left: 20px; line-height: 16px; }
-.form .remaining { text-align: right; display: block; float: none; padding: 12px 12px 0 0; clear: both; }
-.form .termsMessage { text-align: right; padding: 10px 12px 8px 155px; font-size: 11px; line-height: 14px; }
+.form .text textarea:focus {
+  border-color: #000
+}
+
+.form .submit button {
+  display: block;
+  padding-right: 10px;
+  text-transform: uppercase;
+  margin: 10px 0 10px auto;
+  width: 300px;
+  text-align: right;
+}
+
+.form .validationMessages {
+  margin-left: auto;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.form .validationMessages li {
+
+}
+
+.form .validationMessages li span {
+  display: inline-block;
+  background: none no-repeat 5px 5px;
+  padding-left: 20px;
+  line-height: 16px;
+}
+
+.form .remaining {
+  text-align: right;
+  display: block;
+  float: none;
+  padding: 12px 12px 0 0;
+  clear: both;
+}
+
+.form .termsMessage {
+  text-align: right;
+  padding: 10px 12px 8px 155px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
 /* - full screen backgrounds - */
-/* .headerImage { padding-bottom: 20.6%; height: 0; } */
-.fullScreenContent{position:relative;background:#fff;z-index:3;}
-.minimalPage .fullScreenContent{background:transparent;}
+
+/* .headerImage { padding-bottom: 20.6%; height: 0; } _NO__DOTCOMMA__AFTER___NO__DOTCOMMA__AFTER__*/
+
+.fullScreenContent {
+  position: relative;
+  background: #fff;
+  z-index: 3;
+}
+
+.minimalPage .fullScreenContent {
+  background: transparent
+}
+
 /* - header quotes - */
-.headerQuote { width: 50%; position: absolute; right: 30px; top: 10px; padding-top: 30px; text-align: right; }
-.headerQuote h5 { padding-bottom: 0; padding-right: 50px; }
-.headerQuote p { padding-bottom: 0; padding-right: 50px; }
-.headerQuote blockquote { display: inline-block; *display: inline; padding-top: 10px; background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_left.png') no-repeat 0 10px; padding-left: 45px; }
-.headerQuote blockquote p { display: inline-block; *display: inline; font-size: 18px; line-height: 22px;  font-style: italic; background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_right.png') no-repeat 100% 100%; }
+
+.headerQuote {
+  width: 50%;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  padding-top: 30px;
+  text-align: right;
+}
+
+.headerQuote h5 {
+  padding-bottom: 0;
+  padding-right: 50px;
+}
+
+.headerQuote p {
+  padding-bottom: 0;
+  padding-right: 50px;
+}
+
+.headerQuote blockquote {
+  display: inline-block;
+  *display: inline;
+  padding-top: 10px;
+  background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_left.png') no-repeat 0 10px;
+  padding-left: 45px;
+}
+
+.headerQuote blockquote p {
+  display: inline-block;
+  *display: inline;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: italic;
+  background: url('http://s.abhishekmunie.com/officialfiles/img/headerquote_right.png') no-repeat 100% 100%;
+}
+
 /* - WYSIWYG content - */
-.wizzyContent h3 { padding-bottom: 20px; font-size: 16px; line-height: 16px; }
+
+.wizzyContent h3 {
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
 /* TEMPLATE STYLES ------------------------------------------------------*/
 
 /* - horizontal listings template */
-#mainContent.horzListingsTemplate { padding-left: 15px; }
-.horzListingsTemplate .row { width: 915px; }
-#mainContent.horzListingsTemplate h2 { padding: 0 0 15px 15px; }
-.horzListingsTemplate h4 { padding-bottom: 10px; }
-.horzListingsTemplate .linksHeader h4 { padding-bottom: 0; }
-.colContent { border-left: 1px solid #e0e0e0; padding: 0 15px 9999px; margin-bottom: -9999px; }
-.col4:first-child .colContent { border: 0 none; }
-.colContentHeader { padding: 20px 0 16px; }			
-.colContentHeader + p { min-height: 150px; }
-.horzListingsTemplate ul.newsList { border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; padding: 15px 3px 0; margin-bottom: 16px; }
-.horzListingsTemplate ul.newsList li { padding-bottom: 15px; }
-ul.linksList { border-top: 1px solid #e0e0e0; padding: 15px 3px 0; }
-ul.linksList li { padding-bottom: 10px; }
-.rssIcon { background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat 0 -644px; display: block; padding: 2px 0 1px 20px; }
+
+#mainContent.horzListingsTemplate {
+  padding-left: 15px
+}
+
+.horzListingsTemplate .row {
+  width: 915px
+}
+
+#mainContent.horzListingsTemplate h2 {
+  padding: 0 0 15px 15px
+}
+
+.horzListingsTemplate h4 {
+  padding-bottom: 10px
+}
+
+.horzListingsTemplate .linksHeader h4 {
+  padding-bottom: 0
+}
+
+.colContent {
+  border-left: 1px solid #e0e0e0;
+  padding: 0 15px 9999px;
+  margin-bottom: -9999px;
+}
+
+.col4:first-child .colContent {
+  border: 0 none
+}
+
+.colContentHeader {
+  padding: 20px 0 16px
+}
+
+.colContentHeader + p {
+  min-height: 150px
+}
+
+.horzListingsTemplate ul.newsList {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 3px 0;
+  margin-bottom: 16px;
+}
+
+.horzListingsTemplate ul.newsList li {
+  padding-bottom: 15px
+}
+
+ul.linksList {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 3px 0;
+}
+
+ul.linksList li {
+  padding-bottom: 10px
+}
+
+.rssIcon {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/icons.png) no-repeat 0 -644px;
+  display: block;
+  padding: 2px 0 1px 20px;
+}
+
 /* - flat content template - */
-.flatContentTemplate {}
-.flatContentTemplate .flatContentSections > div { border-top: 1px solid #ddd; padding-top: 30px; padding-bottom:17px; }
-.flatContentTemplate .flatContentSections > div:first-child { border-top: none; padding-top: 0; }
-.flatContentTemplate h4 { padding-bottom: 20px; }
-.flatContentTemplate dt { text-transform: uppercase; float: none; display: block; font-size: 12px; padding-bottom: 5px; }
-.flatContentTemplate dl { padding-bottom: 0; }
-.flatContentTemplate dd { padding-bottom: 20px; }
-.flatContentTemplate ol { margin-left: 20px; }
-.flatContentTemplate ol li { padding-left: 5px; list-style-type: decimal; padding-bottom: 15px; }
-.flatContentTemplate ul { padding-bottom: 0; margin-bottom: 0; }
-.flatContentTemplate ul li { padding-bottom: 5px;  padding-left: 5px; list-style: inside disc; }
-.flatContentTemplate .additionalInfo ul li { padding-bottom: 20px; }
-.flatContentTemplate li ul { padding-top: 14px; }
-.flatContentTemplate li ul li { padding-bottom: 0; }
-.flatContentTemplate .col2 { text-align: justify; } 
-.flatContentTemplate .articleDate { margin-top: -12px; font-style: italic; }
+
+.flatContentTemplate {
+
+}
+
+.flatContentTemplate .flatContentSections > div {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  padding-bottom: 17px;
+}
+
+.flatContentTemplate .flatContentSections > div:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.flatContentTemplate h4 {
+  padding-bottom: 20px
+}
+
+.flatContentTemplate dt {
+  text-transform: uppercase;
+  float: none;
+  display: block;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.flatContentTemplate dl {
+  padding-bottom: 0
+}
+
+.flatContentTemplate dd {
+  padding-bottom: 20px
+}
+
+.flatContentTemplate ol {
+  margin-left: 20px
+}
+
+.flatContentTemplate ol li {
+  padding-left: 5px;
+  list-style-type: decimal;
+  padding-bottom: 15px;
+}
+
+.flatContentTemplate ul {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.flatContentTemplate ul li {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  list-style: inside disc;
+}
+
+.flatContentTemplate .additionalInfo ul li {
+  padding-bottom: 20px
+}
+
+.flatContentTemplate li ul {
+  padding-top: 14px
+}
+
+.flatContentTemplate li ul li {
+  padding-bottom: 0
+}
+
+.flatContentTemplate .col2 {
+  text-align: justify
+}
+
+.flatContentTemplate .articleDate {
+  margin-top: -12px;
+  font-style: italic;
+}
+
 /* - abhishek messages - */
-.minimalPage_flexi { position: relative; padding-right: 30px; }
-.minimalPage_flexi .thirdNavigation { margin-left: 30px; padding:0; }
-.messagecontrols { width: 100%; margin-bottom: 20px; }
-.minimalPage_flexi .messagePag { position: absolute; top: -3px; right: 32px; }
-.minimalPage_flexi .pagBot { bottom: 0px; top:auto; right: 29px; }
-.mBack, .mNext { float: left; display: block; height: 18px; width: 19px; text-indent: -9999px; background: url(http://s.abhishekmunie.com/officialfiles/img/bg-message-arrows.gif) no-repeat; }
-.minimalPage_flexi .messagePag span, .minimalPage_flexi .messagePag a { float: left; display: block; height: 18px; line-height:17px; }
-.mBack { background-position: 0 -34px; margin: 0 10px; }
-.mNext { background-position: 0 -86px; margin: 0 10px; }
-a.mBack { background-position: 0 1px; }
-a.mNext { background-position: 0 -51px; }
-a.mBack:hover { background-position: 0 -17px; }
-a.mNext:hover { background-position: 0 -69px; }
-span.sBack, span.sNext { color: #ccc; float: left; }
-.messagesTemplate ul.abhishekMessages { padding-bottom: 34px; }
-.messagesTemplate ul.abhishekMessages > li { width: 21%; float: left; display: inline; margin: 30px 0 0 30px; min-height: 150px; background: url('http://s.abhishekmunie.com/officialfiles/img/tile-border.png') no-repeat 50% 100%; }
-.messagesTemplate ul.abhishekMessages > li > p { font-style: italic; }
-.messagesTemplate .artworkOverlay { top: -40px; }
-.messagesTemplate h5 { padding-bottom: 0; }
-.viewMessagesUl { margin-bottom: 30px; padding: 0; }
+
+.minimalPage_flexi {
+  position: relative;
+  padding-right: 30px;
+}
+
+.minimalPage_flexi .thirdNavigation {
+  margin-left: 30px;
+  padding: 0;
+}
+
+.messagecontrols {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.minimalPage_flexi .messagePag {
+  position: absolute;
+  top: -3px;
+  right: 32px;
+}
+
+.minimalPage_flexi .pagBot {
+  bottom: 0px;
+  top: auto;
+  right: 29px;
+}
+
+.mBack,
+.mNext {
+  float: left;
+  display: block;
+  height: 18px;
+  width: 19px;
+  text-indent: -9999px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-message-arrows.gif) no-repeat;
+}
+
+.minimalPage_flexi .messagePag span,
+.minimalPage_flexi .messagePag a {
+  float: left;
+  display: block;
+  height: 18px;
+  line-height: 17px;
+}
+
+.mBack {
+  background-position: 0 -34px;
+  margin: 0 10px;
+}
+
+.mNext {
+  background-position: 0 -86px;
+  margin: 0 10px;
+}
+
+a.mBack {
+  background-position: 0 1px
+}
+
+a.mNext {
+  background-position: 0 -51px
+}
+
+a.mBack:hover {
+  background-position: 0 -17px
+}
+
+a.mNext:hover {
+  background-position: 0 -69px
+}
+
+span.sBack,
+span.sNext {
+  color: #ccc;
+  float: left;
+}
+
+.messagesTemplate ul.abhishekMessages {
+  padding-bottom: 34px
+}
+
+.messagesTemplate ul.abhishekMessages > li {
+  width: 21%;
+  float: left;
+  display: inline;
+  margin: 30px 0 0 30px;
+  min-height: 150px;
+  background: url('http://s.abhishekmunie.com/officialfiles/img/tile-border.png') no-repeat 50% 100%;
+}
+
+.messagesTemplate ul.abhishekMessages > li > p {
+  font-style: italic
+}
+
+.messagesTemplate .artworkOverlay {
+  top: -40px
+}
+
+.messagesTemplate h5 {
+  padding-bottom: 0
+}
+
+.viewMessagesUl {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
 /* - general article template */
-.articleTemplate {}
-#newsScroller { border-bottom: 1px solid #e0e0e0; margin-bottom: 18px; padding-bottom: 5px; position: relative; }
-#mask { position: relative;overflow: hidden;border-bottom: 1px solid #e0e0e0; margin-bottom: 18px; }
-#mask #newsScroller { border: 0; padding-bottom: 0; }
-.newsListPag { border-bottom: 1px solid #e0e0e0; padding: 0 0 18px 0; margin: 5px 0 18px; display: none; }
-.newsListPag .newsListInfo { float: left; }
-.newsListPag .newsListContols { float: right; }	
-.newsListPag .newsListContols a { float: left; height: 13px; width: 18px; background-image: url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif); display: inline-block; text-indent: -9999px; }
-.newsListPag .newsListContols a:first-child { border-right: 1px solid #e0e0e0; }
-.upLink { background-position: 0 1px; }
-.downLink { background-position: 4px -21px; }
-.newsListPag .newsListContols a.disabled { background-color: #E0E0E0; cursor: default; }
-/* - faqs template (also uses ".listings" as child) */	
-.faqsTemplate {}
-/* - events template (also uses ".listings" as child) */	
-eventsTemplate {}
-/* - flow template (for stories and picturebooks) */	
-.flowTemplate {}
-.flowTemplate .row { padding-left: 30px; padding-top: 4px; }
-.flowTemplate .row > div { float: left; display: inline;  }
-.flowTemplate .row > div.odd { width: 347px; clear: left; text-align: right; }
-.flowTemplate .row > div img { display: block; margin-bottom: 20px; margin-left: auto; }
-.flowTemplate .row > div.even { width: 510px; padding-left: 20px; }
-.flowTemplate .row > div.even img { margin-left: 0; }	
-#mainContent.flowTemplate h2 { padding-bottom: 5px; text-transform: uppercase; }
-.cufon-active .flowTemplate h2 { margin-top: -5px; } /** fixing mashed line heights on cufon fonts **/
-.flowTemplate h3 { padding-bottom: 15px; }
+
+.articleTemplate {
+
+}
+
+#newsScroller {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 18px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+#mask {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 18px;
+}
+
+#mask #newsScroller {
+  border: 0;
+  padding-bottom: 0;
+}
+
+.newsListPag {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 0 18px 0;
+  margin: 5px 0 18px;
+  display: none;
+}
+
+.newsListPag .newsListInfo {
+  float: left
+}
+
+.newsListPag .newsListContols {
+  float: right
+}
+
+.newsListPag .newsListContols a {
+  float: left;
+  height: 13px;
+  width: 18px;
+  background-image: url(http://s.abhishekmunie.com/officialfiles/img/bg-arrows.gif);
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.newsListPag .newsListContols a:first-child {
+  border-right: 1px solid #e0e0e0
+}
+
+.upLink {
+  background-position: 0 1px
+}
+
+.downLink {
+  background-position: 4px -21px
+}
+
+.newsListPag .newsListContols a.disabled {
+  background-color: #E0E0E0;
+  cursor: default;
+}
+
+/* - faqs template (also uses ".listings" as child) */
+
+.faqsTemplate {
+
+}
+
+/* - events template (also uses ".listings" as child) */
+
+eventsTemplate {
+
+}
+
+/* - flow template (for stories and picturebooks) */
+
+.flowTemplate {
+
+}
+
+.flowTemplate .row {
+  padding-left: 30px;
+  padding-top: 4px;
+}
+
+.flowTemplate .row > div {
+  float: left;
+  display: inline;
+}
+
+.flowTemplate .row > div.odd {
+  width: 347px;
+  clear: left;
+  text-align: right;
+}
+
+.flowTemplate .row > div img {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.flowTemplate .row > div.even {
+  width: 510px;
+  padding-left: 20px;
+}
+
+.flowTemplate .row > div.even img {
+  margin-left: 0
+}
+
+#mainContent.flowTemplate h2 {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.cufon-active .flowTemplate h2 {
+  margin-top: -5px
+}
+
+some_nowhitespace {
+  nowhitespace: afterproperty
+}
+
+/** fixing mashed line heights on cufon fonts **/
+
+.flowTemplate h3 {
+  padding-bottom: 15px
+}
+
 /* - terms template - */
-#mainContent.termsTemplate { padding: 0 0 60px; }
-.termsTemplate .listings { width: 710px; padding: 0; }	
-.termsTemplate dl { overflow: auto; padding-bottom: 0; }
-.termsTemplate dl > dt { float: left; clear: left; width: 35px; line-height: 16px; }
-.termsTemplate dl > dd { float: left; width: 675px;  margin: 0 0 20px 0; line-height: 16px;  }
-.termsTemplate h4 { padding-bottom: 20px; }
+
+#mainContent.termsTemplate {
+  padding: 0 0 60px
+}
+
+.termsTemplate .listings {
+  width: 710px;
+  padding: 0;
+}
+
+.termsTemplate dl {
+  overflow: auto;
+  padding-bottom: 0;
+}
+
+.termsTemplate dl > dt {
+  float: left;
+  clear: left;
+  width: 35px;
+  line-height: 16px;
+}
+
+.termsTemplate dl > dd {
+  float: left;
+  width: 675px;
+  margin: 0 0 20px 0;
+  line-height: 16px;
+}
+
+.termsTemplate h4 {
+  padding-bottom: 20px
+}
+
 /* - error template - */
-#mainContent.errorTemplate { padding-top: 0; margin-top: 0; padding-left: 30px; }
-#mainContent.errorTemplate h1 { font-size: 24px; font-variant: small-caps; padding-bottom: 30px; }
-#mainContent.errorTemplate ul { text-transform: uppercase; }
-#mainContent.errorTemplate h2 { padding-top: 30px; }
+
+#mainContent.errorTemplate {
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+#mainContent.errorTemplate h1 {
+  font-size: 24px;
+  font-variant: small-caps;
+  padding-bottom: 30px;
+}
+
+#mainContent.errorTemplate ul {
+  text-transform: uppercase
+}
+
+#mainContent.errorTemplate h2 {
+  padding-top: 30px
+}
+
 /* - share track - */
-#mainContent .shareTrack {margin: 14px 0 0; padding: 26px 0 20px 0; border-top: 1px solid #e4e4e4;}
-#mainContent .shareTrack .leftside {float: left; width: 120px; height: 120px; background-color: #000;}
-#mainContent .shareTrack .rightside {float: left; width: 360px; height: 120px; margin-left: 20px;}
-#mainContent .shareTrack h5 {padding-bottom: 16px;}
-#mainContent .shareTrack .rightside h5 {padding-bottom: 0px; margin-top: -4px;}
-#mainContent .shareTrack .rightside h6 { line-height: 13px; padding-bottom:12px;}
-#mainContent .shareTrack .rightside p.released {padding-bottom:32px;}
-#mainContent .shareTrack .rightside ul {padding:0 0 6px 0; text-transform: uppercase; width: 360px;}
-#mainContent .shareTrack .rightside ul li { float: left; list-style: none; background:url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat scroll 0 4px transparent; display:block; padding:0 10px 0 12px;}
-#mainContent .shareTrack .rightside ul li:first-child { background:none; padding:0 10px 0 0;}
-#mainContent .shareTrack .rightside p.itunes {background:url(http://s.abhishekmunie.com/officialfiles/img/itunes.gif); padding-bottom: 0; height:11px; width:45px; text-indent: -9999px;}
+
+#mainContent .shareTrack {
+  margin: 14px 0 0;
+  padding: 26px 0 20px 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+#mainContent .shareTrack .leftside {
+  float: left;
+  width: 120px;
+  height: 120px;
+  background-color: #000;
+}
+
+#mainContent .shareTrack .rightside {
+  float: left;
+  width: 360px;
+  height: 120px;
+  margin-left: 20px;
+}
+
+#mainContent .shareTrack h5 {
+  padding-bottom: 16px
+}
+
+#mainContent .shareTrack .rightside h5 {
+  padding-bottom: 0px;
+  margin-top: -4px;
+}
+
+#mainContent .shareTrack .rightside h6 {
+  line-height: 13px;
+  padding-bottom: 12px;
+}
+
+#mainContent .shareTrack .rightside p.released {
+  padding-bottom: 32px
+}
+
+#mainContent .shareTrack .rightside ul {
+  padding: 0 0 6px 0;
+  text-transform: uppercase;
+  width: 360px;
+}
+
+#mainContent .shareTrack .rightside ul li {
+  float: left;
+  list-style: none;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-social-nav.gif) no-repeat scroll 0 4px transparent;
+  display: block;
+  padding: 0 10px 0 12px;
+}
+
+#mainContent .shareTrack .rightside ul li:first-child {
+  background: none;
+  padding: 0 10px 0 0;
+}
+
+#mainContent .shareTrack .rightside p.itunes {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/itunes.gif);
+  padding-bottom: 0;
+  height: 11px;
+  width: 45px;
+  text-indent: -9999px;
+}
+
 /* SLIDESHOW --------------------------------------------------------------*/
-#pageContent.slideshowTemplate { background: #eee url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow.gif) repeat-y top; position: relative; overflow:visible; }
-#slideshowImg { position: relative; min-height: 478px; }
-.slideShowSpacer { width:100%; padding-bottom: 51.5%; height: 0; }
-#imgMask { overflow: hidden; position: relative; }
-#imgScroller { position: relative; }
-#imgScroller img { float: left; display: block; }
-#imgScroller #flashFallback { margin:-62px 0 0 -225px; height:125px; width:450px; text-align:center; position:absolute; top:50%; left:50%; }
-#flashFallback .fallbackHeader { font-size:24px; padding-bottom:10px; }
-#flashFallback .fallbackSubheader { font-size:16px; padding-bottom:30px; }
-#flashFallback .divider { background-image:url(http://s.abhishekmunie.com/officialfiles/img/fallback-divider.gif); width:90px; height:1px; display:block; margin:0 auto 30px; }
-#flashFallback .getFlash { font-size:16px; }
-.js #imgScroller #flashFallback { display: none; }
-#imgScroller.videoScoller { position: absolute; top: 0; width: 100%; height: 100%; }
-#slideshowLoader { width: 100%; position: absolute; top: 0; height: 100%; display: none;  z-index:107; }
-.loaderImg { position: absolute; top: 50%; left: 50%; padding: 18px; margin-top: -30px; margin-left: -30px; }
-.loaderImg span { display: block; height: 24px; width: 24px; }
-.loaderOverlay { background: #fff; width: 100%; height: 100%; display: block; position: absolute; top: 0; z-index: 106; display: none; }
-#slideShowOverlayCont { display: none;}
-#slideshowBar { position: relative; width: 100%; position: absolute; bottom: -29px; z-index: 111; }
-#slideshowBar > a { display: inline-block; background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-icons.gif) no-repeat 10px 12px; height: 5px; width: 6px; padding: 12px 11px; text-indent: -9999px; border-right: 1px solid; position: relative; z-index: 101; }
-.progressHolder { padding: 8px 0 9px; position: absolute; top: 0; width: 100%; z-index: 100; }
-#slideshowBar .pause { background-position: 10px -22px; }
-#slideshowBar .pause:hover { background-position: 10px -39px; }
-#slideshowBar .play { background-position: 10px -5px; }
-#slideshowBar .play:hover { background-position: 10px 13px; }	
-.progressWrapper { margin: 0 15px 0 40px; }
-.progressTracks { width: 100%; height: 3px; display: inline-block; border: 1px solid; display: block; margin-top: 4px; overflow: hidden; }
-.progressBar { background-color: #327BA8; border-right: 1px solid; width: 0%; display: block; height: 3px; }
-.imgLeft, .imgRight { display: block; position: absolute; top: 50%; height: 9px; width: 20px; margin-top: -30px; padding: 26px 20px 25px 21px; z-index: 111; }
-.imgLeft span, .imgRight span { text-indent: -9999px; display: block; background: url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif); width: 20px; height: 9px; }
-.imgLeft { left: 0; }
-.imgLeft span { background-position: -3px -59px; }
-.imgLeft:hover span { background-position: -3px -78px; }
-.imgRight { right: 0; }
-.imgRight span { background-position: -3px -97px; }
-.imgRight:hover span { background-position: -3px -116px; }
-#slideShowOverlay { position: absolute; bottom: -38px; left: 0; width: 100%; height: 156px; z-index: 150; overflow: hidden; }	
-#slideShowOverlay .overlayContent { color: #fff; width: 100%; position: absolute; height: 156px; bottom: 0; }
-#slideShowOverlay .overlayContent .right { width: 630px; }
-#slideShowOverlay .right { text-align: right; padding: 24px 30px 0 0; overflow: hidden; max-height: 84px; }
-#slideShowOverlay h1, #slideShowOverlay h2 { font-size: 18px; line-height: 20px; color: #fff; padding-bottom: 12px; text-transform: uppercase; }
-#slideShowOverlay a { color: #fff; }
-#slideShowOverlay a:hover { color: #fff; text-decoration: underline; }
-#slideShowOverlay p { padding-bottom: 14px; }
-#slideShowOverlay p a { text-decoration: underline; }
-#slideShowOverlay .credits { position: absolute; right: 30px; bottom: 20px; padding: 0;font-size: 11px; }
-#slideShowOverlay .credits span { background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px; padding-left: 10px; margin-left: 6px; }
-#slideShowOverlay .credits span:first-child { background: none; }
-#slideShowOverlay .credits div { background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px; padding-left: 10px; margin-left: 6px; display: inline; }
-#slideShowFooter { width: 100%; background: #fff; position: relative; z-index: 102; }
-#slideshowThumbs { margin: 0 auto; display:table; }
-#thumbsMask { width: auto; float: left; overflow: hidden; padding-bottom: 16px; height:41px; }
-#thumbsMask ul { display: none; }
-#thumbsMask ul li a { display: none; }
-.js #thumbsMask { width: 666px; }
-.js #thumbsMask ul { display: block; }
-#slideshowThumbs > span { background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-ends.gif); height: 39px; width: 86px; display: block; float: left; display: none; }
-.js #slideshowThumbs > span { display: block; }
-#slideshowThumbs ul { position: relative; padding: 0; }
-.js #slideshowThumbs ul { width: 99999px; background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-thumbs.gif) repeat-x top left; }
-#slideshowThumbs ul li { float: left; border-bottom: 3px solid #fff; height: 38px; width: 74px; overflow: hidden; }
-#slideshowThumbs ul li.selected { border-bottom: 3px solid; }
-#slideshowThumbs .rightEnd { background-position: -86px 0; }
-/*#thumbsMask .selected { display: block; height: 3px; width: 74px; height: 3px; position: absolute; top: 38px; left: 50%; margin-left: -37px; }*/	
-#slideshowNavigation { padding: 0 20px 22px 19px; position: relative; height:18px; }
-#slideshowNavigation ul { padding: 0; position: absolute; top: -4px; }
-.leftControls { left: 21px; }
-.rightControls { right: 20px; }
-#slideshowNavigation ul li { float: left; }
-#slideshowNavigation ul li a { text-transform: uppercase; font-size: 16px; background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif) no-repeat 0 11px; padding: 0 10px 0 11px; }	
-#slideshowNavigation ul li:first-child a { background: 0 none; }
-#slideshowNavigation ul li .overviewTrigger { display: none; }
-.js #slideshowNavigation ul li .overviewTrigger {display:block; }
-.imgInfoBox {display:none;margin:0 auto;}
-.js .imgInfoBox {display:table;}	
-.imgInfoLeft,.imgInfoRight,.imgSkipLeft,.imgSkipRight{display:inline-block;height:18px;width:25px;text-indent:-9999px; background:url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif) 0 -27px;margin:0 10px 0 0;}
-.imgInfoRight { background-position: 0 -8px; margin: 0 0 0 10px; }
-.imgSkipLeft { background-position: 0 -161px; margin: 0; padding-right: 5px; display: none; }
-.imgSkipRight { background-position: 2px -142px; margin: 0; padding-left: 5px; display: none; }
-.imgInfoLeft:hover, .imgInfoRight:hover, .imgSkipLeft:hover, .imgSkipRight:hover { background-color: #000; }
-.imgInfoLeft.disabled, .imgInfoRight.disabled { background-color: #E0E0E0!important; cursor: default; }
+
+#pageContent.slideshowTemplate {
+  background: #eee url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow.gif) repeat-y top;
+  position: relative;
+  overflow: visible;
+}
+
+#slideshowImg {
+  position: relative;
+  min-height: 478px;
+}
+
+.slideShowSpacer {
+  width: 100%;
+  padding-bottom: 51.5%;
+  height: 0;
+}
+
+#imgMask {
+  overflow: hidden;
+  position: relative;
+}
+
+#imgScroller {
+  position: relative
+}
+
+#imgScroller img {
+  float: left;
+  display: block;
+}
+
+#imgScroller #flashFallback {
+  margin: -62px 0 0 -225px;
+  height: 125px;
+  width: 450px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#flashFallback .fallbackHeader {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+#flashFallback .fallbackSubheader {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+#flashFallback .divider {
+  background-image: url(http://s.abhishekmunie.com/officialfiles/img/fallback-divider.gif);
+  width: 90px;
+  height: 1px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+#flashFallback .getFlash {
+  font-size: 16px
+}
+
+.js #imgScroller #flashFallback {
+  display: none
+}
+
+#imgScroller.videoScoller {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#slideshowLoader {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: none;
+  z-index: 107;
+}
+
+.loaderImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 18px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.loaderImg span {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.loaderOverlay {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 106;
+  display: none;
+}
+
+#slideShowOverlayCont {
+  display: none
+}
+
+#slideshowBar {
+  position: relative;
+  width: 100%;
+  position: absolute;
+  bottom: -29px;
+  z-index: 111;
+}
+
+#slideshowBar > a {
+  display: inline-block;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-icons.gif) no-repeat 10px 12px;
+  height: 5px;
+  width: 6px;
+  padding: 12px 11px;
+  text-indent: -9999px;
+  border-right: 1px solid;
+  position: relative;
+  z-index: 101;
+}
+
+.progressHolder {
+  padding: 8px 0 9px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#slideshowBar .pause {
+  background-position: 10px -22px
+}
+
+#slideshowBar .pause:hover {
+  background-position: 10px -39px
+}
+
+#slideshowBar .play {
+  background-position: 10px -5px
+}
+
+#slideshowBar .play:hover {
+  background-position: 10px 13px
+}
+
+.progressWrapper {
+  margin: 0 15px 0 40px
+}
+
+.progressTracks {
+  width: 100%;
+  height: 3px;
+  display: inline-block;
+  border: 1px solid;
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  background-color: #327BA8;
+  border-right: 1px solid;
+  width: 0%;
+  display: block;
+  height: 3px;
+}
+
+.imgLeft,
+.imgRight {
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 9px;
+  width: 20px;
+  margin-top: -30px;
+  padding: 26px 20px 25px 21px;
+  z-index: 111;
+}
+
+.imgLeft span,
+.imgRight span {
+  text-indent: -9999px;
+  display: block;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif);
+  width: 20px;
+  height: 9px;
+}
+
+.imgLeft {
+  left: 0
+}
+
+.imgLeft span {
+  background-position: -3px -59px
+}
+
+.imgLeft:hover span {
+  background-position: -3px -78px
+}
+
+.imgRight {
+  right: 0
+}
+
+.imgRight span {
+  background-position: -3px -97px
+}
+
+.imgRight:hover span {
+  background-position: -3px -116px
+}
+
+#slideShowOverlay {
+  position: absolute;
+  bottom: -38px;
+  left: 0;
+  width: 100%;
+  height: 156px;
+  z-index: 150;
+  overflow: hidden;
+}
+
+#slideShowOverlay .overlayContent {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  height: 156px;
+  bottom: 0;
+}
+
+#slideShowOverlay .overlayContent .right {
+  width: 630px
+}
+
+#slideShowOverlay .right {
+  text-align: right;
+  padding: 24px 30px 0 0;
+  overflow: hidden;
+  max-height: 84px;
+}
+
+#slideShowOverlay h1,
+#slideShowOverlay h2 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+#slideShowOverlay a {
+  color: #fff
+}
+
+#slideShowOverlay a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#slideShowOverlay p {
+  padding-bottom: 14px
+}
+
+#slideShowOverlay p a {
+  text-decoration: underline
+}
+
+#slideShowOverlay .credits {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  padding: 0;
+  font-size: 11px;
+}
+
+#slideShowOverlay .credits span {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
+  padding-left: 10px;
+  margin-left: 6px;
+}
+
+#slideShowOverlay .credits span:first-child {
+  background: none
+}
+
+#slideShowOverlay .credits div {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-second-nav.gif) no-repeat 0 8px;
+  padding-left: 10px;
+  margin-left: 6px;
+  display: inline;
+}
+
+#slideShowFooter {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 102;
+}
+
+#slideshowThumbs {
+  margin: 0 auto;
+  display: table;
+}
+
+#thumbsMask {
+  width: auto;
+  float: left;
+  overflow: hidden;
+  padding-bottom: 16px;
+  height: 41px;
+}
+
+#thumbsMask ul {
+  display: none
+}
+
+#thumbsMask ul li a {
+  display: none
+}
+
+.js #thumbsMask {
+  width: 666px
+}
+
+.js #thumbsMask ul {
+  display: block
+}
+
+#slideshowThumbs > span {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-ends.gif);
+  height: 39px;
+  width: 86px;
+  display: block;
+  float: left;
+  display: none;
+}
+
+.js #slideshowThumbs > span {
+  display: block
+}
+
+#slideshowThumbs ul {
+  position: relative;
+  padding: 0;
+}
+
+.js #slideshowThumbs ul {
+  width: 99999px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-slideshow-thumbs.gif) repeat-x top left;
+}
+
+#slideshowThumbs ul li {
+  float: left;
+  border-bottom: 3px solid #fff;
+  height: 38px;
+  width: 74px;
+  overflow: hidden;
+}
+
+#slideshowThumbs ul li.selected {
+  border-bottom: 3px solid
+}
+
+#slideshowThumbs .rightEnd {
+  background-position: -86px 0
+}
+
+/*#thumbsMask .selected { display: block; height: 3px; width: 74px; height: 3px; position: absolute; top: 38px; left: 50%; margin-left: -37px; }_NO__DOTCOMMA__AFTER___NO__DOTCOMMA__AFTER__*/
+
+#slideshowNavigation {
+  padding: 0 20px 22px 19px;
+  position: relative;
+  height: 18px;
+}
+
+#slideshowNavigation ul {
+  padding: 0;
+  position: absolute;
+  top: -4px;
+}
+
+.leftControls {
+  left: 21px
+}
+
+.rightControls {
+  right: 20px
+}
+
+#slideshowNavigation ul li {
+  float: left
+}
+
+#slideshowNavigation ul li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/div-site-nav.gif) no-repeat 0 11px;
+  padding: 0 10px 0 11px;
+}
+
+#slideshowNavigation ul li:first-child a {
+  background: 0 none
+}
+
+#slideshowNavigation ul li .overviewTrigger {
+  display: none
+}
+
+.js #slideshowNavigation ul li .overviewTrigger {
+  display: block
+}
+
+.imgInfoBox {
+  display: none;
+  margin: 0 auto;
+}
+
+.js .imgInfoBox {
+  display: table
+}
+
+.imgInfoLeft,
+.imgInfoRight,
+.imgSkipLeft,
+.imgSkipRight {
+  display: inline-block;
+  height: 18px;
+  width: 25px;
+  text-indent: -9999px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-sildeshow-arrows.gif) 0 -27px;
+  margin: 0 10px 0 0;
+}
+
+.imgInfoRight {
+  background-position: 0 -8px;
+  margin: 0 0 0 10px;
+}
+
+.imgSkipLeft {
+  background-position: 0 -161px;
+  margin: 0;
+  padding-right: 5px;
+  display: none;
+}
+
+.imgSkipRight {
+  background-position: 2px -142px;
+  margin: 0;
+  padding-left: 5px;
+  display: none;
+}
+
+.imgInfoLeft:hover,
+.imgInfoRight:hover,
+.imgSkipLeft:hover,
+.imgSkipRight:hover {
+  background-color: #000
+}
+
+.imgInfoLeft.disabled,
+.imgInfoRight.disabled {
+  background-color: #E0E0E0!important;
+  cursor: default;
+}
+
 /* ARTICLE LETTERS ---------------------------------------------------------*/
-.cA,.cB,.cC,.cD,.cE,.cF,.cG,.cH,.cI,.cJ,.cK,.cL,.cM,.cN,.cO,.cP,.cQ,.cR,.cS,.cT,.cU,.cV,.cW,.cX,.cY,.cZ
-{float:left;width:110px;height:103px;margin-top:6px;display:block;text-indent:-9999px;background:url(http://s.abhishekmunie.com/officialfiles/img/bg-fonts.png) no-repeat;}
-.cA{background-position:0 0;width:110px;}
-.cB{background-position:0 -114px;width:91px;}
-.cC{background-position:0 -227px;width:105px;}
-.cD{background-position:0 -340px;width:105px;}
-.cE{background-position:0 -453px;width:94px;}
-.cF{background-position:0 -566px;width:92px;}
-.cG{background-position:0 -679px;width:106px;}
-.cH{background-position:0 -792px;width:115px;}
-.cI{background-position:0 -904px;width:86px;}
-.cJ{background-position:0 -1017px;width:86px;}
-.cK{background-position:0 -1130px;width:110px;}
-.cL{background-position:0 -1244px;width:90px;}
-.cM{background-position:0 -1357px;width:133px;}
-.cN{background-position:0 -1470px;width:117px;}
-.cO{background-position:0 -1582px;width:114px;}
-.cP{background-position:0 -1696px;width:94px;}
-.cQ{background-position:0 -1809px;width:99px;}
-.cR{background-position:0 -1921px;width:107px;}
-.cS{background-position:0 -2034px;width:83px;}
-.cT{background-position:0 -2148px;width:101px;}
-.cU{background-position:0 -2259px;width:113px;}
-.cV{background-position:0 -2487px;width:115px;}
-.cW{background-position:0 -2374px;width:161px;}
-.cX{background-position:0 -2599px;width:112px;}
-.cY{background-position:0 -2712px;width:109px;}
-.cZ{background-position:0 -2826px;width:90px;}
+
+.cA,
+.cB,
+.cC,
+.cD,
+.cE,
+.cF,
+.cG,
+.cH,
+.cI,
+.cJ,
+.cK,
+.cL,
+.cM,
+.cN,
+.cO,
+.cP,
+.cQ,
+.cR,
+.cS,
+.cT,
+.cU,
+.cV,
+.cW,
+.cX,
+.cY,
+.cZ {
+  float: left;
+  width: 110px;
+  height: 103px;
+  margin-top: 6px;
+  display: block;
+  text-indent: -9999px;
+  background: url(http://s.abhishekmunie.com/officialfiles/img/bg-fonts.png) no-repeat;
+}
+
+.cA {
+  background-position: 0 0;
+  width: 110px;
+}
+
+.cB {
+  background-position: 0 -114px;
+  width: 91px;
+}
+
+.cC {
+  background-position: 0 -227px;
+  width: 105px;
+}
+
+.cD {
+  background-position: 0 -340px;
+  width: 105px;
+}
+
+.cE {
+  background-position: 0 -453px;
+  width: 94px;
+}
+
+.cF {
+  background-position: 0 -566px;
+  width: 92px;
+}
+
+.cG {
+  background-position: 0 -679px;
+  width: 106px;
+}
+
+.cH {
+  background-position: 0 -792px;
+  width: 115px;
+}
+
+.cI {
+  background-position: 0 -904px;
+  width: 86px;
+}
+
+.cJ {
+  background-position: 0 -1017px;
+  width: 86px;
+}
+
+.cK {
+  background-position: 0 -1130px;
+  width: 110px;
+}
+
+.cL {
+  background-position: 0 -1244px;
+  width: 90px;
+}
+
+.cM {
+  background-position: 0 -1357px;
+  width: 133px;
+}
+
+.cN {
+  background-position: 0 -1470px;
+  width: 117px;
+}
+
+.cO {
+  background-position: 0 -1582px;
+  width: 114px;
+}
+
+.cP {
+  background-position: 0 -1696px;
+  width: 94px;
+}
+
+.cQ {
+  background-position: 0 -1809px;
+  width: 99px;
+}
+
+.cR {
+  background-position: 0 -1921px;
+  width: 107px;
+}
+
+.cS {
+  background-position: 0 -2034px;
+  width: 83px;
+}
+
+.cT {
+  background-position: 0 -2148px;
+  width: 101px;
+}
+
+.cU {
+  background-position: 0 -2259px;
+  width: 113px;
+}
+
+.cV {
+  background-position: 0 -2487px;
+  width: 115px;
+}
+
+.cW {
+  background-position: 0 -2374px;
+  width: 161px;
+}
+
+.cX {
+  background-position: 0 -2599px;
+  width: 112px;
+}
+
+.cY {
+  background-position: 0 -2712px;
+  width: 109px;
+}
+
+.cZ {
+  background-position: 0 -2826px;
+  width: 90px;
+}
 
 /*----------------------------------------------------------------------
  [Screen Stylesheet] 
  Desc: IE7 bug fixes.
  -----------------------------------------------------------------------*/
+
 /* GENERAL SHARED STYLES ----------------------------------------------*/
-.ie7 a {line-height:16px;}
-.ie7 #sectionHeader.higherLevelHeader {position:static;}
-.ie7 #sectionHeader.higherLevelHeader img {position:relative;z-index:2000;}
-.ie7  #sectionHeader.higherLevelHeader + .ie7 #pageContent #mainContent dl {margin-bottom:30px;}
-.ie7 .minimalPage_flexi .inner {position:relative;left:-210px;}
-.ie7 q {line-height:18px;}
-.ie7 #mask {zoom:1;}
-.ie7 .newsListPag {margin-bottom: 16px;padding:0;height:30px;}
-.ie7 .flatContentTemplate .col5 {margin-left:15px;width:195px;}
-.ie7 .messagecontrols {padding-top:30px;}
-.ie7 #mainContent .shareTrack {zoom:1;}
+
+.ie7 a {
+  line-height: 16px
+}
+
+.ie7 #sectionHeader.higherLevelHeader {
+  position: static
+}
+
+.ie7 #sectionHeader.higherLevelHeader img {
+  position: relative;
+  z-index: 2000;
+}
+
+.ie7  #sectionHeader.higherLevelHeader + .ie7 #pageContent #mainContent dl {
+  margin-bottom: 30px
+}
+
+.ie7 .minimalPage_flexi .inner {
+  position: relative;
+  left: -210px;
+}
+
+.ie7 q {
+  line-height: 18px
+}
+
+.ie7 #mask {
+  zoom: 1
+}
+
+.ie7 .newsListPag {
+  margin-bottom: 16px;
+  padding: 0;
+  height: 30px;
+}
+
+.ie7 .flatContentTemplate .col5 {
+  margin-left: 15px;
+  width: 195px;
+}
+
+.ie7 .messagecontrols {
+  padding-top: 30px
+}
+
+.ie7 #mainContent .shareTrack {
+  zoom: 1
+}
+
 /* SLIDESHOW ----------------------------------------------------------*/
-.ie7 #thumbsMask {position:relative;z-index:102;}
-.ie7 #slideshowNavigation {position: relative;z-index:102;}
-.ie7 #slideshowThumbs {display:block;width:850px;margin:0 auto;}
-.ie7 .imgInfoBox {width:130px;margin:0 auto;display:block;position:relative;}
-.ie7 .imgInfoBox a, .ie7 .imgInfoBox span {display:inline;zoom:1;}
-.ie7 .imgInfoBox a {text-indent:0;font-size:0;}
-.ie7 #slideshowBar {display:none;}
-.ie7 #slideShowOverlay, .ie7 #slideshowImg {zoom:1;z-index:115;}
-.ie7 #slideshowThumbs {text-align:center;display:block;}
-.ie7 .imgInfoLeft, .ie7 .imgInfoRight { }
-.ie7 .imgSkipLeft, .ie7 .imgSkipRight {display:none!important;}
+
+.ie7 #thumbsMask {
+  position: relative;
+  z-index: 102;
+}
+
+.ie7 #slideshowNavigation {
+  position: relative;
+  z-index: 102;
+}
+
+.ie7 #slideshowThumbs {
+  display: block;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.ie7 .imgInfoBox {
+  width: 130px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.ie7 .imgInfoBox a,
+.ie7 .imgInfoBox span {
+  display: inline;
+  zoom: 1;
+}
+
+.ie7 .imgInfoBox a {
+  text-indent: 0;
+  font-size: 0;
+}
+
+.ie7 #slideshowBar {
+  display: none
+}
+
+.ie7 #slideShowOverlay,
+.ie7 #slideshowImg {
+  zoom: 1;
+  z-index: 115;
+}
+
+.ie7 #slideshowThumbs {
+  text-align: center;
+  display: block;
+}
+
+.ie7 .imgInfoLeft,
+.ie7 .imgInfoRight {
+
+}
+
+.ie7 .imgSkipLeft,
+.ie7 .imgSkipRight {
+  display: none!important
+}
+
 /* LANDING -----------------------------------------------------------*/
 
 /*----------------------------------------------------------------------
  [Screen Stylesheet] 
  Desc: IE7 bug fixes.
  -----------------------------------------------------------------------*/
-.ie6 div.BrowserNotice {background:url(bg.gif) no-repeat;padding:235px 0 0 40px;width:575px;}
-.ie6 div.BrowserNotice h1 {margin-bottom:50px;}
-.ie6 div.BrowserNotice h2 {margin-bottom:15px;text-indent:-9999px;background:url(header.gif);padding:0;height:54px;width:451px;}
+
+.ie6 div.BrowserNotice {
+  background: url(bg.gif) no-repeat;
+  padding: 235px 0 0 40px;
+  width: 575px;
+}
+
+.ie6 div.BrowserNotice h1 {
+  margin-bottom: 50px
+}
+
+.ie6 div.BrowserNotice h2 {
+  margin-bottom: 15px;
+  text-indent: -9999px;
+  background: url(header.gif);
+  padding: 0;
+  height: 54px;
+  width: 451px;
+}
+
 .ie6 div.BrowserNotice h1 a {
-    background:url(../../styles/images/logo-.png) no-repeat;
-    text-indent:-9999px;
-    display:block;
-    height:17px;
-    width:187px;
+  background: url(../../styles/images/logo-.png) no-repeat;
+  text-indent: -9999px;
+  display: block;
+  height: 17px;
+  width: 187px;
 }
-.ie6 div.BrowserNotice p, div.BrowserNotice ul a {font-family:Georgia;font-size:11px;}
-.ie6 div.BrowserNotice ul {margin-top:30px;margin-left:-45px;}
-.ie6 div.BrowserNotice li {margin-left:45px;text-align:center;padding:1px 0;display:inline;zoom:1;}
+
+.ie6 div.BrowserNotice p,
+div.BrowserNotice ul a {
+  font-family: Georgia;
+  font-size: 11px;
+}
+
+.ie6 div.BrowserNotice ul {
+  margin-top: 30px;
+  margin-left: -45px;
+}
+
+.ie6 div.BrowserNotice li {
+  margin-left: 45px;
+  text-align: center;
+  padding: 1px 0;
+  display: inline;
+  zoom: 1;
+}
+
 .ie6 div.BrowserNotice ul a {
-    background-position:center 0;
-    background-repeat:no-repeat;
-    white-space:nowrap;
-    padding-top:57px;
-    display:block;
-    height:0;
-    width:47px;
-    color:#000;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  padding-top: 57px;
+  display: block;
+  height: 0;
+  width: 47px;
+  color: #000;
 }
-.ie6 div.BrowserNotice li.IE a {background-image:url(/officialfiles/ie.gif);}
-.ie6 div.BrowserNotice li.FF a {background-image:url(/officialfiles/firefox.gif);}
-.ie6 div.BrowserNotice li.SF a {background-image:url(/officialfiles/safari.gif);}
-.ie6 div.BrowserNotice li.OP a {background-image:url(/officialfiles/opera.gif);}
-.ie6 div.BrowserNotice li.CH a {background-image:url(/officialfiles/chrome.gif);}
+
+.ie6 div.BrowserNotice li.IE a {
+  background-image: url(/officialfiles/ie.gif)
+}
+
+.ie6 div.BrowserNotice li.FF a {
+  background-image: url(/officialfiles/firefox.gif)
+}
+
+.ie6 div.BrowserNotice li.SF a {
+  background-image: url(/officialfiles/safari.gif)
+}
+
+.ie6 div.BrowserNotice li.OP a {
+  background-image: url(/officialfiles/opera.gif)
+}
+
+.ie6 div.BrowserNotice li.CH a {
+  background-image: url(/officialfiles/chrome.gif)
+}
+
 /* LANDING -----------------------------------------------------------*/
 
 /* ============================================================================================================= *
@@ -777,191 +2773,591 @@ eventsTemplate {}
  * ============================================================================================================= */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BLUE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* COLOUR: #3e9ad2 */
+
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-a.blue, .blue button {color:#3e9ad2;}
-.blue a:hover, .blue button:hover, .blue button:focus, .blue a:focus,.blue a:active {color:#000;}
-/* GOLBAL SHARED STYLES -----------------------------------------------*/
-.blue ul#siteNavigation li a {color:#3e9ad2;}
-.blue #secondNavigation {background:#3e9ad2;}
-.blue .artworkOverlay {background:url(http://s.abhishekmunie.com/officialfiles/img/blueArt.png);}
-.blue .landingBlocks > ul > li > .box {border-color:#3e9ad2;}
-/* SLIDESHOW --------------------------------------------------------------*/
-.blue #slideshowThumbs ul li:hover, .blue #slideshowThumbs ul li.selected {border-bottom-color:#3e9ad2;}
-.blue #thumbsMask .selected {background:#3e9ad2;}
-.blue #slideshowBar {background-color:#3e9ad2;}
-.blue #slideshowBar > a {border-color:#76b7df;}
-.blue .progressTracks {border-color:#9fcde9;}
-.blue .progressBar {border-color:#9fcde9;}
-.blue .imgInfoLeft, .blue .imgInfoRight, .blue .imgLeft, .blue .imgRight, .blue .imgSkipRight, .blue .imgSkipLeft {background-color:#3e9ad2;}
-.blue .overlayContent {background-color:#3e9ad2;}
-.blue .loaderImg {background:#3e9ad2;}
-.blue .loaderImg span {background:url('http://s.abhishekmunie.com/officialfiles/img/blueLoader.gif');}
-/* - standard form - */
-.blue .form .error {border-color:#3e9ad2 !important;}
-.blue .form .validationMessages {color:#3e9ad2;}
-.blue .form .labelError {background-image:url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png');}
-.blue .termsTemplate .message {color:#3e9ad2;font-weight:bold;}
-/* - error template - */
-.blue .errorTemplate h1 {color:#3e9ad2;}
-li.blueNav a strong {color:#3e9ad2;} li.blueNav div.menubutton {background-color:#3e9ad2;}
+a.blue,
+.blue button {
+  color: #3e9ad2
+}
 
-nav .blue{background-color:#3e9ad2;}
-nav .blue div.TopSubNav{background-color:#3e9ad2;}
+.blue a:hover,
+.blue button:hover,
+.blue button:focus,
+.blue a:focus,
+.blue a:active {
+  color: #000
+}
+
+/* GOLBAL SHARED STYLES -----------------------------------------------*/
+
+.blue ul#siteNavigation li a {
+  color: #3e9ad2
+}
+
+.blue #secondNavigation {
+  background: #3e9ad2
+}
+
+.blue .artworkOverlay {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/blueArt.png)
+}
+
+.blue .landingBlocks > ul > li > .box {
+  border-color: #3e9ad2
+}
+
+/* SLIDESHOW --------------------------------------------------------------*/
+
+.blue #slideshowThumbs ul li:hover,
+.blue #slideshowThumbs ul li.selected {
+  border-bottom-color: #3e9ad2
+}
+
+.blue #thumbsMask .selected {
+  background: #3e9ad2
+}
+
+.blue #slideshowBar {
+  background-color: #3e9ad2
+}
+
+.blue #slideshowBar > a {
+  border-color: #76b7df
+}
+
+.blue .progressTracks {
+  border-color: #9fcde9
+}
+
+.blue .progressBar {
+  border-color: #9fcde9
+}
+
+.blue .imgInfoLeft,
+.blue .imgInfoRight,
+.blue .imgLeft,
+.blue .imgRight,
+.blue .imgSkipRight,
+.blue .imgSkipLeft {
+  background-color: #3e9ad2
+}
+
+.blue .overlayContent {
+  background-color: #3e9ad2
+}
+
+.blue .loaderImg {
+  background: #3e9ad2
+}
+
+.blue .loaderImg span {
+  background: url('http://s.abhishekmunie.com/officialfiles/img/blueLoader.gif')
+}
+
+/* - standard form - */
+
+.blue .form .error {
+  border-color: #3e9ad2 !important
+}
+
+.blue .form .validationMessages {
+  color: #3e9ad2
+}
+
+.blue .form .labelError {
+  background-image: url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png')
+}
+
+.blue .termsTemplate .message {
+  color: #3e9ad2;
+  font-weight: bold;
+}
+
+/* - error template - */
+
+.blue .errorTemplate h1 {
+  color: #3e9ad2
+}
+
+li.blueNav a strong {
+  color: #3e9ad2
+}
+
+li.blueNav div.menubutton {
+  background-color: #3e9ad2
+}
+
+nav .blue {
+  background-color: #3e9ad2
+}
+
+nav .blue div.TopSubNav {
+  background-color: #3e9ad2
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DARK ORANGE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* COLOUR: #b38e01 */
-/* GENERAL SHARED STYLES ----------------------------------------------*/
-.darkOrange a {color:#b38e01;}
-.darkOrange a:hover {color:#000;}
-.darkOrange .backLink, .darkOrange .upLink, .downLink {background-color:#b38e01;}
-/* GOLBAL SHARED STYLES -----------------------------------------------*/
-.darkOrange ul#siteNavigation li a {color:#b38e01;}
-.darkOrange #secondNavigation {background:#b38e01;}
-.darkOrange .artworkOverlay {background:url(http://s.abhishekmunie.com/officialfiles/img/darkOrangeArt.png);}
-.darkOrange .landingBlocks > ul > li > .box {border-color:#b38e01;}
-li.darkOrangeNav a strong {color:#b38e01;} li.darkOrangeNav div.menubutton {background-color:#b38e01;}
 
-nav .darkOrange{background-color:#b38e01;}
-nav .darkOrange div.TopSubNav{background-color:#b38e01;}
+/* COLOUR: #b38e01 */
+
+/* GENERAL SHARED STYLES ----------------------------------------------*/
+
+.darkOrange a {
+  color: #b38e01
+}
+
+.darkOrange a:hover {
+  color: #000
+}
+
+.darkOrange .backLink,
+.darkOrange .upLink,
+.downLink {
+  background-color: #b38e01
+}
+
+/* GOLBAL SHARED STYLES -----------------------------------------------*/
+
+.darkOrange ul#siteNavigation li a {
+  color: #b38e01
+}
+
+.darkOrange #secondNavigation {
+  background: #b38e01
+}
+
+.darkOrange .artworkOverlay {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/darkOrangeArt.png)
+}
+
+.darkOrange .landingBlocks > ul > li > .box {
+  border-color: #b38e01
+}
+
+li.darkOrangeNav a strong {
+  color: #b38e01
+}
+
+li.darkOrangeNav div.menubutton {
+  background-color: #b38e01
+}
+
+nav .darkOrange {
+  background-color: #b38e01
+}
+
+nav .darkOrange div.TopSubNav {
+  background-color: #b38e01
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FACEBOOK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* COLOUR: ##3b5998 */
-/* GENERAL SHARED STYLES ----------------------------------------------*/
-.facebook a {color:#3b5998;}
-.facebook a:hover {color:#000;}
-/* GOLBAL SHARED STYLES -----------------------------------------------*/
-.facebook ul#siteNavigation li a {color:#3b5998;}
-.facebook #secondNavigation {background-color:#3b5998;}
-.facebook .artworkOverlay {background-image:url('http://s.abhishekmunie.com/officialfiles/img/facebookArt.png');}
-.facebook .landingBlocks > ul > li > .box {border-color:#3b5998;}
-li.facebookNav a strong {color:#3b5998;} li.facebookNav div.menubutton {background-color:#3b5998;}
 
-nav .facebook{background-color:#3b5998;}
-nav .facebook div.TopSubNav{background-color:#3b5998;}
+/* COLOUR: ##3b5998 */
+
+/* GENERAL SHARED STYLES ----------------------------------------------*/
+
+.facebook a {
+  color: #3b5998
+}
+
+.facebook a:hover {
+  color: #000
+}
+
+/* GOLBAL SHARED STYLES -----------------------------------------------*/
+
+.facebook ul#siteNavigation li a {
+  color: #3b5998
+}
+
+.facebook #secondNavigation {
+  background-color: #3b5998
+}
+
+.facebook .artworkOverlay {
+  background-image: url('http://s.abhishekmunie.com/officialfiles/img/facebookArt.png')
+}
+
+.facebook .landingBlocks > ul > li > .box {
+  border-color: #3b5998
+}
+
+li.facebookNav a strong {
+  color: #3b5998
+}
+
+li.facebookNav div.menubutton {
+  background-color: #3b5998
+}
+
+nav .facebook {
+  background-color: #3b5998
+}
+
+nav .facebook div.TopSubNav {
+  background-color: #3b5998
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PURPLE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* COLOUR: #b38e01 */
-/* GENERAL SHARED STYLES ----------------------------------------------*/
-.purple a { color: #a27292; }
-.purple a:hover { color: #000; }
-/* GOLBAL SHARED STYLES -----------------------------------------------*/
-.purple ul#siteNavigation li a {color:#a27292;}
-.purple #secondNavigation {background:#a27292;}
-.purple .artworkOverlay {background:url('http://s.abhishekmunie.com/officialfilesImages/purpleArt.png');}
-.purple .landingBlocks > ul > li > .box {border-color:#a27292;}
-li.purpleNav a strong {color:#a27292;} li.purpleNav div.menubutton {background-color:#a27292;}
 
-nav .purple{background-color:#a27292;}
-nav .purple div.TopSubNav{background-color:#a27292;}
+/* COLOUR: #b38e01 */
+
+/* GENERAL SHARED STYLES ----------------------------------------------*/
+
+.purple a {
+  color: #a27292
+}
+
+.purple a:hover {
+  color: #000
+}
+
+/* GOLBAL SHARED STYLES -----------------------------------------------*/
+
+.purple ul#siteNavigation li a {
+  color: #a27292
+}
+
+.purple #secondNavigation {
+  background: #a27292
+}
+
+.purple .artworkOverlay {
+  background: url('http://s.abhishekmunie.com/officialfilesImages/purpleArt.png')
+}
+
+.purple .landingBlocks > ul > li > .box {
+  border-color: #a27292
+}
+
+li.purpleNav a strong {
+  color: #a27292
+}
+
+li.purpleNav div.menubutton {
+  background-color: #a27292
+}
+
+nav .purple {
+  background-color: #a27292
+}
+
+nav .purple div.TopSubNav {
+  background-color: #a27292
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* COLOUR: #bd542a */
-/* GENERAL SHARED STYLES ----------------------------------------------*/
-.red a, .red button {color:#bd542a;}
-.red a:hover, .red button:hover, .red button:focus, .red a:focus, .red a:active {color:#000;}
-/* GLOBAL SHARED STYLES -----------------------------------------------*/
-.red ul#siteNavigation li a {color:#bd542a;}
-.red #secondNavigation {background:#bd542a;}
-.red .artworkOverlay {background:url('http://s.abhishekmunie.com/officialfiles/img/redArt.png');}
-.red .landingBlocks > ul > li > .box {border-color:#bd542a;}
-/* - standard form - */
-.red .form .error {border-color:#bd542a !important; }
-.red .form .validationMessages {color:#bd542a;}
-.red .form .labelError {background-image:url('http://s.abhishekmunie.com/officialfiles/img/redAsterisk.png');}
-.red .messagesTemplate .message {color:#BD542A;font-weight:bold;}
-li.red a strong {color:#bd542a;} li.red div.menubutton {background-color:#bd542a;}
 
-nav .red{background-color:#bd542a;}
-nav .red div.TopSubNav{background-color:#bd542a;}
+/* COLOUR: #bd542a */
+
+/* GENERAL SHARED STYLES ----------------------------------------------*/
+
+.red a,
+.red button {
+  color: #bd542a
+}
+
+.red a:hover,
+.red button:hover,
+.red button:focus,
+.red a:focus,
+.red a:active {
+  color: #000
+}
+
+/* GLOBAL SHARED STYLES -----------------------------------------------*/
+
+.red ul#siteNavigation li a {
+  color: #bd542a
+}
+
+.red #secondNavigation {
+  background: #bd542a
+}
+
+.red .artworkOverlay {
+  background: url('http://s.abhishekmunie.com/officialfiles/img/redArt.png')
+}
+
+.red .landingBlocks > ul > li > .box {
+  border-color: #bd542a
+}
+
+/* - standard form - */
+
+.red .form .error {
+  border-color: #bd542a !important
+}
+
+.red .form .validationMessages {
+  color: #bd542a
+}
+
+.red .form .labelError {
+  background-image: url('http://s.abhishekmunie.com/officialfiles/img/redAsterisk.png')
+}
+
+.red .messagesTemplate .message {
+  color: #BD542A;
+  font-weight: bold;
+}
+
+li.red a strong {
+  color: #bd542a
+}
+
+li.red div.menubutton {
+  background-color: #bd542a
+}
+
+nav .red {
+  background-color: #bd542a
+}
+
+nav .red div.TopSubNav {
+  background-color: #bd542a
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TEAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* COLOUR: #0c9895 */
-/* GENERAL SHARED STYLES ----------------------------------------------*/
-.teal a {color:#0c9895;}
-.teal a:hover {color:#000;}
-/* GOLBAL SHARED STYLES -----------------------------------------------*/
-.teal ul#siteNavigation li a {color: #0c9895; }
-.teal #secondNavigation {background-color:#0c9895;}
-.teal .artworkOverlay {background-image:url('http://s.abhishekmunie.com/officialfiles/img/tealArt.png');}
-.teal .landingBlocks > ul > li > .box {border-color:#0c9895;}
-li.tealNav a strong {color:#0c9895;} li.tealNav div.menubutton {background-color:#0c9895;}
 
-nav .teal{background-color:#0c9895;}
-nav .teal div.TopSubNav{background-color:#0c9895;}
+/* COLOUR: #0c9895 */
+
+/* GENERAL SHARED STYLES ----------------------------------------------*/
+
+.teal a {
+  color: #0c9895
+}
+
+.teal a:hover {
+  color: #000
+}
+
+/* GOLBAL SHARED STYLES -----------------------------------------------*/
+
+.teal ul#siteNavigation li a {
+  color: #0c9895
+}
+
+.teal #secondNavigation {
+  background-color: #0c9895
+}
+
+.teal .artworkOverlay {
+  background-image: url('http://s.abhishekmunie.com/officialfiles/img/tealArt.png')
+}
+
+.teal .landingBlocks > ul > li > .box {
+  border-color: #0c9895
+}
+
+li.tealNav a strong {
+  color: #0c9895
+}
+
+li.tealNav div.menubutton {
+  background-color: #0c9895
+}
+
+nav .teal {
+  background-color: #0c9895
+}
+
+nav .teal div.TopSubNav {
+  background-color: #0c9895
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~XMAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* COLOUR: #076e48 */
+
 /* GENERAL SHARED STYLES ----------------------------------------------*/
-/*a, button { color: #076e48;  }*/
-.xmas a:hover, .xmas button:hover, .xmas button:focus, .xmas a:focus, .xmas a:active {color:#000;}
+
+/*a, button { color: #076e48;  }_NO__DOTCOMMA__AFTER___NO__DOTCOMMA__AFTER__*/
+
+.xmas a:hover,
+.xmas button:hover,
+.xmas button:focus,
+.xmas a:focus,
+.xmas a:active {
+  color: #000
+}
+
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
-.xmas ul#siteNavigation li a {color:#076e48;}
-.xmas #secondNavigation {background:#076e48;}
-.xmas .artworkOverlay {background:url(http://s.abhishekmunie.com/officialfiles/img/xmasArt.png);}
-.xmas .artworkOverlayflip {background:url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png);}
-.xmas .landingBlocks > ul > li > .box { border-color:#076e48; }
+
+.xmas ul#siteNavigation li a {
+  color: #076e48
+}
+
+.xmas #secondNavigation {
+  background: #076e48
+}
+
+.xmas .artworkOverlay {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt.png)
+}
+
+.xmas .artworkOverlayflip {
+  background: url(http://s.abhishekmunie.com/officialfiles/img/xmasArt-flip.png)
+}
+
+.xmas .landingBlocks > ul > li > .box {
+  border-color: #076e48
+}
+
 /* SLIDESHOW --------------------------------------------------------------*/
-.xmas #slideshowThumbs ul li:hover, .xmas #slideshowThumbs ul li.selected {border-bottom-color:#076e48;}
-.xmas #thumbsMask .selected {background:#076e48;}
-.xmas #slideshowBar {background-color:#076e48;}
-.xmas #slideshowBar > a {border-color:#76b7df;}
-.xmas .progressTracks {border-color:#9fcde9;}
-.xmas .progressBar {border-color:#9fcde9;}
-.xmas .imgInfoLeft, .xmas .imgInfoRight, .xmas .imgLeft, .xmas .imgRight, .xmas .imgSkipRight, .xmas .imgSkipLeft {background-color:#076e48;}
-.xmas .overlayContent {background-color:#076e48;}
-.xmas .loaderImg {background:#076e48;}
-.xmas .loaderImg span {background:url('http://s.abhishekmunie.com/officialfiles/img/xmasLoader.gif');}
+
+.xmas #slideshowThumbs ul li:hover,
+.xmas #slideshowThumbs ul li.selected {
+  border-bottom-color: #076e48
+}
+
+.xmas #thumbsMask .selected {
+  background: #076e48
+}
+
+.xmas #slideshowBar {
+  background-color: #076e48
+}
+
+.xmas #slideshowBar > a {
+  border-color: #76b7df
+}
+
+.xmas .progressTracks {
+  border-color: #9fcde9
+}
+
+.xmas .progressBar {
+  border-color: #9fcde9
+}
+
+.xmas .imgInfoLeft,
+.xmas .imgInfoRight,
+.xmas .imgLeft,
+.xmas .imgRight,
+.xmas .imgSkipRight,
+.xmas .imgSkipLeft {
+  background-color: #076e48
+}
+
+.xmas .overlayContent {
+  background-color: #076e48
+}
+
+.xmas .loaderImg {
+  background: #076e48
+}
+
+.xmas .loaderImg span {
+  background: url('http://s.abhishekmunie.com/officialfiles/img/xmasLoader.gif')
+}
+
 /* - standard form - */
-.xmas .form .error {border-color:#076e48 !important;}
-.xmas .form .validationMessages {color:#076e48;}
-.xmas .form .labelError {background-image:url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png');}
-.xmas .termsTemplate .message {color:#076e48;font-weight:bold;}
+
+.xmas .form .error {
+  border-color: #076e48 !important
+}
+
+.xmas .form .validationMessages {
+  color: #076e48
+}
+
+.xmas .form .labelError {
+  background-image: url('http://s.abhishekmunie.com/officialfiles/img/blueAsterisk.png')
+}
+
+.xmas .termsTemplate .message {
+  color: #076e48;
+  font-weight: bold;
+}
+
 /* - error template - */
-.xmas .errorTemplate h1 {color:#076e48;}
-li.xmasNav a strong {color:#076e48;} li.xmasNav div.menubutton {background-color:#076e48;}
 
-nav .xmas{background-color:#076e48;}
-nav .xmas div.TopSubNav{background-color:#076e48;}
+.xmas .errorTemplate h1 {
+  color: #076e48
+}
+
+li.xmasNav a strong {
+  color: #076e48
+}
+
+li.xmasNav div.menubutton {
+  background-color: #076e48
+}
+
+nav .xmas {
+  background-color: #076e48
+}
+
+nav .xmas div.TopSubNav {
+  background-color: #076e48
+}
+
 /* ============================================================================================================= */
-
 
 /* ============================================================================================================= *
  * =============================================== COLOR SCHEMES =============================================== *
  * ============================================================================================================= */
-.startup #MyNav{
-    -webkit-animation-name:easingReveal;
-    -webkit-animation-duration:1.5s;
-    -webkit-animation-timing-function:linear;
-    visibility:visible;
-}.no-js #MyNav{
-    -khtml-transition:margin-top 1.5s ease-in-out;
-    -webkit-transition:margin-top 1.5s ease-in-out;
-    margin-top:0;
-    visibility:visible;
-} #MyNav {
-    -moz-transition:margin-top 1.5s ease-in-out;
-    -o-transition:margin-top 1.5s ease-in-out;
-    margin-top:0;
-    visibility:visible;
-}
-.startup .NavItem {
-    -webkit-animation-name:pane_scaleOut;
-    -webkit-animation-duration:3.9s;
-    -webkit-animation-timing-function:ease;
-} .NavItem {visibility:visible;}
-.startup #MyLogo {
-    -webkit-animation-name:shakeReveal;
-    -webkit-animation-duration:2.9s;
-    -webkit-animation-timing-function:ease;
-    visibility:visible;
-} #MyLogo {visibility:visible;}
-.startup .subNavList li {
-    -webkit-animation-name:enter-previous;
-    -webkit-animation-duration:2.9s;
-    -webkit-animation-timing-function:ease;
-} .subNavList li {visibility:visible;}
-#siteNavigation{display:inline;margin-top:0px;}
-.loading .initHidden{opacity:1;}
 
+.startup #MyNav {
+  -webkit-animation-name: easingReveal;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  visibility: visible;
+}
+
+.no-js #MyNav {
+  -khtml-transition: margin-top 1.5s ease-in-out;
+  -webkit-transition: margin-top 1.5s ease-in-out;
+  margin-top: 0;
+  visibility: visible;
+}
+
+#MyNav {
+  -moz-transition: margin-top 1.5s ease-in-out;
+  -o-transition: margin-top 1.5s ease-in-out;
+  margin-top: 0;
+  visibility: visible;
+}
+
+.startup .NavItem {
+  -webkit-animation-name: pane_scaleOut;
+  -webkit-animation-duration: 3.9s;
+  -webkit-animation-timing-function: ease;
+}
+
+.NavItem {
+  visibility: visible
+}
+
+.startup #MyLogo {
+  -webkit-animation-name: shakeReveal;
+  -webkit-animation-duration: 2.9s;
+  -webkit-animation-timing-function: ease;
+  visibility: visible;
+}
+
+#MyLogo {
+  visibility: visible
+}
+
+.startup .subNavList li {
+  -webkit-animation-name: enter-previous;
+  -webkit-animation-duration: 2.9s;
+  -webkit-animation-timing-function: ease;
+}
+
+.subNavList li {
+  visibility: visible;
+}
+
+#siteNavigation {
+  display: inline;
+  margin-top: 0px;
+}
+
+.loading .initHidden {
+  opacity: 1;
+}

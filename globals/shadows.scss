@@ -1,0 +1,40 @@
+.topImgShadow {
+  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/topShadow.png");
+  background-position: top;
+  background-repeat: repeat-x;
+  padding-top: 11px;
+  margin-top: -11px;
+}
+
+.bottomImgShadow {
+  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/bottomShadow.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 11px;
+  margin-bottom: -11px;
+}
+
+.leftImgShadow {
+  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/leftShadow.png");
+  background-position: left;
+  background-repeat: repeat-y;
+  padding-left: 11px;
+  margin-left: -11px;
+}
+
+.rightImgShadow {
+  background-image: url("http://s.abhishekmunie.com/img/shadow/msww/rightShadow.png");
+  background-position: right;
+  background-repeat: repeat-y;
+  padding-right: 11px;
+  margin-right: -11px;
+}
+
+.Shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset,0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset,0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset, 0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset,0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+  -khtml-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset, 0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+  -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.3) inset,0 1px 0 rgba(0,0,0,0.2),0 0 21px rgba(0,0,0,1);
+}

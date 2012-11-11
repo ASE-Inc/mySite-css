@@ -1,0 +1,57 @@
+.overlayTheaterBack {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: fixed;
+  zoom: 1;
+  opacity: 0;
+  display: none;
+  cursor: default;
+  z-index: -999;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -khtml-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.overlayTheater {
+  zoom: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(255,255,255,0.5);
+  opacity: 0;
+  display: none;
+  cursor: default;
+  position: relative;
+  z-index: -999;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -khtml-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.error .overlayTheaterBack,
+.loading .overlayTheaterBack,
+.warning .overlayTheaterBack,
+.info .overlayTheaterBack {
+  display: block;
+  opacity: 1;
+  z-index: 999998;
+}
+
+.error .overlayTheater,
+.loading .overlayTheater,
+.warning .overlayTheater,
+.info .overlayTheater {
+  display: block;
+  opacity: 1;
+  z-index: 999999;
+}

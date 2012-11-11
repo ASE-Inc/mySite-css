@@ -1,0 +1,152 @@
+.PL {
+  animation-name: enter-next;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  -webkit-animation-name: enter-next;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: enter-next;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: enter-next;
+  -o-animation-duration: 1.5s;
+  -o-animation-timing-function: linear;
+  -ms-animation-name: enter-next;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-timing-function: linear;
+  -khtml-animation-name: enter-next;
+  -khtml-animation-duration: 1.5s;
+  -khtml-animation-timing-function: linear;
+}
+
+.PoppedBack .PL {
+  animation-name: enter-previous;
+  animation-duration: .9s;
+  -webkit-animation-name: enter-previous;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: enter-previous;
+  -moz-animation-duration: .9s;
+  -o-animation-name: enter-previous;
+  -o-animation-duration: .9s;
+  -ms-animation-name: enter-previous;
+  -ms-animation-duration: .9s;
+  -khtml-animation-name: enter-previous;
+  -khtml-animation-duration: .9s;
+}
+
+#PL1 {
+  animation-name: enter-next;
+  animation-duration: .9s;
+  -webkit-animation-name: enter-next;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: enter-next;
+  -moz-animation-duration: .9s;
+  -o-animation-name: enter-next;
+  -o-animation-duration: .9s;
+  -ms-animation-name: enter-next;
+  -ms-animation-duration: .9s;
+  -khtml-animation-name: enter-next;
+  -khtml-animation-duration: .9s;
+}
+
+.PL1_ajax #PL1 {
+  animation-name: exit-previous;
+  animation-duration: .9s;
+  -webkit-animation-name: exit-previous;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: exit-previous;
+  -moz-animation-duration: .9s;
+  -ms-animation-name: exit-previous;
+  -ms-animation-duration: .9s;
+  -o-animation-name: exit-previous;
+  -o-animation-duration: .9s;
+  -khtml-animation-name: exit-previous;
+  -khtml-animation-duration: .9s;
+}
+
+.PoppedBack .PL1_ajax #PL1 {
+  animation-name: exit-next;
+  animation-duration: .9s;
+  -webkit-animation-name: exit-next;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: exit-next;
+  -moz-animation-duration: .9s;
+  -o-animation-name: exit-next;
+  -o-animation-duration: .9s;
+  -ms-animation-name: exit-next;
+  -ms-animation-duration: .9s;
+  -khtml-animation-name: exit-next;
+  -khtml-animation-duration: .9s;
+}
+
+.PL2_ajax #PL2 {
+  animation-name: exit-previous;
+  animation-duration: .9s;
+  -webkit-animation-name: exit-previous;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: exit-previous;
+  -moz-animation-duration: .9s;
+  -o-animation-name: exit-previous;
+  -o-animation-duration: .9s;
+  -ms-animation-name: exit-previous;
+  -ms-animation-duration: .9s;
+  -khtml-animation-name: exit-previous;
+  -khtml-animation-duration: .9s;
+}
+
+.PoppedBack .PL2_ajax #PL2 {
+  animation-name: exit-next;
+  animation-duration: .9s;
+  -webkit-animation-name: exit-next;
+  -webkit-animation-duration: .9s;
+  -moz-animation-name: exit-next;
+  -moz-animation-duration: .9s;
+  -o-animation-name: exit-next;
+  -o-animation-duration: .9s;
+  -ms-animation-name: exit-next;
+  -ms-animation-duration: .9s;
+  -khtml-animation-name: exit-next;
+  -khtml-animation-duration: .9s;
+}
+
+.LoadingImg {
+  margin: auto;
+  width: 32px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.loading .LoadingImg {
+  display: inline-block
+}
+
+.PL2_Loading {
+  background-image: url('http://s.abhishekmunie.com/img/preloaders/loading.png');
+  background-repeat: no-repeat;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  margin-left: -8px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.PL2_ajax .PL2_Loading {
+  display: inline
+}
+
+#PL2 {
+  margin-top: 1000px;
+  -webkit-transition: margin-top 2.5s ease;
+  -moz-transition: margin-top 2.5s ease;
+  -khtml-transition: margin-top 2.5s ease;
+  -o-transition: margin-top 2.5s ease;
+}

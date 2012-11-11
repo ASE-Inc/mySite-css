@@ -1,0 +1,43 @@
+.button_box {
+  -webkit-box-shadow: rgba(0, 0, 0, .4) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .4) 0 1px 3px;
+  -ms-box-shadow: rgba(0, 0, 0, .4) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .4) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .4) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, .4) 0 1px 6px url(0/IE9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.rounded {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+}
+
+.Page {
+  position: relative;
+  border: 1px solid #dfdfdf;
+  border-color: #E5E5E5 #DBDBDB #D2D2D2;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -ms-border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -o-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-delay: 0.20000000298023224s;
+  -webkit-transition-duration: 0.30000001192092896s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+}

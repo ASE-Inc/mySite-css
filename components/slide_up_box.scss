@@ -1,0 +1,102 @@
+/**
+ * Slide Up Box & Image Wipes - css-tricks.com
+ */
+
+.slide-up-boxes a {
+  overflow: hidden
+}
+
+.slide-up-boxes h5 {
+  text-align: center;
+  opacity: 1;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+}
+
+.slide-up-boxes a:hover h5 {
+  margin-top: -65px;
+  opacity: 0;
+}
+
+.slide-up-boxes div {
+  position: relative;
+  color: white;
+  height: 45px;
+  padding: 10px;
+  opacity: 0;
+  transform: rotate(6deg);
+  transition: all 0.4s linear;
+  -webkit-transform: rotate(6deg);
+  -webkit-transition: all 0.4s linear;
+  -moz-transform: rotate(6deg);
+  -moz-transition: all 0.4s linear;
+  -o-transform: rotate(6deg);
+  -o-transition: all 0.4s linear;
+  -ms-transform: rotate(6deg);
+  -ms-transition: all 0.4s linear;
+}
+
+.slide-up-boxes a:hover div {
+  opacity: 1;
+  transform: rotate();
+  -webkit-transform: rotate();
+  -moz-transform: rotate();
+  -o-transform: rotate();
+  -ms-transform: rotate();
+}
+.img_banner {
+  width: 800px;
+  height: 300px;
+  position: relative;
+  border: 8px solid #eee;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+}
+
+.img_banner div {
+  position: absolute
+}
+
+.img_banner div:nth-child(2) {
+  -webkit-animation: img_wipe 6s infinite;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-direction: alternate;
+  -webkit-mask-size: 2000px 2000px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.00,  rgba(0,0,0,1)), color-stop(0.45,  rgba(0,0,0,1)), color-stop(0.50,  rgba(0,0,0,0)), color-stop(0.55,  rgba(0,0,0,0)), color-stop(1.00,  rgba(0,0,0,0)));
+}
+
+@-webkit-keyframes img_wipe { 
+  0% {
+    -webkit-mask-position: 0 0
+  }
+
+  100% {
+    -webkit-mask-position: -1200px -1200px
+  }
+}
+
+.img_rollover {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border: 8px solid #eee;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+}
+
+.img_rollover div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_rollover div:nth-child(2) {
+  -webkit-transition: -webkit-mask-position 1s ease;
+  -webkit-mask-size: 600px 600px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0.00,  rgba(0,0,0,1)), color-stop(0.35,  rgba(0,0,0,1)), color-stop(0.50,  rgba(0,0,0,0)), color-stop(0.75,  rgba(0,0,0,0)), color-stop(1.00,  rgba(0,0,0,0)));
+}
+
+.img_rollover div:nth-child(2):hover {
+  -webkit-mask-position: -300px -300px
+}

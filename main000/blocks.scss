@@ -1,0 +1,29 @@
+@import "base";
+
+.loading body {
+  cursor: url(#{$cdn_img}img/preloaders/loading.png)
+}
+
+.rcContainer {
+  min-width: 990px
+}
+
+.rcBlock {
+  max-width: 1600px;
+  min-width: 990px;
+}
+
+.nrcInnerBlock {
+  width: 930px
+}
+
+.nrcOuterBlock {
+  width: 990px
+}
+
+.outerBlocks {
+  display: inline-block;
+  clear: both;
+  text-align: center;
+  min-width: 100%;
+}

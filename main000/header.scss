@@ -1,0 +1,23 @@
+@import "base";
+
+#MainHeader {
+  margin: 0;
+  clear: both;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.headerWrapper {
+  width: 85%;
+  min-height: 69px;
+  display: inline-block;
+  margin: 21px auto 9px auto;
+  clear: both;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+}

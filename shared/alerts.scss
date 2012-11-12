@@ -1,4 +1,4 @@
-@import "globals/config";
+@import "base";
 
 .warning {
   position: absolute;
@@ -31,7 +31,6 @@
 }
 
 .error body,
-.loading body,
 .warning body,
 .info body {
   overflow: hidden

@@ -1,0 +1,72 @@
+@import "base";
+
+.startup {
+
+  #MyNav {
+    -webkit-animation-name: easingReveal;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    visibility: visible;
+  }
+
+  .NavItem {
+    -webkit-animation-name: pane_scaleOut;
+    -webkit-animation-duration: 3.9s;
+    -webkit-animation-timing-function: ease;
+  }
+
+  #MyLogo {
+    -webkit-animation-name: shakeReveal;
+    -webkit-animation-duration: 2.9s;
+    -webkit-animation-timing-function: ease;
+    visibility: visible;
+  }
+
+  .subNavList li {
+    -webkit-animation-name: enter-previous;
+    -webkit-animation-duration: 2.9s;
+    -webkit-animation-timing-function: ease;
+  }
+}
+
+.no-js {
+
+  #MyNav {
+    -khtml-transition: margin-top 1.5s ease-in-out;
+    -webkit-transition: margin-top 1.5s ease-in-out;
+    margin-top: 0;
+    visibility: visible;
+  }
+}
+
+#MyNav {
+  -moz-transition: margin-top 1.5s ease-in-out;
+  -o-transition: margin-top 1.5s ease-in-out;
+  margin-top: 0;
+  visibility: visible;
+}
+
+.NavItem {
+  visibility: visible
+}
+
+
+#MyLogo {
+  visibility: visible
+}
+
+
+.subNavList li {
+  visibility: visible;
+}
+
+#siteNavigation {
+  display: inline;
+  margin-top: 0px;
+}
+
+.loading {
+  .initHidden {
+    opacity: 1;
+  }
+}

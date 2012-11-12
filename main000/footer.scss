@@ -1,0 +1,99 @@
+@import "base";
+
+#MyFooter {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#MyFooterBox {
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.maclogo {
+  color: #777;
+  width: 105px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+a.maclogo:hover {
+  color: #999;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.maclogo div {
+  display: block;
+  margin-left: 43px;
+}
+
+.maclogo div.logo {
+  background-image: url('#{$cdn_img}ext_img/apple/icloud/icloudapplelogo.png')
+}
+
+.ie8 .maclogo div.logo-brightener:hover,
+.maclogo div.logo-brightener {
+  background-image: url('#{$cdn_img}ext_img/apple/icloud/icloudapplelogo.png')
+}
+
+.maclogo div.logo,
+.maclogo div.logo-brightener {
+  top: 3px;
+  width: 19px;
+  height: 22px;
+}
+
+.maclogo div.logo {
+  position: relative;
+  z-index: 12;
+  background-position: 0px -1566px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.maclogo div.logo-brightener {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 13;
+  background-position: 0px -1588px;
+  background-repeat: no-repeat;
+}
+
+.ie8 .maclogo div.logo-brightener {
+  background: transparent
+}
+
+.maclogo div.logo-brightener:hover {
+  opacity: 1;
+  z-index: 10;
+}
+
+.maclogo:hover div.logo-brightener {
+  opacity: 1;
+  z-index: 10;
+}
+
+.ie8 .maclogo div.logo-brightener:hover {
+  background-position: 0px -1588px;
+  background-repeat: no-repeat;
+}
+
+.sponsor {
+  white-space: nowrap;
+  color: #777;
+  display: inline-block;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.sponsor a {
+  color: #BD101F
+}
+
+.sponsor .rslogo {
+  margin-right: 10px
+}

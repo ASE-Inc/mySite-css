@@ -1,5 +1,10 @@
 @import "base";
 
+body > footer {
+  position: relative;
+  bottom: 0;
+}
+
 #MyFooter {
   text-align: center;
   margin-bottom: 0;

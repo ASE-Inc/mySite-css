@@ -3,7 +3,7 @@
 @import "base";
 @import "animations/animations000";
 @import "mySite";
-//@import "typography";
+@import "typography/typography";
 
 /* ==========================================================================
  SITE SPECIFIC STYLES
@@ -14,7 +14,6 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  text-align: center;
   direction: ltr;
   unicode-bidi: embed;
   background-color: #F5F6F7;
@@ -22,17 +21,28 @@ body {
   background-position: center top;
   background-image: url(#{$cdn_img}img/bg/bg_matte.png);
   background-repeat: repeat;
-  behavior: url("csshover3.htc");
   color: #333;
   font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Georgia,"Times New Roman",Verdana,sans-serif,Times,serif;
   text-align: center;
   min-width: 1000px;
   min-height: 100%;
+
+
+  > nav,
+  > header,
+  > div,
+  > span,
+  > article {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
 }
 
 @import "main000/blocks";
 
-@import "main000/navs";
+@import "main000/nav";
 @import "main000/header";
 @import "main000/home";
 @import "main000/Abhishek";

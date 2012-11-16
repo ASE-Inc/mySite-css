@@ -1,32 +1,38 @@
-.fixedRatioBox,
-.goldenBox,
-.goldenBox_flexi,
-.goldenBox_Vertical,
-.goldenBox_Vertical_flexi {
-  position: relative;
+.fixed-ratio-box,
+.golden-box,
+.golden-box-flexi,
+.golden-box-vertical,
+.golden-box-vertical-flexi {
   display: inline-block;
 }
 
-.fixedRatioBox>.dummy,
-.goldenBox>.dummy,
-.goldenBox_flexi>.dummy,
-.goldenBox_Vertical>.dummy,
-.goldenBox_Vertical_flexi>.dummy {
-  float: left;
+.fixed-ratio-box>.dummy,
+.golden-box>.dummy,
+.golden-box-flexi>.dummy,
+.golden-box-vertical>.dummy,
+.golden-box-vertical-flexi>.dummy {
   width: 0;
   height: 0;
 }
 
-.goldenBox>div.dummy,
-.goldenBox_flexi>div.dummy {  margin-top: 61.80339887498948482045868343656381177203091798057628621354% }
+.golden-box>div.dummy,
+.golden-box-flexi>div.dummy {
+  margin-top: 61.80339887498948482045868343656381177203091798057628621354%;
+}
 
-.goldenBox_Vertical>div.dummy,
-.goldenBox_Vertical_flexi>div.dummy {  margin-top: 161.80339887498948482045868343656381177203091798057628621354% }
+.golden-box-vertical>div.dummy,
+.golden-box-vertical-flexi>div.dummy {
+  margin-top: 161.80339887498948482045868343656381177203091798057628621354%;
+}
 
-.goldenBox>div.content,
-.goldenBox>div:not(.dummy),
-.goldenBox_Vertical>div.content,
-.goldenBox_Vertical>div:not(.dummy) {
+.fixed-ratio-box>.content,
+.fixed-ratio-box>*:not(.dummy),
+.fixed-ratio-box-vertical>.content,
+.fixed-ratio-box-vertical>*:not(.dummy),
+.golden-box>.content,
+.golden-box>*:not(.dummy),
+.golden-box-vertical>.content,
+.golden-box-vertical>*:not(.dummy) {
   position: absolute;
   top: 0;
   right: 0;
@@ -34,9 +40,13 @@
   left: 0;
 }
 
-.goldenBox>div.overflow_content,
-.goldenBox_Vertical>div.overflow_content {
+.golden-box>div.overflow_content,
+.golden-box-vertical>div.overflow_content {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.golden-width {
+  
 }

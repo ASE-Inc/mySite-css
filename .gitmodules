@@ -1,0 +1,6 @@
+[submodule "plugins/bootstrap"]
+	path = plugins/bootstrap
+	url = git://github.com/twitter/bootstrap.git
+[submodule "plugins/Font-Awesome"]
+	path = plugins/Font-Awesome
+	url = git://github.com/FortAwesome/Font-Awesome.git

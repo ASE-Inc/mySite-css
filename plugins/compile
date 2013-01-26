@@ -19,10 +19,10 @@ function indent() {
   esac
 }
 
-BOOTSTRAP=./bootstrap/css/bootstrap.scss
-BOOTSTRAP_LESS=./bootstrap/less/bootstrap.less
-BOOTSTRAP_RESPONSIVE=./bootstrap/css/bootstrap-responsive.scss
-BOOTSTRAP_RESPONSIVE_LESS=./bootstrap/less/responsive.less
-mkdir ./bootstrap/css
-recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
-recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+BOOTSTRAP=$BUILD_DIR/plugins/bootstrap/css/bootstrap.scss
+BOOTSTRAP_LESS=$BUILD_DIR/plugins/bootstrap/less/bootstrap.less
+BOOTSTRAP_RESPONSIVE=$BUILD_DIR/plugins/bootstrap/css/bootstrap-responsive.scss
+BOOTSTRAP_RESPONSIVE_LESS=$BUILD_DIR/plugins/bootstrap/less/responsive.less
+mkdir $BUILD_DIR/plugins/bootstrap/css
+lessc --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+lessc --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}

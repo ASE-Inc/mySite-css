@@ -8,7 +8,7 @@
   font-size: 14px;
   z-index: 0;
   background: #fff;
-  background: rgba(255,255,255,.8);
+  background: rgba(255, 255, 255, 0.8);
   background: none;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF)";
 }
@@ -30,10 +30,8 @@
   font-weight: bold;
 }
 
-.error body,
-.warning body,
-.info body {
-  overflow: hidden
+.error body, .warning body, .info body {
+  overflow: hidden;
 }
 
 .inlineWarning {
@@ -52,25 +50,22 @@
   -o-box-shadow: 0 1px 4px #999;
   -khtml-box-shadow: 0 1px 4px #999;
   -ms-box-shadow: 0 1px 4px #999;
-}
-
-.inlineWarning>span:before,
-.inlineWarning>div:before {
-  content: url(#{$cdn_img}img/icons/js-exlm-pnt.png)
-}
-
-.inlineWarning>span,
-.inlineWarning>div {
-  color: #777;
-  position: relative;
-  padding-left: 25px;
-  top: 13px;
-  background: url(#{$cdn_img}img/icons/js-exlm-pnt.png) 0 0 no-repeat;
-  font-size: 13px;
-  font-weight: bold;
-  font-family: arial,sans-serif;
-}
-
-.inlineWarning a {
-  color: #db0303
+  > {
+    span:before, div:before {
+      content: url('#{$cdn_img}img/icons/js-exlm-pnt.png');
+    }
+    span, div {
+      color: #777;
+      position: relative;
+      padding-left: 25px;
+      top: 13px;
+      background: url('#{$cdn_img}img/icons/js-exlm-pnt.png') 0 0 no-repeat;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: arial,sans-serif;
+    }
+  }
+  a {
+    color: #db0303;
+  }
 }

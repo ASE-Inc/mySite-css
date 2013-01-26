@@ -57,7 +57,7 @@
       @include opacity(1);
     }
   }
-  
+
   #MyNav {
     -khtml-transition: margin-top 1.5s ease-in-out;
     -webkit-transition: margin-top 1.5s ease-in-out;
@@ -73,16 +73,8 @@
   visibility: visible;
 }
 
-.NavItem {
-  visibility: visible
-}
-
-
-#MyLogo {
-  visibility: visible
-}
-
-
+.NavItem,
+#MyLogo,
 .subNavList li {
   visibility: visible;
 }

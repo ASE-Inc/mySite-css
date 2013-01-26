@@ -2,89 +2,105 @@
  * CSS3 Paperstack
  * See me  : http://kremalicious.com/csspaperstack
  * Fork me : https://github.com/kremalicious/csspaperstack
- * 
- * License: 
- * 
+ *
+ * License:
+ *
  * -------------------------------------------------------
- * 
+ *
  * by Matthias Kretschmann | http://mkretschmann.com
- * 
+ *
  * -------------------------------------------------------
- * 
+ *
  * Base styles from HTML5 ✰ Boilerplate
  *
 */
+
 .paperstack {
-	padding: 4% 8%;
-	position: relative;
-	z-index: 0; /* important or the pseudo elements will be over the content */
+  padding: 4% 8%;
+  position: relative;
+  z-index: 0;
+  /* important or the pseudo elements will be over the content */
+  background: #f4f2ee;
+  background: -moz-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f0e7), color-stop(15%, #f4f2ee), color-stop(85%, #f4f2ee), color-stop(100%, #f4f0e7));
+  background: -webkit-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+  background: -o-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+  background: -ms-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F0E7', endColorstr='#F4F0E7',GradientType=0 );
+  background: linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+  border: 1px solid #deddd9;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  &:before, &:after {
+    background: #f4f2ee;
+    background: -moz-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f0e7), color-stop(15%, #f4f2ee), color-stop(85%, #f4f2ee), color-stop(100%, #f4f0e7));
+    background: -webkit-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+    background: -o-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+    background: -ms-linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4F0E7', endColorstr='#F4F0E7',GradientType=0 );
+    background: linear-gradient(top, #f4f0e7 0%, #f4f2ee 15%, #f4f2ee 85%, #f4f0e7 100%);
+    border: 1px solid #deddd9;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  }
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  &:before {
+    left: -0.5%;
+    /*drag it slightly to the left*/
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+    z-index: -1;
+    /* makes element display over the wrapper but behind wrapper content */
+  }
+  &:after {
+    width: 99.6%;
+    left: 0.7%;
+    /*push it slightly from the left*/
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg);
+    z-index: -2;
+    /*positioning behind the :before element*/
+  }
 }
 
 /* Paper background */
-.paperstack,
-.paperstack:before,
-.paperstack:after {
-	background: #f4f2ee;
-	background: -moz-linear-gradient(top, #F4F0E7 0%, #F4F2EE 15%, #F4F2EE 85%, #F4F0E7 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F4F0E7), color-stop(15%,#F4F2EE), color-stop(85%,#F4F2EE), color-stop(100%,#F4F0E7));
-	background: -webkit-linear-gradient(top, #F4F0E7 0%,#F4F2EE 15%,#F4F2EE 85%,#F4F0E7 100%);
-	background: -o-linear-gradient(top, #F4F0E7 0%,#F4F2EE 15%,#F4F2EE 85%,#F4F0E7 100%);
-	background: -ms-linear-gradient(top, #F4F0E7 0%,#F4F2EE 15%,#F4F2EE 85%,#F4F0E7 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F4F0E7', endColorstr='#F4F0E7',GradientType=0 );
-	background: linear-gradient(top, #F4F0E7 0%,#F4F2EE 15%,#F4F2EE 85%,#F4F0E7 100%);
-	border: 1px solid #deddd9;
-	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.08);
-	-moz-box-shadow: 0 0 4px rgba(0,0,0,.08);
-	box-shadow: 0 0 4px rgba(0,0,0,.08);
-}
-	/* inject full width/height pseudo elements */
-	.paperstack:before,
-	.paperstack:after {
-		content: "";
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-	}
-	
-	/* Start the individual pseudo elements
-	 * Good elements to play with:
-	 * - width
-	 * - height
-	 * - left/right
-	 * - transform
-	 */
-	.paperstack:before {
-		left: -0.5%; /*drag it slightly to the left*/
-		-webkit-transform: rotate(2deg);
-		-moz-transform: rotate(2deg);
-		-o-transform: rotate(2deg);
-		transform: rotate(2deg);
-		z-index: -1; /* makes element display over the wrapper but behind wrapper content */
-	}
-	
-	.paperstack:after {
-		width: 99.6%;
-		left: 0.7%; /*push it slightly from the left*/
-		-webkit-transform: rotate(4deg);
-		-moz-transform: rotate(4deg);
-		-o-transform: rotate(4deg);
-		transform: rotate(4deg);
-		z-index: -2; /*positioning behind the :before element*/
-	}
-	
+
+/* inject full width/height pseudo elements */
+
+/* Start the individual pseudo elements
+ * Good elements to play with:
+ * - width
+ * - height
+ * - left/right
+ * - transform
+ */
+
 /* smaller paperstack within content */
-article section .paperstack:before {
-	left: 3%;
-	width: 98%;
-	
+
+article section .paperstack {
+  &:before {
+    left: 3%;
+    width: 98%;
+  }
+  &:after {
+    width: 100%;
+    left: 3%;
+    height: 105%;
+  }
 }
 
-article section .paperstack:after {
-	width: 100%;
-	left: 3%;
-	height: 105%;
-}
-	
 /* END PAPER STACKS */

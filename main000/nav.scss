@@ -1,9 +1,6 @@
 @import "base";
 
 $nav-height: 59px;
-
-
-// Top Nav ====================================================================================================
 #TopNavElement {
   text-align: center;
   z-index: 999;
@@ -24,7 +21,7 @@ $nav-height: 59px;
 }
 
 nav .TopNav {
-  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font: 12px / 18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   width: 85%;
   margin: 0 auto;
   left: 0;
@@ -66,7 +63,7 @@ nav .TopNav {
   -webkit-transition-delay: 0s;
   -webkit-transition-duration: 0s;
   -webkit-transition-property: all;
-  -webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   text-shadow: #555555 1px 1px 5px;
 }
 
@@ -76,15 +73,12 @@ nav .TopNav {
   list-style: none;
   margin: 0;
   margin-left: 5px;
-
   > li {
-
     &.navElement {
       display: inline-block;
       text-align: center;
       vertical-align: middle;
     }
-
     > a {
       font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
       position: relative;
@@ -101,7 +95,7 @@ nav .TopNav {
       font-weight: bolder;
       text-shadow: 1px 1px 2px black;
       color: #BBB;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, .75);
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
       border-width: 0 2px 0 2px;
       border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
       -webkit-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
@@ -109,12 +103,10 @@ nav .TopNav {
       -o-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
       -khtml-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
       -ms-border-image: url('#{$cdn_img}img/overlays/toolbarItemSelected.png') 0 2 0 2;
-      
       &:hover {
-        color: white
+        color: white;
       }
     }
-
     &.lavalampback {
       position: absolute;
       top: 3px;
@@ -128,17 +120,14 @@ nav .TopNav {
       -o-transition: all .3s ease-in;
       -ms-transition: all .3s ease-in;
     }
-
     > div.TopSubNav {
       overflow: hidden;
       display: none;
     }
-
-    &.selected>div.TopSubNav {
-      display: block
+    &.selected > div.TopSubNav {
+      display: block;
     }
-
-    &:hover>div.TopSubNav {
+    &:hover > div.TopSubNav {
       display: block;
       z-index: 9;
     }
@@ -156,11 +145,9 @@ nav .TopNav {
 }
 
 .subNavList li {
-  float: left
+  float: left;
 }
 
-
-// Top Fixed Nav ==============================================================================================
 #TopFixedNav {
   position: fixed;
   top: 0;

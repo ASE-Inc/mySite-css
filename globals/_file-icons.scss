@@ -1,55 +1,49 @@
 @import "base";
 
-a.pdf {
-  background: url(#{$cdn_img}img/file_icons/globaliconpdf12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.html {
-  background: url(#{$cdn_img}img/file_icons/globaliconhtml12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.qt {
-  background: url(#{$cdn_img}img/file_icons/globaliconqt12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.ical {
-  background: url(#{$cdn_img}img/file_icons/globaliconical12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.dl {
-  background: url(#{$cdn_img}img/file_icons/globalicondl11x10.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.dmg {
-  background: url(#{$cdn_img}img/file_icons/globalicondmg12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.zip {
-  background: url(#{$cdn_img}img/file_icons/globaliconzip12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.keynote {
-  background: url(#{$cdn_img}img/file_icons/globaliconkeynote12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
-}
-
-a.audio {
-  background: url(#{$cdn_img}img/file_icons/globaliconaudio12x12.gif) 0 0.4em no-repeat;
-  display: block;
-  padding-left: 20px;
+a {
+  &.pdf {
+    background: url('#{$cdn_img}img/file_icons/globaliconpdf12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.html {
+    background: url('#{$cdn_img}img/file_icons/globaliconhtml12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.qt {
+    background: url('#{$cdn_img}img/file_icons/globaliconqt12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.ical {
+    background: url('#{$cdn_img}img/file_icons/globaliconical12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.dl {
+    background: url('#{$cdn_img}img/file_icons/globalicondl11x10.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.dmg {
+    background: url('#{$cdn_img}img/file_icons/globalicondmg12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.zip {
+    background: url('#{$cdn_img}img/file_icons/globaliconzip12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.keynote {
+    background: url('#{$cdn_img}img/file_icons/globaliconkeynote12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
+  &.audio {
+    background: url('#{$cdn_img}img/file_icons/globaliconaudio12x12.gif') 0 0.4em no-repeat;
+    display: block;
+    padding-left: 20px;
+  }
 }

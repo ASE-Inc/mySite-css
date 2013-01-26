@@ -10,124 +10,107 @@
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-a.blue,
-.blue button {
-  color: #3e9ad2
+a.blue {
+  color: #3e9ad2;
 }
 
-.blue a:hover,
-.blue button:hover,
-.blue button:focus,
-.blue a:focus,
-.blue a:active {
-  color: #000
+.blue {
+  button {
+    color: #3e9ad2;
+  }
+  a:hover {
+    color: black;
+  }
+  button {
+    &:hover, &:focus {
+      color: black;
+    }
+  }
+  a {
+    &:focus, &:active {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #3e9ad2;
+  }
+  #secondNavigation {
+    background: #3e9ad2;
+  }
+  .artworkOverlay {
+    background: url('#{$img}officialfiles/img/blueArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #3e9ad2;
+  }
+  #slideshowThumbs ul li {
+    &:hover, &.selected {
+      border-bottom-color: #3e9ad2;
+    }
+  }
+  #thumbsMask .selected {
+    background: #3e9ad2;
+  }
+  #slideshowBar {
+    background-color: #3e9ad2;
+    > a {
+      border-color: #76b7df;
+    }
+  }
+  .progressTracks, .progressBar {
+    border-color: #9fcde9;
+  }
+  .imgInfoLeft, .imgInfoRight, .imgLeft, .imgRight, .imgSkipRight, .imgSkipLeft, .overlayContent {
+    background-color: #3e9ad2;
+  }
+  .loaderImg {
+    background: #3e9ad2;
+    span {
+      background: url('#{$img}officialfiles/img/blueLoader.gif');
+    }
+  }
+  .form {
+    .error {
+      border-color: #3e9ad2 !important;
+    }
+    .validationMessages {
+      color: #3e9ad2;
+    }
+    .labelError {
+      background-image: url('#{$img}officialfiles/img/blueAsterisk.png');
+    }
+  }
+  .termsTemplate .message {
+    color: #3e9ad2;
+    font-weight: bold;
+  }
+  .errorTemplate h1 {
+    color: #3e9ad2;
+  }
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.blue ul#siteNavigation li a {
-  color: #3e9ad2
-}
-
-.blue #secondNavigation {
-  background: #3e9ad2
-}
-
-.blue .artworkOverlay {
-  background: url(#{$img}officialfiles/img/blueArt.png)
-}
-
-.blue .landingBlocks > ul > li > .box {
-  border-color: #3e9ad2
-}
-
 /* SLIDESHOW --------------------------------------------------------------*/
-
-.blue #slideshowThumbs ul li:hover,
-.blue #slideshowThumbs ul li.selected {
-  border-bottom-color: #3e9ad2
-}
-
-.blue #thumbsMask .selected {
-  background: #3e9ad2
-}
-
-.blue #slideshowBar {
-  background-color: #3e9ad2
-}
-
-.blue #slideshowBar > a {
-  border-color: #76b7df
-}
-
-.blue .progressTracks {
-  border-color: #9fcde9
-}
-
-.blue .progressBar {
-  border-color: #9fcde9
-}
-
-.blue .imgInfoLeft,
-.blue .imgInfoRight,
-.blue .imgLeft,
-.blue .imgRight,
-.blue .imgSkipRight,
-.blue .imgSkipLeft {
-  background-color: #3e9ad2
-}
-
-.blue .overlayContent {
-  background-color: #3e9ad2
-}
-
-.blue .loaderImg {
-  background: #3e9ad2
-}
-
-.blue .loaderImg span {
-  background: url('#{$img}officialfiles/img/blueLoader.gif')
-}
 
 /* - standard form - */
 
-.blue .form .error {
-  border-color: #3e9ad2 !important
-}
-
-.blue .form .validationMessages {
-  color: #3e9ad2
-}
-
-.blue .form .labelError {
-  background-image: url('#{$img}officialfiles/img/blueAsterisk.png')
-}
-
-.blue .termsTemplate .message {
-  color: #3e9ad2;
-  font-weight: bold;
-}
-
 /* - error template - */
 
-.blue .errorTemplate h1 {
-  color: #3e9ad2
-}
-
-li.blueNav a strong {
-  color: #3e9ad2
-}
-
-li.blueNav div.menubutton {
-  background-color: #3e9ad2
+li.blueNav {
+  a strong {
+    color: #3e9ad2;
+  }
+  div.menubutton {
+    background-color: #3e9ad2;
+  }
 }
 
 nav .blue {
-  background-color: #3e9ad2
-}
-
-nav .blue div.TopSubNav {
-  background-color: #3e9ad2
+  background-color: #3e9ad2;
+  div.TopSubNav {
+    background-color: #3e9ad2;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DARK ORANGE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -136,52 +119,53 @@ nav .blue div.TopSubNav {
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-.darkOrange a {
-  color: #b38e01
+.darkOrange {
+  a {
+    color: #b38e01;
+    &:hover {
+      color: black;
+    }
+  }
+  .backLink, .upLink {
+    background-color: #b38e01;
+  }
 }
 
-.darkOrange a:hover {
-  color: #000
-}
-
-.darkOrange .backLink,
-.darkOrange .upLink,
 .downLink {
-  background-color: #b38e01
+  background-color: #b38e01;
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.darkOrange ul#siteNavigation li a {
-  color: #b38e01
+.darkOrange {
+  ul#siteNavigation li a {
+    color: #b38e01;
+  }
+  #secondNavigation {
+    background: #b38e01;
+  }
+  .artworkOverlay {
+    background: url('#{$img}officialfiles/img/darkOrangeArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #b38e01;
+  }
 }
 
-.darkOrange #secondNavigation {
-  background: #b38e01
-}
-
-.darkOrange .artworkOverlay {
-  background: url(#{$img}officialfiles/img/darkOrangeArt.png)
-}
-
-.darkOrange .landingBlocks > ul > li > .box {
-  border-color: #b38e01
-}
-
-li.darkOrangeNav a strong {
-  color: #b38e01
-}
-
-li.darkOrangeNav div.menubutton {
-  background-color: #b38e01
+li.darkOrangeNav {
+  a strong {
+    color: #b38e01;
+  }
+  div.menubutton {
+    background-color: #b38e01;
+  }
 }
 
 nav .darkOrange {
-  background-color: #b38e01
-}
-
-nav .darkOrange div.TopSubNav {
-  background-color: #b38e01
+  background-color: #b38e01;
+  div.TopSubNav {
+    background-color: #b38e01;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FACEBOOK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -190,46 +174,43 @@ nav .darkOrange div.TopSubNav {
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-.facebook a {
-  color: #3b5998
-}
-
-.facebook a:hover {
-  color: #000
+.facebook {
+  a {
+    color: #3b5998;
+    &:hover {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #3b5998;
+  }
+  #secondNavigation {
+    background-color: #3b5998;
+  }
+  .artworkOverlay {
+    background-image: url('#{$img}officialfiles/img/facebookArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #3b5998;
+  }
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.facebook ul#siteNavigation li a {
-  color: #3b5998
-}
-
-.facebook #secondNavigation {
-  background-color: #3b5998
-}
-
-.facebook .artworkOverlay {
-  background-image: url('#{$img}officialfiles/img/facebookArt.png')
-}
-
-.facebook .landingBlocks > ul > li > .box {
-  border-color: #3b5998
-}
-
-li.facebookNav a strong {
-  color: #3b5998
-}
-
-li.facebookNav div.menubutton {
-  background-color: #3b5998
+li.facebookNav {
+  a strong {
+    color: #3b5998;
+  }
+  div.menubutton {
+    background-color: #3b5998;
+  }
 }
 
 nav .facebook {
-  background-color: #3b5998
-}
-
-nav .facebook div.TopSubNav {
-  background-color: #3b5998
+  background-color: #3b5998;
+  div.TopSubNav {
+    background-color: #3b5998;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PURPLE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -238,46 +219,43 @@ nav .facebook div.TopSubNav {
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-.purple a {
-  color: #a27292
-}
-
-.purple a:hover {
-  color: #000
+.purple {
+  a {
+    color: #a27292;
+    &:hover {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #a27292;
+  }
+  #secondNavigation {
+    background: #a27292;
+  }
+  .artworkOverlay {
+    background: url('#{$img}officialfilesImages/purpleArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #a27292;
+  }
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.purple ul#siteNavigation li a {
-  color: #a27292
-}
-
-.purple #secondNavigation {
-  background: #a27292
-}
-
-.purple .artworkOverlay {
-  background: url('#{$img}officialfilesImages/purpleArt.png')
-}
-
-.purple .landingBlocks > ul > li > .box {
-  border-color: #a27292
-}
-
-li.purpleNav a strong {
-  color: #a27292
-}
-
-li.purpleNav div.menubutton {
-  background-color: #a27292
+li.purpleNav {
+  a strong {
+    color: #a27292;
+  }
+  div.menubutton {
+    background-color: #a27292;
+  }
 }
 
 nav .purple {
-  background-color: #a27292
-}
-
-nav .purple div.TopSubNav {
-  background-color: #a27292
+  background-color: #a27292;
+  div.TopSubNav {
+    background-color: #a27292;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RED~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -286,70 +264,70 @@ nav .purple div.TopSubNav {
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-.red a,
-.red button {
-  color: #bd542a
-}
-
-.red a:hover,
-.red button:hover,
-.red button:focus,
-.red a:focus,
-.red a:active {
-  color: #000
+.red {
+  a, button {
+    color: #bd542a;
+  }
+  a:hover {
+    color: black;
+  }
+  button {
+    &:hover, &:focus {
+      color: black;
+    }
+  }
+  a {
+    &:focus, &:active {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #bd542a;
+  }
+  #secondNavigation {
+    background: #bd542a;
+  }
+  .artworkOverlay {
+    background: url('#{$img}officialfiles/img/redArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #bd542a;
+  }
+  .form {
+    .error {
+      border-color: #bd542a !important;
+    }
+    .validationMessages {
+      color: #bd542a;
+    }
+    .labelError {
+      background-image: url('#{$img}officialfiles/img/redAsterisk.png');
+    }
+  }
+  .messagesTemplate .message {
+    color: #BD542A;
+    font-weight: bold;
+  }
 }
 
 /* GLOBAL SHARED STYLES -----------------------------------------------*/
 
-.red ul#siteNavigation li a {
-  color: #bd542a
-}
-
-.red #secondNavigation {
-  background: #bd542a
-}
-
-.red .artworkOverlay {
-  background: url('#{$img}officialfiles/img/redArt.png')
-}
-
-.red .landingBlocks > ul > li > .box {
-  border-color: #bd542a
-}
-
 /* - standard form - */
 
-.red .form .error {
-  border-color: #bd542a !important
-}
-
-.red .form .validationMessages {
-  color: #bd542a
-}
-
-.red .form .labelError {
-  background-image: url('#{$img}officialfiles/img/redAsterisk.png')
-}
-
-.red .messagesTemplate .message {
-  color: #BD542A;
-  font-weight: bold;
-}
-
-li.red a strong {
-  color: #bd542a
-}
-
-li.red div.menubutton {
-  background-color: #bd542a
+li.red {
+  a strong {
+    color: #bd542a;
+  }
+  div.menubutton {
+    background-color: #bd542a;
+  }
 }
 
 nav .red {
-  background-color: #bd542a
-}
-
-nav .red div.TopSubNav {
-  background-color: #bd542a
+  background-color: #bd542a;
+  div.TopSubNav {
+    background-color: #bd542a;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TEAL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -358,46 +336,43 @@ nav .red div.TopSubNav {
 
 /* GENERAL SHARED STYLES ----------------------------------------------*/
 
-.teal a {
-  color: #0c9895
-}
-
-.teal a:hover {
-  color: #000
+.teal {
+  a {
+    color: #0c9895;
+    &:hover {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #0c9895;
+  }
+  #secondNavigation {
+    background-color: #0c9895;
+  }
+  .artworkOverlay {
+    background-image: url('#{$img}officialfiles/img/tealArt.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #0c9895;
+  }
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.teal ul#siteNavigation li a {
-  color: #0c9895
-}
-
-.teal #secondNavigation {
-  background-color: #0c9895
-}
-
-.teal .artworkOverlay {
-  background-image: url('#{$img}officialfiles/img/tealArt.png')
-}
-
-.teal .landingBlocks > ul > li > .box {
-  border-color: #0c9895
-}
-
-li.tealNav a strong {
-  color: #0c9895
-}
-
-li.tealNav div.menubutton {
-  background-color: #0c9895
+li.tealNav {
+  a strong {
+    color: #0c9895;
+  }
+  div.menubutton {
+    background-color: #0c9895;
+  }
 }
 
 nav .teal {
-  background-color: #0c9895
-}
-
-nav .teal div.TopSubNav {
-  background-color: #0c9895
+  background-color: #0c9895;
+  div.TopSubNav {
+    background-color: #0c9895;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~XMAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -408,121 +383,101 @@ nav .teal div.TopSubNav {
 
 /*a, button { color: #076e48;  }_NO__DOTCOMMA__AFTER___NO__DOTCOMMA__AFTER__*/
 
-.xmas a:hover,
-.xmas button:hover,
-.xmas button:focus,
-.xmas a:focus,
-.xmas a:active {
-  color: #000
+.xmas {
+  a:hover {
+    color: black;
+  }
+  button {
+    &:hover, &:focus {
+      color: black;
+    }
+  }
+  a {
+    &:focus, &:active {
+      color: black;
+    }
+  }
+  ul#siteNavigation li a {
+    color: #076e48;
+  }
+  #secondNavigation {
+    background: #076e48;
+  }
+  .artworkOverlay {
+    background: url('#{$img}officialfiles/img/xmasArt.png');
+  }
+  .artworkOverlayflip {
+    background: url('#{$img}officialfiles/img/xmasArt-flip.png');
+  }
+  .landingBlocks > ul > li > .box {
+    border-color: #076e48;
+  }
+  #slideshowThumbs ul li {
+    &:hover, &.selected {
+      border-bottom-color: #076e48;
+    }
+  }
+  #thumbsMask .selected {
+    background: #076e48;
+  }
+  #slideshowBar {
+    background-color: #076e48;
+    > a {
+      border-color: #76b7df;
+    }
+  }
+  .progressTracks, .progressBar {
+    border-color: #9fcde9;
+  }
+  .imgInfoLeft, .imgInfoRight, .imgLeft, .imgRight, .imgSkipRight, .imgSkipLeft, .overlayContent {
+    background-color: #076e48;
+  }
+  .loaderImg {
+    background: #076e48;
+    span {
+      background: url('#{$img}officialfiles/img/xmasLoader.gif');
+    }
+  }
+  .form {
+    .error {
+      border-color: #076e48 !important;
+    }
+    .validationMessages {
+      color: #076e48;
+    }
+    .labelError {
+      background-image: url('#{$img}officialfiles/img/blueAsterisk.png');
+    }
+  }
+  .termsTemplate .message {
+    color: #076e48;
+    font-weight: bold;
+  }
+  .errorTemplate h1 {
+    color: #076e48;
+  }
 }
 
 /* GOLBAL SHARED STYLES -----------------------------------------------*/
 
-.xmas ul#siteNavigation li a {
-  color: #076e48
-}
-
-.xmas #secondNavigation {
-  background: #076e48
-}
-
-.xmas .artworkOverlay {
-  background: url(#{$img}officialfiles/img/xmasArt.png)
-}
-
-.xmas .artworkOverlayflip {
-  background: url(#{$img}officialfiles/img/xmasArt-flip.png)
-}
-
-.xmas .landingBlocks > ul > li > .box {
-  border-color: #076e48
-}
-
 /* SLIDESHOW --------------------------------------------------------------*/
-
-.xmas #slideshowThumbs ul li:hover,
-.xmas #slideshowThumbs ul li.selected {
-  border-bottom-color: #076e48
-}
-
-.xmas #thumbsMask .selected {
-  background: #076e48
-}
-
-.xmas #slideshowBar {
-  background-color: #076e48
-}
-
-.xmas #slideshowBar > a {
-  border-color: #76b7df
-}
-
-.xmas .progressTracks {
-  border-color: #9fcde9
-}
-
-.xmas .progressBar {
-  border-color: #9fcde9
-}
-
-.xmas .imgInfoLeft,
-.xmas .imgInfoRight,
-.xmas .imgLeft,
-.xmas .imgRight,
-.xmas .imgSkipRight,
-.xmas .imgSkipLeft {
-  background-color: #076e48
-}
-
-.xmas .overlayContent {
-  background-color: #076e48
-}
-
-.xmas .loaderImg {
-  background: #076e48
-}
-
-.xmas .loaderImg span {
-  background: url('#{$img}officialfiles/img/xmasLoader.gif')
-}
 
 /* - standard form - */
 
-.xmas .form .error {
-  border-color: #076e48 !important
-}
-
-.xmas .form .validationMessages {
-  color: #076e48
-}
-
-.xmas .form .labelError {
-  background-image: url('#{$img}officialfiles/img/blueAsterisk.png')
-}
-
-.xmas .termsTemplate .message {
-  color: #076e48;
-  font-weight: bold;
-}
-
 /* - error template - */
 
-.xmas .errorTemplate h1 {
-  color: #076e48
-}
-
-li.xmasNav a strong {
-  color: #076e48
-}
-
-li.xmasNav div.menubutton {
-  background-color: #076e48
+li.xmasNav {
+  a strong {
+    color: #076e48;
+  }
+  div.menubutton {
+    background-color: #076e48;
+  }
 }
 
 nav .xmas {
-  background-color: #076e48
-}
-
-nav .xmas div.TopSubNav {
-  background-color: #076e48
+  background-color: #076e48;
+  div.TopSubNav {
+    background-color: #076e48;
+  }
 }

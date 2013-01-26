@@ -1,19 +1,22 @@
-.cufon-active h2 {
-  font-size: 24px;
+.cufon-active {
+  h2 {
+    font-size: 24px;
+  }
+  #mainContent h2 {
+    margin-top: -5px;
+    padding-bottom: 16px;
+    line-height: 23px;
+  }
 }
 
-.cufon-active #mainContent h2 {
-  margin-top: -5px;
-  padding-bottom: 16px;
-  line-height: 23px;
-}
-
-.cufon-loading .errorTemplate h1,
-.cufon-loading h2,
-.cufon-loading #siteNavigation li a,
-.cufon-loading #secondNavigation li a,
-.cufon-loading #slideshowNavigation li a,
-.cufon-loading h4,
-.cufon-loading h5 {
-  visibility: hidden !important;
+.cufon-loading {
+  .errorTemplate h1,
+  h2,
+  #siteNavigation li a,
+  #secondNavigation li a,
+  #slideshowNavigation li a,
+  h4,
+  h5 {
+    visibility: hidden !important;
+  }
 }

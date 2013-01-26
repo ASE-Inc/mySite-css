@@ -1,6 +1,6 @@
-/** 
+/**
  * The expand / collapse button
- * =============================== 
+ * ===============================
  */
 
 @import "base";
@@ -13,27 +13,21 @@ a.faqtoggle {
   right: 50px;
   overflow: hidden;
   border: none !important;
-}
-
-a.faqtoggle.expand:hover {
-  background-position: 0 -38px
-}
-
-a.faqtoggle.collapse {
-  background-position: 0 -76px
-}
-
-a.faqtoggle.collapse:hover {
-  background-position: 0 bottom
+  &.expand:hover {
+    background-position: 0 -38px;
+  }
+  &.collapse {
+    background-position: 0 -76px;
+    &:hover {
+      background-position: 0 bottom;
+    }
+  }
 }
 
 /* ===[ Definition Lists ]=== */
 
-.QAs>.ans {
-  overflow: hidden
-}
-
-.QAs>.ans {
+.QAs > .ans {
+  overflow: hidden;
   transition: height .9s ease-out;
   -webkit-transition: height .9s ease-out;
   -moz-transition: height .9s ease-out;
@@ -41,45 +35,37 @@ a.faqtoggle.collapse:hover {
   -o-transition: height .9s ease-out;
   -ms-transition: height .9s ease-out;
 }
-
 input.toggleCB {
-  display: none
-}
-
-input.toggleCB + label {
-  width: 100%;
-  text-align: left;
-}
-
-input.toggleCB:checked ~ label {
-
-}
-
-input.toggleCB:checked + label + .ans {
-  height: 0;
-  margin: 0;
-  padding: 0;
+  display: none;
+  + label {
+    width: 100%;
+    text-align: left;
+  }
+  &:checked + label + .ans {
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .ques {
   padding-left: 25px;
   position: relative;
   cursor: pointer;
-}
-
-.ques .icon {
-  background: url('#{$cdn_img}img/bullets/faq_bullets.png') no-repeat left bottom;
-  height: 12px;
-  left: 0;
-  position: absolute;
-  top: 11px;
-  width: 12px;
+  .icon {
+    background: url('#{$cdn_img}img/bullets/faq_bullets.png') no-repeat left bottom;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+    width: 12px;
+  }
 }
 
 input.toggleCB:checked + label .ques .icon {
-  background-position: left top
+  background-position: left top;
 }
 
 .ans {
-  padding-left: 25px
+  padding-left: 25px;
 }

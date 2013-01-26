@@ -1,4 +1,4 @@
-div.github_ribbon {
+iv.github_ribbon {
   background-color: #a00;
   position: absolute;
   right: -3em;
@@ -13,7 +13,6 @@ div.github_ribbon {
   -moz-box-shadow: 0 0 1em #888;
   -o-box-shadow: 0 0 1em #888;
   -ms-box-shadow: 0 0 1em #888;
-
   a {
     border: 1px solid #faa;
     color: #fff;
@@ -24,29 +23,23 @@ div.github_ribbon {
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 0.5em #444;
-  }
-
-  a.githubLogo {
-    img {
-      margin-top: 3px;
-      -webkit-transition: opacity .25s linear;
-      -moz-transition: opacity .25s linear;
-      -khtml-transition: opacity .25s linear;
-      -o-transition: opacity .25s linear;
-    }
-
-    img.default {
-      opacity: 1
-    }
-    &:hover img.default {
-      opacity: 0
-    }
-
-    img.hover {
-      opacity: 0
-    }
-    &:hover img.hover {
-      opacity: 1
+    &.githubLogo {
+      img {
+        margin-top: 3px;
+        -webkit-transition: opacity .25s linear;
+        -moz-transition: opacity .25s linear;
+        -khtml-transition: opacity .25s linear;
+        -o-transition: opacity .25s linear;
+        &.default {
+          opacity: 1;
+        }
+      }
+      &:hover img.default, img.hover {
+        opacity: 0;
+      }
+      &:hover img.hover {
+        opacity: 1;
+      }
     }
   }
 }

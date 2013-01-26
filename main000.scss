@@ -22,21 +22,21 @@ body {
   background-image: url(#{$cdn_img}img/bg/bg_matte.png);
   background-repeat: repeat;
   color: #333;
-  font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Georgia,"Times New Roman",Verdana,sans-serif,Times,serif;
+  font: 12px / 18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Georgia, "Times New Roman", Verdana, sans-serif, Times, serif;
   text-align: center;
   min-width: 1000px;
   min-height: 100%;
-
-
-  > nav,
-  > header,
-  > div,
-  > span,
-  > article {
-    display: block;
-    position: relative;
-    left: 0;
-    right: 0;
+  > {
+    nav,
+    header,
+    div,
+    span,
+    article {
+      display: block;
+      position: relative;
+      left: 0;
+      right: 0;
+    }
   }
 }
 

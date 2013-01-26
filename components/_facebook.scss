@@ -1,4 +1,4 @@
-/** 
+/**
  * Facebook Components Style
  * ============================
  */
@@ -6,48 +6,44 @@
 @import "base";
 
 .fb_profile_image {
-  height: 30px
+  height: 30px;
 }
 
 .facebox {
   margin: auto;
-  background-color: rgba(39,39,39,0.5);
+  background-color: rgba(39, 39, 39, 0.5);
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   padding: 8px;
-}
-
-.facebox .titlebar {
-  display: block;
-  padding: 6px;
-  color: white;
-  background-color: #3b5998;
-  border: 1px solid #3B5998;
-  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-}
-
-.facebox .titlebar .titletext:before {
-  content: url('http://static.ak.fbcdn.net/rsrc.php/zd/r/Cou7n-nqK52.gif')
-}
-
-.facebox .titlebar .titletext {
-  height: 15px;
-  color: white;
-  display: block;
-  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: bold;
-  font-variant: normal;
-  vertical-align: top;
-  text-align: left;
-}
-
-.facebox .close {
-  background-image: url(#{$cdn_img}img/button/close/close.png);
-  margin: -18px -18px 0 0;
-  float: right;
-  cursor: pointer;
-  width: 35px;
-  height: 35px;
+  .titlebar {
+    display: block;
+    padding: 6px;
+    color: white;
+    background-color: #3b5998;
+    border: 1px solid #3B5998;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    .titletext {
+      &:before {
+        content: url('http://static.ak.fbcdn.net/rsrc.php/zd/r/Cou7n-nqK52.gif');
+      }
+      height: 15px;
+      color: white;
+      display: block;
+      font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+      font-weight: bold;
+      font-variant: normal;
+      vertical-align: top;
+      text-align: left;
+    }
+  }
+  .close {
+    background-image: url('#{$cdn_img}img/button/close/close.png');
+    margin: -18px -18px 0 0;
+    float: right;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
 }

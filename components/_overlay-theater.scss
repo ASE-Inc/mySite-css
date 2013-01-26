@@ -24,7 +24,7 @@
   zoom: 1;
   text-align: center;
   vertical-align: middle;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
   display: none;
   cursor: default;
@@ -38,19 +38,13 @@
   transition: all .5s ease-in-out;
 }
 
-.error .overlayTheaterBack,
-.loading .overlayTheaterBack,
-.warning .overlayTheaterBack,
-.info .overlayTheaterBack {
+.error .overlayTheaterBack, .loading .overlayTheaterBack, .warning .overlayTheaterBack, .info .overlayTheaterBack {
   display: block;
   opacity: 1;
   z-index: 999998;
 }
 
-.error .overlayTheater,
-.loading .overlayTheater,
-.warning .overlayTheater,
-.info .overlayTheater {
+.error .overlayTheater, .loading .overlayTheater, .warning .overlayTheater, .info .overlayTheater {
   display: block;
   opacity: 1;
   z-index: 999999;

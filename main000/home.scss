@@ -52,7 +52,7 @@
 #pageHome {
   margin: auto;
   width: 100%;
-  background: rgba(180,180,180,0.33);
+  background: rgba(180, 180, 180, 0.33);
   -webkit-transition: opacity 4.99s linear;
   -moz-transition: opacity 4.99s linear;
   -khtml-transition: opacity 4.99s linear;
@@ -61,10 +61,9 @@
   text-align: center;
   position: relative;
   z-index: 99;
-}
-
-#pageHome:hover {
-  background: white
+  &:hover {
+    background: white;
+  }
 }
 
 #emart {
@@ -93,7 +92,7 @@
 }
 
 .HomeartworkOverlayflip {
-  background: url(#{$img}officialfiles/img/xmasArt-flip.png);
+  background: url('#{$img}officialfiles/img/xmasArt-flip.png');
   float: left;
   height: 318px;
   width: 259px;
@@ -108,34 +107,30 @@
   height: 150px;
   overflow: hidden;
   position: relative;
-}
-
-#HomeURLCode figure.expandable {
-  background: white;
-  border: 10px solid white;
-  position: absolute;
-  display: inline-block;
-  -webkit-box-shadow: 0 3px 10px #ccc;
-  -moz-box-shadow: 0 3px 10px #ccc;
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 1s ease;
-}
-
-#HomeURLCode figure.expandable:focus {
-  left: 50%;
-  top: -30px;
-  margin-left: -475px;
-}
-
-#HomeURLCode figure.expandable figcaption {
-  text-align: center;
-  display: none;
-}
-
-#HomeURLCode figure.expandable:focus figcaption {
-  display: block
+  figure.expandable {
+    background: white;
+    border: 10px solid white;
+    position: absolute;
+    display: inline-block;
+    -webkit-box-shadow: 0 3px 10px #ccc;
+    -moz-box-shadow: 0 3px 10px #ccc;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 1s ease;
+    &:focus {
+      left: 50%;
+      top: -30px;
+      margin-left: -475px;
+    }
+    figcaption {
+      text-align: center;
+      display: none;
+    }
+    &:focus figcaption {
+      display: block;
+    }
+  }
 }
 
 #abhishekmunie {
@@ -154,7 +149,7 @@
 }
 
 #pageMain {
-  width: 100%
+  width: 100%;
 }
 
 .socialWidget {
@@ -165,10 +160,11 @@
   height: 550px;
   display: inline;
 }
+
 #pageHome {
   margin: auto;
   width: 100%;
-  background: rgba(180,180,180,0.33);
+  background: rgba(180, 180, 180, 0.33);
   -webkit-transition: opacity 4.99s linear;
   -moz-transition: opacity 4.99s linear;
   -khtml-transition: opacity 4.99s linear;
@@ -177,10 +173,9 @@
   text-align: center;
   position: relative;
   z-index: 99;
-}
-
-#pageHome:hover {
-  background: white
+  &:hover {
+    background: white;
+  }
 }
 
 #emart {
@@ -209,7 +204,7 @@
 }
 
 .HomeartworkOverlayflip {
-  background: url(#{$img}officialfiles/img/xmasArt-flip.png);
+  background: url('#{$img}officialfiles/img/xmasArt-flip.png');
   float: left;
   height: 318px;
   width: 259px;
@@ -224,34 +219,30 @@
   height: 150px;
   overflow: hidden;
   position: relative;
-}
-
-#HomeURLCode figure.expandable {
-  background: white;
-  border: 10px solid white;
-  position: absolute;
-  display: inline-block;
-  -webkit-box-shadow: 0 3px 10px #ccc;
-  -moz-box-shadow: 0 3px 10px #ccc;
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 1s ease;
-}
-
-#HomeURLCode figure.expandable:focus {
-  left: 50%;
-  top: -30px;
-  margin-left: -475px;
-}
-
-#HomeURLCode figure.expandable figcaption {
-  text-align: center;
-  display: none;
-}
-
-#HomeURLCode figure.expandable:focus figcaption {
-  display: block
+  figure.expandable {
+    background: white;
+    border: 10px solid white;
+    position: absolute;
+    display: inline-block;
+    -webkit-box-shadow: 0 3px 10px #ccc;
+    -moz-box-shadow: 0 3px 10px #ccc;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 1s ease;
+    &:focus {
+      left: 50%;
+      top: -30px;
+      margin-left: -475px;
+    }
+    figcaption {
+      text-align: center;
+      display: none;
+    }
+    &:focus figcaption {
+      display: block;
+    }
+  }
 }
 
 #abhishekmunie {
@@ -270,7 +261,7 @@
 }
 
 #pageMain {
-  width: 100%
+  width: 100%;
 }
 
 .socialWidget {

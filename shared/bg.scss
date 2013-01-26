@@ -1,7 +1,7 @@
 @import "base";
 
 .bg_droid_circuit {
-	background: url('#{$cdn_img}img/bg/google/HeaderCircuit.png') repeat-x scroll left top;
+  background: url('#{$cdn_img}img/bg/google/HeaderCircuit.png') repeat-x scroll left top;
 }
 
 .bg_droid_circuit_psudo:before {
@@ -14,5 +14,5 @@
 }
 
 .bg_icloud {
-  background: url('#{$cdn_img}img/bg/apple/bg_tile.jpg') repeat top left !important
+  background: url('#{$cdn_img}img/bg/apple/bg_tile.jpg') repeat top left !important;
 }

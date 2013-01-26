@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+# fail fast
+set -e
+
+# clean up leaking environment
+unset GIT_DIR
+
+function indent() {
+  c='s/^/       /'
+  case $(uname) in
+    Darwin) sed -l "$c";;
+    *)      sed -u "$c";;
+  esac
+}
+
+BOOTSTRAP=./bootstrap/css/bootstrap.scss
+BOOTSTRAP_LESS=./bootstrap/less/bootstrap.less
+BOOTSTRAP_RESPONSIVE=./bootstrap/css/bootstrap-responsive.scss
+BOOTSTRAP_RESPONSIVE_LESS=./bootstrap/less/responsive.less
+recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}

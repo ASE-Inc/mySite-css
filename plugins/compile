@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 # plugins/compile <build-dir> <cache-dir>
 
-# fail fast
-set -e
-
 # parse args
+PLUGINS_DIR=`cd $(dirname $0); pwd`
 BUILD_DIR=$1
 CACHE_DIR=$2
 
@@ -19,10 +17,17 @@ function indent() {
   esac
 }
 
-BOOTSTRAP=$BUILD_DIR/plugins/bootstrap/css/bootstrap.scss
-BOOTSTRAP_LESS=$BUILD_DIR/plugins/bootstrap/less/bootstrap.less
-BOOTSTRAP_RESPONSIVE=$BUILD_DIR/plugins/bootstrap/css/bootstrap-responsive.scss
-BOOTSTRAP_RESPONSIVE_LESS=$BUILD_DIR/plugins/bootstrap/less/responsive.less
-mkdir $BUILD_DIR/plugins/bootstrap/css
-lessc --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
-lessc --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+##################################################
+# Building Bootstrap...
+##################################################
+echo "-----> Building Bootstrap... " | indent
+BOOTSTRAP=$PLUGINS_DIR/bootstrap/css/bootstrap.scss
+BOOTSTRAP_LESS=$PLUGINS_DIR/less/bootstrap.less
+BOOTSTRAP_RESPONSIVE=$PLUGINS_DIR/bootstrap/css/bootstrap-responsive.scss
+BOOTSTRAP_RESPONSIVE_LESS=$PLUGINS_DIR/bootstrap/less/responsive.less
+if [[ ! -d $PLUGINS_DIR/bootstrap/css ]]; then
+  mkdir $PLUGINS_DIR/bootstrap/css
+fi
+recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+echo "       done."
